@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-13T10:04:01.908Z</updated>
+  <updated>2022-03-16T04:59:38.153Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>差错控制及两种检错编码</title>
+    <link href="http://example.com/2022/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%B7%AE%E9%94%99%E6%8E%A7%E5%88%B6%E5%8F%8A%E4%B8%A4%E7%A7%8D%E6%A3%80%E9%94%99%E7%BC%96%E7%A0%81/"/>
+    <id>http://example.com/2022/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%B7%AE%E9%94%99%E6%8E%A7%E5%88%B6%E5%8F%8A%E4%B8%A4%E7%A7%8D%E6%A3%80%E9%94%99%E7%BC%96%E7%A0%81/</id>
+    <published>2022-03-16T04:30:08.000Z</published>
+    <updated>2022-03-16T04:59:38.153Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="差错控制"><a href="#差错控制" class="headerlink" title="差错控制"></a>差错控制</h1><h2 id="差错从何而来？"><a href="#差错从何而来？" class="headerlink" title="差错从何而来？"></a>差错从何而来？</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161239375.png" alt="image-20220316123959230"></p><h2 id="数据链路层的差错控制"><a href="#数据链路层的差错控制" class="headerlink" title="数据链路层的差错控制"></a>数据链路层的差错控制</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161243433.png" alt="image-20220316124301277"></p><h2 id="检错编码——奇偶校验码"><a href="#检错编码——奇偶校验码" class="headerlink" title="检错编码——奇偶校验码"></a>检错编码——奇偶校验码</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161248392.png" alt="image-20220316124842250"></p><h2 id="检错编码——CRC循环冗余码"><a href="#检错编码——CRC循环冗余码" class="headerlink" title="检错编码——CRC循环冗余码"></a>检错编码——CRC循环冗余码</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161254466.png" alt="image-20220316125448313"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161255222.png" alt="image-20220316125540086"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161256451.png" alt="image-20220316125643313"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>链路层的基本概念与封装成帧</title>
+    <link href="http://example.com/2022/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%93%BE%E8%B7%AF%E5%B1%82%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%B0%81%E8%A3%85%E6%88%90%E5%B8%A7/"/>
+    <id>http://example.com/2022/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%93%BE%E8%B7%AF%E5%B1%82%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%B0%81%E8%A3%85%E6%88%90%E5%B8%A7/</id>
+    <published>2022-03-16T04:30:07.000Z</published>
+    <updated>2022-03-16T04:59:03.427Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="数据链路层的基本概念"><a href="#数据链路层的基本概念" class="headerlink" title="数据链路层的基本概念"></a>数据链路层的基本概念</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161217438.png" alt="image-20220316121732268"></p><h1 id="数据链路层的功能概述"><a href="#数据链路层的功能概述" class="headerlink" title="数据链路层的功能概述"></a>数据链路层的功能概述</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161219105.png" alt="image-20220316121927945"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161221609.png" alt="image-20220316122100463"></p><h1 id="封装成帧"><a href="#封装成帧" class="headerlink" title="封装成帧"></a>封装成帧</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161222248.png" alt="image-20220316122218113"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161224263.png" alt="image-20220316122402120"></p><h2 id="透明传输"><a href="#透明传输" class="headerlink" title="透明传输"></a>透明传输</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161225782.png" alt="image-20220316122534644"></p><h2 id="1-字符计数法"><a href="#1-字符计数法" class="headerlink" title="1.字符计数法"></a>1.字符计数法</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161227002.png" alt="image-20220316122743865"></p><h2 id="2-字符填充法"><a href="#2-字符填充法" class="headerlink" title="2.字符填充法"></a>2.字符填充法</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161229392.png" alt="image-20220316122932243"></p><h3 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161230176.png" alt="image-20220316123052047"></p><h2 id="3-零比特填充法"><a href="#3-零比特填充法" class="headerlink" title="3.零比特填充法"></a>3.零比特填充法</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161232846.png" alt="image-20220316123234697"></p><h2 id="4-违规编码法"><a href="#4-违规编码法" class="headerlink" title="4.违规编码法"></a>4.违规编码法</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161235646.png" alt="image-20220316123536524"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>微机原理概论1</title>
@@ -391,48 +433,6 @@
     
     
     <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>c语言-4</title>
-    <link href="http://example.com/2022/03/05/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%804/"/>
-    <id>http://example.com/2022/03/05/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%804/</id>
-    <published>2022-03-05T04:40:03.000Z</published>
-    <updated>2022-03-05T04:58:31.289Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="编译预处理"><a href="#编译预处理" class="headerlink" title="编译预处理"></a>编译预处理</h1><p><img src="https://s2.loli.net/2022/03/05/G852f3HjrR9qloV.png" alt="image-20220305104235369"></p><p><img src="https://s2.loli.net/2022/03/05/XmVMcrgn7oY4GTW.png" alt="image-20220305104558470"></p><p><img src="https://s2.loli.net/2022/03/05/aFDfnsPijS26uBb.png" alt="image-20220305104746664"></p><p><img src="https://s2.loli.net/2022/03/05/miTVlrFN8aPJ7kx.png" alt="image-20220305105503249"></p><p><img src="https://s2.loli.net/2022/03/05/xj9zS8WcYVlOCPB.png" alt="image-20220305110119757"></p><p><img src="https://s2.loli.net/2022/03/05/gbmZO2AUXQFrJYW.png" alt="image-20220305122020581"></p><h1 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h1><p><img src="https://s2.loli.net/2022/03/05/7ur6EiwTWymnNRa.png" alt="image-20220305123251331"></p><p><img src="https://s2.loli.net/2022/03/05/KqiASleVCyfRgrF.png" alt="image-20220305123414218"></p><ul><li>第一种不能忘记括号（）。</li></ul><p><img src="https://s2.loli.net/2022/03/05/KDO3mprudoINEX2.png" alt="image-20220305124611541"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203051253330.png" alt="image-20220305125255780"></p>]]></content>
-    
-    
-    <summary type="html">为考试做的准备</summary>
-    
-    
-    
-    <category term="c语言学习" scheme="http://example.com/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="c语言" scheme="http://example.com/tags/c%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>c语言-3</title>
-    <link href="http://example.com/2022/03/05/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%803/"/>
-    <id>http://example.com/2022/03/05/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%803/</id>
-    <published>2022-03-05T04:40:02.000Z</published>
-    <updated>2022-03-05T04:57:26.203Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><p><img src="https://s2.loli.net/2022/03/05/ISjJWpkO6gVNvoT.png" alt="image-20220305100549340"></p><p><img src="https://s2.loli.net/2022/03/05/TubEecCkaKPmdn9.png" alt="image-20220305100936501"></p><p><img src="https://s2.loli.net/2022/03/05/oxVqXIjiSrHs2GQ.png" alt="image-20220305101110904"></p><p><img src="https://s2.loli.net/2022/03/05/OUWZmXBhGPLw2jl.png" alt="image-20220305101611512"></p><p><img src="https://s2.loli.net/2022/03/05/ZyXu2rtl8pWAmKD.png" alt="image-20220305101642112"></p><p><img src="https://s2.loli.net/2022/03/05/EPLjKoAXwZsNctG.png" alt="image-20220305101719738"></p><p><img src="https://s2.loli.net/2022/03/05/IoJPYz97hQRBWpX.png" alt="image-20220305102331381"></p><h1 id="指针数组"><a href="#指针数组" class="headerlink" title="指针数组"></a>指针数组</h1><p><img src="https://s2.loli.net/2022/03/05/YK9NnILPajmQ4UJ.png" alt="image-20220305103051938"></p><p><img src="https://s2.loli.net/2022/03/05/ZMEJaWFfymzwHc4.png" alt="image-20220305103201390"></p><p><img src="https://s2.loli.net/2022/03/05/xTfbgnRJNOIq4ak.png" alt="image-20220305103418199"></p><p><img src="https://s2.loli.net/2022/03/05/3o7rWn2EfTis8J6.png" alt="image-20220305103722648"></p><p><img src="https://s2.loli.net/2022/03/05/Xl7eLk9VyxuKUfn.png" alt="image-20220305104003182"></p><p><img src="https://s2.loli.net/2022/03/05/ZbEh1um3WkBKHs9.png" alt="image-20220305104012445"></p>]]></content>
-    
-    
-    <summary type="html">为考试做的准备</summary>
-    
-    
-    
-    <category term="c语言学习" scheme="http://example.com/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="c语言" scheme="http://example.com/tags/c%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
