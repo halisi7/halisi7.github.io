@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-17T05:00:37.376Z</updated>
+  <updated>2022-03-18T12:25:42.612Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,174 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSMACD协议</title>
+    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMACD%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMACD%E5%8D%8F%E8%AE%AE/</id>
+    <published>2022-03-18T12:20:15.000Z</published>
+    <updated>2022-03-18T12:25:42.612Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181537248.png" alt="image-20220318153709101"></p><h1 id="CSMA-CD协议"><a href="#CSMA-CD协议" class="headerlink" title="CSMA/CD协议"></a>CSMA/CD协议</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181540488.png" alt="image-20220318154002350"></p><h2 id="传播时延对载波监听的影响"><a href="#传播时延对载波监听的影响" class="headerlink" title="传播时延对载波监听的影响"></a>传播时延对载波监听的影响</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181546979.png" alt="image-20220318154630829"></p><h2 id="确定重传时机"><a href="#确定重传时机" class="headerlink" title="确定重传时机"></a>确定重传时机</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181550696.png" alt="image-20220318155044543"></p><h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181551190.png" alt="image-20220318155143054"></p><h2 id="最小帧长"><a href="#最小帧长" class="headerlink" title="最小帧长"></a>最小帧长</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181553378.png" alt="image-20220318155333234"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181554619.png" alt="">                                                                                                                                                        </p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>随机访问MAC协议</title>
+    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%9A%8F%E6%9C%BA%E8%AE%BF%E9%97%AEMAC%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%9A%8F%E6%9C%BA%E8%AE%BF%E9%97%AEMAC%E5%8D%8F%E8%AE%AE/</id>
+    <published>2022-03-18T12:20:14.000Z</published>
+    <updated>2022-03-18T12:24:56.911Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181521446.png" alt="image-20220318152119299"></p><ul><li>只有随机访问MAC协议会发生冲突。</li></ul><h1 id="轮询协议"><a href="#轮询协议" class="headerlink" title="轮询协议"></a>轮询协议</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181524848.png" alt="image-20220318152403715"></p><h1 id="令牌传递协议"><a href="#令牌传递协议" class="headerlink" title="令牌传递协议"></a>令牌传递协议</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181527762.png" alt="image-20220318152751626"></p><h1 id="MAC协议总结"><a href="#MAC协议总结" class="headerlink" title="MAC协议总结"></a>MAC协议总结</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181531090.png" alt="image-20220318153101957"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSMA协议</title>
+    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMA%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMA%E5%8D%8F%E8%AE%AE/</id>
+    <published>2022-03-18T12:20:13.000Z</published>
+    <updated>2022-03-18T12:24:15.511Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181359126.png" alt="image-20220318135958982"></p><h1 id="CSMA协议"><a href="#CSMA协议" class="headerlink" title="CSMA协议"></a>CSMA协议</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181401894.png" alt="image-20220318140152752"></p><h2 id="1-坚持CSMA"><a href="#1-坚持CSMA" class="headerlink" title="1-坚持CSMA"></a>1-坚持CSMA</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181403272.png" alt="image-20220318140322142"></p><h2 id="非坚持CSMA"><a href="#非坚持CSMA" class="headerlink" title="非坚持CSMA"></a>非坚持CSMA</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181404512.png" alt="image-20220318140435381"></p><h2 id="p-坚持CSMA"><a href="#p-坚持CSMA" class="headerlink" title="p-坚持CSMA"></a>p-坚持CSMA</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181406131.png" alt="image-20220318140636991"></p><h2 id="对比总结"><a href="#对比总结" class="headerlink" title="对比总结"></a>对比总结</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181408274.png" alt="image-20220318140829128"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ALOHA协议</title>
+    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/ALOHA%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/ALOHA%E5%8D%8F%E8%AE%AE/</id>
+    <published>2022-03-18T12:20:12.000Z</published>
+    <updated>2022-03-18T12:23:51.995Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181350045.png" alt="image-20220318135048902"></p><h2 id="动态分配信道-ALOHA协议"><a href="#动态分配信道-ALOHA协议" class="headerlink" title="动态分配信道-ALOHA协议"></a>动态分配信道-ALOHA协议</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181352107.png" alt="image-20220318135226969"></p><h3 id="纯ALOHA协议"><a href="#纯ALOHA协议" class="headerlink" title="纯ALOHA协议"></a>纯ALOHA协议</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181355202.png" alt="image-20220318135522064"></p><h3 id="时隙ALOHA协议"><a href="#时隙ALOHA协议" class="headerlink" title="时隙ALOHA协议"></a>时隙ALOHA协议</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181357908.png" alt="image-20220318135720776"></p><h3 id="ALOHA协议总结"><a href="#ALOHA协议总结" class="headerlink" title="ALOHA协议总结"></a>ALOHA协议总结</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181358305.png" alt="image-20220318135850181"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>介质访问控制-静态划分信道</title>
+    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BB%8B%E8%B4%A8%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E9%9D%99%E6%80%81/"/>
+    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BB%8B%E8%B4%A8%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E9%9D%99%E6%80%81/</id>
+    <published>2022-03-18T12:20:11.000Z</published>
+    <updated>2022-03-18T12:23:17.412Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="传输数据使用的两种链路"><a href="#传输数据使用的两种链路" class="headerlink" title="传输数据使用的两种链路"></a>传输数据使用的两种链路</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181324256.png" alt="image-20220318132400110"></p><h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181325238.png" alt="image-20220318132511094"></p><h2 id="静态划分信道-信道划分介质访问控制"><a href="#静态划分信道-信道划分介质访问控制" class="headerlink" title="静态划分信道-信道划分介质访问控制"></a>静态划分信道-信道划分介质访问控制</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181327042.png" alt="image-20220318132720901"></p><h3 id="频分多路复用FDM"><a href="#频分多路复用FDM" class="headerlink" title="频分多路复用FDM"></a>频分多路复用FDM</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181329955.png" alt="image-20220318132922818"></p><h3 id="时分多路复用TDM"><a href="#时分多路复用TDM" class="headerlink" title="时分多路复用TDM"></a>时分多路复用TDM</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181332029.png" alt="image-20220318133206900"></p><ul><li>并行：同时向前推进。</li><li>并发：一人占用一个时间片。</li></ul><h3 id="改进的时分复用-统计时分复用STDM"><a href="#改进的时分复用-统计时分复用STDM" class="headerlink" title="改进的时分复用-统计时分复用STDM"></a>改进的时分复用-统计时分复用STDM</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181335584.png" alt="image-20220318133519438"></p><h3 id="波分多路复用WDM"><a href="#波分多路复用WDM" class="headerlink" title="波分多路复用WDM"></a>波分多路复用WDM</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181336439.png" alt="image-20220318133616305"></p><h3 id="码分多路复用CDM"><a href="#码分多路复用CDM" class="headerlink" title="码分多路复用CDM"></a>码分多路复用CDM</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181341568.png" alt="image-20220318134109419"></p><ul><li>规格化内积：对应位相乘再相加最后除以总位数。</li><li>相互正交：规格化内积等于0。</li><li>线性相加：各个位相加即可。</li></ul><h2 id="CD和CS的混淆"><a href="#CD和CS的混淆" class="headerlink" title="CD和CS的混淆"></a>CD和CS的混淆</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181348253.png" alt="image-20220318134835114"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>后退N帧协议</title>
+    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%90%8E%E9%80%80N%E5%B8%A7%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%90%8E%E9%80%80N%E5%B8%A7%E5%8D%8F%E8%AE%AE/</id>
+    <published>2022-03-18T12:20:11.000Z</published>
+    <updated>2022-03-18T12:22:22.730Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="后退N帧协议（GBN）"><a href="#后退N帧协议（GBN）" class="headerlink" title="后退N帧协议（GBN）"></a>后退N帧协议（GBN）</h1><h2 id="停等协议的弊端"><a href="#停等协议的弊端" class="headerlink" title="停等协议的弊端"></a>停等协议的弊端</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181229817.png" alt="image-20220318122928649"></p><h2 id="后退N帧协议的滑动窗口"><a href="#后退N帧协议的滑动窗口" class="headerlink" title="后退N帧协议的滑动窗口"></a>后退N帧协议的滑动窗口</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181233552.png" alt="image-20220318123335410"></p><h2 id="发送方"><a href="#发送方" class="headerlink" title="发送方"></a>发送方</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181236696.png" alt="image-20220318123640539"></p><h2 id="接收方"><a href="#接收方" class="headerlink" title="接收方"></a>接收方</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181238157.png" alt="image-20220318123855013"></p><h2 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181248042.png" alt="image-20220318124854887"></p><h2 id="滑动窗口长度的问题"><a href="#滑动窗口长度的问题" class="headerlink" title="滑动窗口长度的问题"></a>滑动窗口长度的问题</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181250910.png" alt="image-20220318125040786"></p><h2 id="GBN协议重点总结"><a href="#GBN协议重点总结" class="headerlink" title="GBN协议重点总结"></a>GBN协议重点总结</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181252651.png" alt="image-20220318125225507"></p><h2 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181253569.png" alt="image-20220318125342436"></p><ul><li>接收方一定是按序接收并发送的确认帧。</li></ul><h1 id="GBN协议的性能分析"><a href="#GBN协议的性能分析" class="headerlink" title="GBN协议的性能分析"></a>GBN协议的性能分析</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181256026.png" alt="image-20220318125617865"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181256398.png" alt="image-20220318125633275"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>选择重传协议</title>
+    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%80%89%E6%8B%A9%E9%87%8D%E4%BC%A0%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%80%89%E6%8B%A9%E9%87%8D%E4%BC%A0%E5%8D%8F%E8%AE%AE/</id>
+    <published>2022-03-18T12:20:10.000Z</published>
+    <updated>2022-03-18T12:21:55.564Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="GBN协议的弊端"><a href="#GBN协议的弊端" class="headerlink" title="GBN协议的弊端"></a>GBN协议的弊端</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181258945.png" alt="image-20220318125856800"></p><h1 id="选择重传协议（SR）"><a href="#选择重传协议（SR）" class="headerlink" title="选择重传协议（SR）"></a>选择重传协议（SR）</h1><h2 id="选择重传协议中的滑动窗口"><a href="#选择重传协议中的滑动窗口" class="headerlink" title="选择重传协议中的滑动窗口"></a>选择重传协议中的滑动窗口</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181301951.png" alt="image-20220318130158810"></p><h2 id="发送方"><a href="#发送方" class="headerlink" title="发送方"></a>发送方</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181303009.png" alt="image-20220318130330862"></p><h2 id="接收方"><a href="#接收方" class="headerlink" title="接收方"></a>接收方</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181305714.png" alt="image-20220318130521580"></p><h2 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181307250.png" alt="image-20220318130750094"></p><h2 id="滑动窗口长度"><a href="#滑动窗口长度" class="headerlink" title="滑动窗口长度"></a>滑动窗口长度</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181312866.png" alt="image-20220318131210718"></p><h2 id="SR协议的重点总结"><a href="#SR协议的重点总结" class="headerlink" title="SR协议的重点总结"></a>SR协议的重点总结</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181313400.png" alt="image-20220318131344266"></p><h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181314150.png" alt="image-20220318131450023"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181315370.png" alt="image-20220318131511247"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微机原理概论2</title>
+    <link href="http://example.com/2022/03/18/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA2/"/>
+    <id>http://example.com/2022/03/18/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA2/</id>
+    <published>2022-03-18T09:30:20.000Z</published>
+    <updated>2022-03-18T12:20:13.196Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="考点"><a href="#考点" class="headerlink" title="考点"></a>考点</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181946617.png" alt="image-20220318194650441"></p><ul><li>背的东西变多了。</li></ul><h1 id="8086-8088"><a href="#8086-8088" class="headerlink" title="8086/8088"></a>8086/8088</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181948098.png" alt="image-20220318194826940"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181949973.png" alt="image-20220318194915828"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181950663.png" alt="image-20220318195019504"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181950624.png" alt="image-20220318195056489"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181951671.png" alt="image-20220318195144524"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181952791.png" alt="image-20220318195217621"></p><h1 id="流水线技术"><a href="#流水线技术" class="headerlink" title="流水线技术"></a>流水线技术</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181953716.png" alt="image-20220318195319578"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181954397.png" alt="image-20220318195404206"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181954642.png" alt="image-20220318195420445"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181955664.png" alt="image-20220318195524488"></p><ul><li>一个cpu的总线周期由4个时钟周期组成。</li></ul><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181958287.png" alt="image-20220318195822104"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181958052.png" alt="image-20220318195841874"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181959961.png" alt="image-20220318195928795"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203182000493.png" alt="image-20220318200013317"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203182000763.png" alt="image-20220318200038593"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203182001982.png" alt="image-20220318200134831"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203182002000.png" alt="image-20220318200220860"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203182003938.png" alt="image-20220318200314780"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203182004319.png" alt="image-20220318200406143"></p><ul><li>20位地址码应该是00000H~FFFFFH。</li></ul><p><img src="https://s2.loli.net/2022/03/18/52JzbMULN37TGlO.png" alt="image-20220318200804045"></p><p><img src="https://s2.loli.net/2022/03/18/w6CJOknq7P4EFYN.png" alt="image-20220318200844860"></p><p><img src="https://s2.loli.net/2022/03/18/3cojN2Pv8GlV1pR.png" alt="image-20220318200944028"></p><p><img src="https://s2.loli.net/2022/03/18/bfzh3qIR2BHciXu.png" alt="image-20220318201029960"></p><p><img src="https://s2.loli.net/2022/03/18/16ihgDt5jGdFCBW.png" alt="image-20220318201220585"></p><p><img src="https://s2.loli.net/2022/03/18/uxYETKnPh4ogcAS.png" alt="image-20220318201314850"></p><p><img src="https://s2.loli.net/2022/03/18/GfY7uabxOrhgmK5.png" alt="image-20220318201552107"></p><p><img src="https://s2.loli.net/2022/03/18/jXnv4VlqmrLHW5Z.png" alt="image-20220318201707689"></p><p><img src="https://s2.loli.net/2022/03/18/tQjhfzk5bD182Pi.png" alt="image-20220318201749006"></p>]]></content>
+    
+    
+    <summary type="html">为考试做的准备</summary>
+    
+    
+    
+    <category term="微机原理" scheme="http://example.com/categories/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="微机原理" scheme="http://example.com/tags/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>停止-等待协议</title>
@@ -265,174 +433,6 @@
     
     
     <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>物理层、数据通信和码元</title>
-    <link href="http://example.com/2022/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%89%A9%E7%90%86%E5%B1%82%E3%80%81%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%92%8C%E7%A0%81%E5%85%83/"/>
-    <id>http://example.com/2022/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%89%A9%E7%90%86%E5%B1%82%E3%80%81%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%92%8C%E7%A0%81%E5%85%83/</id>
-    <published>2022-03-11T03:30:04.000Z</published>
-    <updated>2022-03-11T03:32:02.340Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="物理层的基本概念"><a href="#物理层的基本概念" class="headerlink" title="物理层的基本概念"></a>物理层的基本概念</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111042463.png" alt="image-20220311104220299"></p><h1 id="数据通信的基础知识"><a href="#数据通信的基础知识" class="headerlink" title="数据通信的基础知识"></a>数据通信的基础知识</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111050109.png" alt="image-20220311105010968"></p><ul><li>调制解调器：光猫。</li></ul><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111053428.png" alt="image-20220311105318288"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111055512.png" alt="image-20220311105548375"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111057942.png" alt="image-20220311105729810"></p><h1 id="码元"><a href="#码元" class="headerlink" title="码元"></a>码元</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111103573.png" alt="image-20220311110304430"></p><ul><li>高低不同的波形表示不同的信号。</li></ul><h1 id="速率、波特、带宽"><a href="#速率、波特、带宽" class="headerlink" title="速率、波特、带宽"></a>速率、波特、带宽</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111112023.png" alt="image-20220311111159873"></p><ul><li>速率：传输速率，也叫发送速率，从主机到链路的传送速度。</li><li>传输速率：在主机那一块，也就是从主机发送到链路的速度。</li><li>传播速率：在整个链路上的传播的速度。</li></ul><h1 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111115129.png" alt="image-20220311111524984"></p><ul><li>一个码元用两位比特表示。</li><li>log~2~4表示用几个二进制数表示这4种状态。</li><li>16进制码元意味着有16种高低不同的状态，那用几个二进制数才能表示这16种状态呢？即2^n^=16,求n。</li></ul>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TCP/IP模型与5层参考模型</title>
-    <link href="http://example.com/2022/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCPIP%E6%A8%A1%E5%9E%8B%E4%B8%8E5%E5%B1%82%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/"/>
-    <id>http://example.com/2022/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCPIP%E6%A8%A1%E5%9E%8B%E4%B8%8E5%E5%B1%82%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/</id>
-    <published>2022-03-11T03:30:03.000Z</published>
-    <updated>2022-03-11T03:31:18.501Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="TCP-IP模型"><a href="#TCP-IP模型" class="headerlink" title="TCP/IP模型"></a>TCP/IP模型</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111028991.png" alt="image-20220311102846863"></p><h2 id="OSI参考模型与TCP-IP参考模型相同点"><a href="#OSI参考模型与TCP-IP参考模型相同点" class="headerlink" title="OSI参考模型与TCP/IP参考模型相同点"></a>OSI参考模型与TCP/IP参考模型相同点</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111029479.png" alt="image-20220311102950347"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111031942.png" alt="image-20220311103156796"></p><h1 id="5层参考模型"><a href="#5层参考模型" class="headerlink" title="5层参考模型"></a>5层参考模型</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111033150.png" alt="image-20220311103315015"></p><ul><li>通用的参考模型。</li></ul><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111035251.png" alt="image-20220311103557124"></p><h1 id="知识总结"><a href="#知识总结" class="headerlink" title="知识总结"></a>知识总结</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111036450.png" alt="image-20220311103632323"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>分层、协议、接口、服务</title>
-    <link href="http://example.com/2022/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%88%86%E5%B1%82%E3%80%81%E5%8D%8F%E8%AE%AE%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%9C%8D%E5%8A%A1/"/>
-    <id>http://example.com/2022/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%88%86%E5%B1%82%E3%80%81%E5%8D%8F%E8%AE%AE%E3%80%81%E6%8E%A5%E5%8F%A3%E3%80%81%E6%9C%8D%E5%8A%A1/</id>
-    <published>2022-03-11T03:30:02.000Z</published>
-    <updated>2022-03-11T03:30:29.648Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="认识分层"><a href="#认识分层" class="headerlink" title="认识分层"></a>认识分层</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203110949462.png" alt="image-20220311094959309"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203110950354.png" alt="image-20220311095015219"></p><h2 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203110950426.png" alt="image-20220311095033310"></p><h1 id="OSI参考模型（1）"><a href="#OSI参考模型（1）" class="headerlink" title="OSI参考模型（1）"></a>OSI参考模型（1）</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203110953230.png" alt="image-20220311095314103"></p><ul><li>目前常用的是TCP/IP模型。</li></ul><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203110954376.png" alt="image-20220311095459234"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203110957049.png" alt="image-20220311095713902"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111001324.png" alt="image-20220311100132182"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111003115.png" alt="image-20220311100316974"></p><h1 id="OSI参考模型（2）"><a href="#OSI参考模型（2）" class="headerlink" title="OSI参考模型（2）"></a>OSI参考模型（2）</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111005011.png" alt="image-20220311100511864"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111007600.png" alt="image-20220311100725452"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111010960.png" alt="image-20220311101035818"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111015904.png" alt="image-20220311101548756"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111018986.png" alt="image-20220311101832843"></p><ul><li>数据报与分组：当数据报太大时会分成多个小分组。</li><li>流量控制：主要是限制发送方的速度。</li></ul><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111021841.png" alt="image-20220311102151703"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111024475.png" alt="image-20220311102403341"></p><h2 id="脑图时刻-1"><a href="#脑图时刻-1" class="headerlink" title="脑图时刻"></a>脑图时刻</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111024373.png" alt="image-20220311102440263"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>英语1</title>
-    <link href="http://example.com/2022/03/10/%E8%8B%B1%E8%AF%AD%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/%E8%8B%B1%E8%AF%AD1/"/>
-    <id>http://example.com/2022/03/10/%E8%8B%B1%E8%AF%AD%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/%E8%8B%B1%E8%AF%AD1/</id>
-    <published>2022-03-10T02:40:20.000Z</published>
-    <updated>2022-03-13T05:17:24.825Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题型分析"><a href="#题型分析" class="headerlink" title="题型分析"></a>题型分析</h1><p><img src="https://s2.loli.net/2022/03/10/5fsDeirQOFwyNzh.jpg" alt="扫描全能王 2022-03-10 10.23"></p><h1 id="有规律的字母组合"><a href="#有规律的字母组合" class="headerlink" title="有规律的字母组合"></a>有规律的字母组合</h1><p>ed——一共会发3个音。</p><ol><li>清音/t/</li><li>浊音/d/</li><li>/id/</li></ol><p>发音规律：清音后则/t/，浊音和元音后则/d/，字母t或d后发/id/。</p><p>做题方法：先看ed前面有没有t或d。</p><hr><p>ng——由于位置不同，会发两个音。</p><ol><li>词尾。</li><li>词中。</li><li>特殊的singer（看到直接选）。</li></ol><hr><p>oo——三种发音。</p><ol><li><p>先看四个选项中有没有flood/blood(有的话直接选)。</p></li><li><p>k/t/d之前一般是短音，口诀：好脚站木羊毛短。（th不能拆开看，即位于th之前也是长音。）</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">即：good foot stood wood wool （短音）</span><br><span class="line">特殊的：food noodle mood boot shoot(不发短音，发长音)</span><br></pre></td></tr></table></figure></li><li><p>其它情况都是长音。</p></li></ol><hr><p>gh——两种规则</p><ol><li>位于字母t之前不发音。（例如：eight，特殊的laughter，因为是laugh的变形）。</li><li>gh位于词尾是发音的。特殊的：though、although、through位于词尾但不发音。</li></ol><hr><p>al——三个音</p><ol><li>位于辅音字母lk之前。</li><li>位于辅音字母fm之前。</li><li>位于词首或其它辅音之前。</li></ol><hr><p>th——两个音</p><ol><li>清音（位于词首，特殊的：them、there、those发浊音；位于词中一般，特殊的位于er、e之前发浊音；位于词尾一般，特殊的：with、smooth浊音）</li><li>浊音（位于词中）</li></ol><hr><p>ex——三种情况</p><ol><li>后面是元音字母。</li><li>后面是辅音字母。</li><li>特殊的：exercise、</li></ol><h1 id="补充："><a href="#补充：" class="headerlink" title="补充："></a>补充：</h1><p>sion</p><ol><li>Sion元音之后发一个音。</li><li>辅音之后发另外一个音。</li></ol>]]></content>
-    
-    
-    <summary type="html">为考试做的准备</summary>
-    
-    
-    
-    <category term="英语" scheme="http://example.com/categories/%E8%8B%B1%E8%AF%AD/"/>
-    
-    
-    <category term="英语" scheme="http://example.com/tags/%E8%8B%B1%E8%AF%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>c语言-9</title>
-    <link href="http://example.com/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%809/"/>
-    <id>http://example.com/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%809/</id>
-    <published>2022-03-06T04:40:20.000Z</published>
-    <updated>2022-03-06T05:35:13.186Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061317895.png" alt="image-20220306131753768"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061318711.png" alt="image-20220306131853548"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061319061.png" alt="image-20220306131914939"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061320227.png" alt="image-20220306132001093"></p><h1 id="结构体初始化"><a href="#结构体初始化" class="headerlink" title="结构体初始化"></a>结构体初始化</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061320580.png" alt="image-20220306132059455"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061321796.png" alt="image-20220306132123698"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061321641.png" alt="image-20220306132151541"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061323252.png" alt="image-20220306132318085"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061331954.png" alt="image-20220306133127770"></p>]]></content>
-    
-    
-    <summary type="html">为考试做的准备</summary>
-    
-    
-    
-    <category term="c语言学习" scheme="http://example.com/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="c语言" scheme="http://example.com/tags/c%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>c语言-8</title>
-    <link href="http://example.com/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%808/"/>
-    <id>http://example.com/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%808/</id>
-    <published>2022-03-06T04:40:18.000Z</published>
-    <updated>2022-03-06T05:35:22.568Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="指针与数组的关系"><a href="#指针与数组的关系" class="headerlink" title="指针与数组的关系"></a>指针与数组的关系</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061245239.png" alt="image-20220306124546110"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061247900.png" alt="image-20220306124712746"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061247382.png" alt="image-20220306124748237"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061249511.png" alt="image-20220306124941394"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061250287.png" alt="image-20220306125037147"></p><h1 id="指针的运算"><a href="#指针的运算" class="headerlink" title="指针的运算"></a>指针的运算</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061252468.png" alt="image-20220306125246267"></p><ol><li>指针可以比较大小。</li><li>指针可以p++，p—；</li></ol><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061301226.png" alt="image-20220306130144109"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061302461.png" alt="image-20220306130210345"></p><h1 id="字符串指针"><a href="#字符串指针" class="headerlink" title="字符串指针"></a>字符串指针</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061305731.png" alt="image-20220306130525592"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061309979.png" alt="image-20220306130936813"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061313933.png" alt="image-20220306131344811"></p><ul><li>指针指向字符串时，字符串是一个常量，不能操作字符串。</li></ul><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061316817.png" alt="image-20220306131644686"></p>]]></content>
-    
-    
-    <summary type="html">为考试做的准备</summary>
-    
-    
-    
-    <category term="c语言学习" scheme="http://example.com/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="c语言" scheme="http://example.com/tags/c%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>c语言-7</title>
-    <link href="http://example.com/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%807/"/>
-    <id>http://example.com/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%807/</id>
-    <published>2022-03-06T04:40:16.000Z</published>
-    <updated>2022-03-06T05:35:29.233Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061219996.png" alt="image-20220306121911860"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061221586.png" alt="image-20220306122120460"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061224074.png" alt="image-20220306122449943"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061226405.png" alt="image-20220306122606277"></p><h1 id="指针的操作"><a href="#指针的操作" class="headerlink" title="指针的操作"></a>指针的操作</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061230346.png" alt="image-20220306123034224"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061232194.png" alt="image-20220306123213005"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061235652.png" alt="image-20220306123504528"></p><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061235227.png" alt="image-20220306123532097"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061241315.png" alt="image-20220306124119164"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061243741.png" alt="image-20220306124331591"></p><ul><li>没赋值就是野指针。</li></ul>]]></content>
-    
-    
-    <summary type="html">为考试做的准备</summary>
-    
-    
-    
-    <category term="c语言学习" scheme="http://example.com/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="c语言" scheme="http://example.com/tags/c%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>c语言-6</title>
-    <link href="http://example.com/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%806/"/>
-    <id>http://example.com/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%806/</id>
-    <published>2022-03-06T04:40:14.000Z</published>
-    <updated>2022-03-06T05:35:35.044Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061108023.png" alt="image-20220306110814842"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061111382.png" alt="image-20220306111127262"></p><h1 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061114412.png" alt="image-20220306111419267"></p><h1 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061118458.png" alt="image-20220306111836244"></p><h1 id="变量的存储方式"><a href="#变量的存储方式" class="headerlink" title="变量的存储方式"></a>变量的存储方式</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061120080.png" alt="image-20220306112003950"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061121009.png" alt="image-20220306112148856"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061122218.png" alt="image-20220306112248056"></p><h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061124166.png" alt="image-20220306112449030"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061210707.png" alt="image-20220306121045526"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061215798.png" alt="image-20220306121531668"></p><h1 id="考点梳理"><a href="#考点梳理" class="headerlink" title="考点梳理"></a>考点梳理</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061216697.png" alt="image-20220306121600583"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203061216547.png" alt="image-20220306121617432"></p>]]></content>
-    
-    
-    <summary type="html">为考试做的准备</summary>
-    
-    
-    
-    <category term="c语言学习" scheme="http://example.com/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-    <category term="c语言" scheme="http://example.com/tags/c%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
