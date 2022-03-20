@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-18T12:25:42.612Z</updated>
+  <updated>2022-03-20T07:29:02.949Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,137 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>CSMACD协议</title>
+    <title>链路层扩展以太网</title>
+    <link href="http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%93%BE%E8%B7%AF%E5%B1%82%E6%89%A9%E5%B1%95%E4%BB%A5%E5%A4%AA%E7%BD%91/"/>
+    <id>http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%93%BE%E8%B7%AF%E5%B1%82%E6%89%A9%E5%B1%95%E4%BB%A5%E5%A4%AA%E7%BD%91/</id>
+    <published>2022-03-20T07:20:21.000Z</published>
+    <updated>2022-03-20T07:29:02.949Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="物理层扩展以太网"><a href="#物理层扩展以太网" class="headerlink" title="物理层扩展以太网"></a>物理层扩展以太网</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201506688.png" alt="image-20220320150617564"></p><ul><li>主机和集线器之间超过100m会严重丢帧。</li></ul><h2 id="物理层扩展以太网-1"><a href="#物理层扩展以太网-1" class="headerlink" title="物理层扩展以太网"></a>物理层扩展以太网</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201508558.png" alt="image-20220320150824428"></p><ul><li>缺点：通信效率变低，冲突概率变高。</li></ul><h1 id="链路层扩展以太网"><a href="#链路层扩展以太网" class="headerlink" title="链路层扩展以太网"></a>链路层扩展以太网</h1><h2 id="网桥"><a href="#网桥" class="headerlink" title="网桥"></a>网桥</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201510324.png" alt="image-20220320151040176"></p><h3 id="网桥的分类"><a href="#网桥的分类" class="headerlink" title="网桥的分类"></a>网桥的分类</h3><h4 id="透明网桥"><a href="#透明网桥" class="headerlink" title="透明网桥"></a>透明网桥</h4><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201511560.png" alt="image-20220320151154419"></p><h4 id="源路由网桥"><a href="#源路由网桥" class="headerlink" title="源路由网桥"></a>源路由网桥</h4><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201514198.png" alt="image-20220320151414059"></p><h2 id="交换机"><a href="#交换机" class="headerlink" title="交换机"></a>交换机</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201516166.png" alt="image-20220320151646022"></p><h3 id="两种交换方式"><a href="#两种交换方式" class="headerlink" title="两种交换方式"></a>两种交换方式</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201518372.png" alt="image-20220320151807236"></p><h1 id="冲突域与广播域"><a href="#冲突域与广播域" class="headerlink" title="冲突域与广播域"></a>冲突域与广播域</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201519941.png" alt="image-20220320151919802"></p><h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201521968.png" alt="image-20220320152132826"></p><ul><li>广播域就是看有几个集线器。</li><li>冲突域看交换机有几个口。</li></ul><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201524617.png" alt="image-20220320152428494"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>广域网</title>
+    <link href="http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%B9%BF%E5%9F%9F%E7%BD%91/"/>
+    <id>http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%B9%BF%E5%9F%9F%E7%BD%91/</id>
+    <published>2022-03-20T07:20:20.000Z</published>
+    <updated>2022-03-20T07:28:36.046Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="广域网"><a href="#广域网" class="headerlink" title="广域网"></a>广域网</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201407091.png" alt="image-20220320140701943"></p><ul><li>覆盖物理层、数据链路层和网络层。</li></ul><h1 id="广域网中的两个数据链路层协议"><a href="#广域网中的两个数据链路层协议" class="headerlink" title="广域网中的两个数据链路层协议"></a>广域网中的两个数据链路层协议</h1><h2 id="PPP协议"><a href="#PPP协议" class="headerlink" title="PPP协议"></a>PPP协议</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201409985.png" alt="image-20220320140926855"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201438259.png" alt="image-20220320143837106"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201439817.png" alt="image-20220320143901685"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201440521.png" alt="image-20220320144016366"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201441710.png" alt="image-20220320144107578"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201442551.png" alt="image-20220320144241418"></p><h2 id="HDLC协议"><a href="#HDLC协议" class="headerlink" title="HDLC协议"></a>HDLC协议</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201444154.png" alt="image-20220320144456019"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201445252.png" alt="image-20220320144545111"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201447515.png" alt="image-20220320144724372"></p><h2 id="两种协议对比"><a href="#两种协议对比" class="headerlink" title="两种协议对比"></a>两种协议对比</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201450539.png" alt="image-20220320145007401"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201450053.png" alt="image-20220320145034928"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>无线局域网</title>
+    <link href="http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E6%97%A0%E7%BA%BF%E5%B1%80%E5%9F%9F%E7%BD%91/"/>
+    <id>http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E6%97%A0%E7%BA%BF%E5%B1%80%E5%9F%9F%E7%BD%91/</id>
+    <published>2022-03-20T07:20:19.000Z</published>
+    <updated>2022-03-20T07:28:15.678Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="IΕΕE-802-11"><a href="#IΕΕE-802-11" class="headerlink" title="IΕΕE 802.11"></a>IΕΕE 802.11</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201135652.png" alt="image-20220320113539514"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201142658.png" alt="image-20220320114144503"></p><ul><li>AP无线接入点。</li></ul><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201142621.png" alt="image-20220320114129787"></p><h2 id="无线局域网的分类"><a href="#无线局域网的分类" class="headerlink" title="无线局域网的分类"></a>无线局域网的分类</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201143732.png" alt="image-20220320114302566"></p><h2 id="有固定基础设施无线局域网"><a href="#有固定基础设施无线局域网" class="headerlink" title="有固定基础设施无线局域网"></a>有固定基础设施无线局域网</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201145742.png" alt="image-20220320114527592"></p><h2 id="无固定基础设施无线局域网"><a href="#无固定基础设施无线局域网" class="headerlink" title="无固定基础设施无线局域网"></a>无固定基础设施无线局域网</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201400615.png" alt="image-20220320140016477"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>以太网</title>
+    <link href="http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BB%A5%E5%A4%AA%E7%BD%91/"/>
+    <id>http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BB%A5%E5%A4%AA%E7%BD%91/</id>
+    <published>2022-03-20T07:20:18.000Z</published>
+    <updated>2022-03-20T07:27:52.781Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="以太网概述"><a href="#以太网概述" class="headerlink" title="以太网概述"></a>以太网概述</h1><p><img src="https://s2.loli.net/2022/03/20/fz4TZkeVJbKmnra.png" alt="image-20220320111444379"></p><p><img src="https://s2.loli.net/2022/03/20/sXSpO7o95xQgIDk.png" alt="image-20220320111606073"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201130160.png" alt="image-20220320113020017"></p><h2 id="10BASE-T以太网"><a href="#10BASE-T以太网" class="headerlink" title="10BASE-T以太网"></a>10BASE-T以太网</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201130884.png" alt="image-20220320111918035"></p><p><img src="https://s2.loli.net/2022/03/20/Vtl3NqJv6Ky5Ps8.png" alt="image-20220320112310337"></p><p><img src="https://s2.loli.net/2022/03/20/kd4OtJZW2igGrsm.png" alt="image-20220320112758734"></p><h2 id="高速以太网"><a href="#高速以太网" class="headerlink" title="高速以太网"></a>高速以太网</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201131158.png" alt="image-20220320113118977"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203201131006.png" alt="image-20220320113135859"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>局域网</title>
+    <link href="http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%B1%80%E5%9F%9F%E7%BD%91/"/>
+    <id>http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%B1%80%E5%9F%9F%E7%BD%91/</id>
+    <published>2022-03-20T07:20:17.000Z</published>
+    <updated>2022-03-20T07:27:31.887Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="局域网"><a href="#局域网" class="headerlink" title="局域网"></a>局域网</h1><p><img src="https://s2.loli.net/2022/03/20/Rvf8oKCXF2GxShe.png" alt="image-20220320104653802"></p><ul><li>只覆盖物理层和数据链路层两个层次。</li></ul><h2 id="局域网拓扑结构"><a href="#局域网拓扑结构" class="headerlink" title="局域网拓扑结构"></a>局域网拓扑结构</h2><p><img src="https://s2.loli.net/2022/03/20/OIvc7nGXrdYhCMb.png" alt="image-20220320105340432"></p><h2 id="局域网的传输介质"><a href="#局域网的传输介质" class="headerlink" title="局域网的传输介质"></a>局域网的传输介质</h2><p><img src="https://s2.loli.net/2022/03/20/vFa4qnP5UmJOh7z.png" alt="image-20220320105743881"></p><h2 id="局域介质访问控制方法"><a href="#局域介质访问控制方法" class="headerlink" title="局域介质访问控制方法"></a>局域介质访问控制方法</h2><p><img src="https://s2.loli.net/2022/03/20/oq5esdRrICXOwah.png" alt="image-20220320110154064"></p><h2 id="局域网的分类"><a href="#局域网的分类" class="headerlink" title="局域网的分类"></a>局域网的分类</h2><p><img src="https://s2.loli.net/2022/03/20/YR3DU8jGTOwWmKr.png" alt="image-20220320110431300"></p><ul><li>WIFI是WLAN的一种具体应用。</li></ul><h2 id="IEEE802标准"><a href="#IEEE802标准" class="headerlink" title="IEEE802标准"></a>IEEE802标准</h2><p><img src="https://s2.loli.net/2022/03/20/ij7RlGNO3emuKqH.png" alt="image-20220320110924260"></p><p><img src="https://s2.loli.net/2022/03/20/eCpkd8mti1BJa5Q.png" alt="image-20220320110935908"></p><h2 id="MAC子层和LLC子层"><a href="#MAC子层和LLC子层" class="headerlink" title="MAC子层和LLC子层"></a>MAC子层和LLC子层</h2><p><img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220320111119187.png" alt="image-20220320111119187"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://s2.loli.net/2022/03/20/5dJEkGFhrj1Qxi8.png" alt="image-20220320111138846"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSMA/CA协议</title>
+    <link href="http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMACA%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMACA%E5%8D%8F%E8%AE%AE/</id>
+    <published>2022-03-20T07:20:16.000Z</published>
+    <updated>2022-03-20T07:27:16.401Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="https://s2.loli.net/2022/03/20/2vtGK9YdjEqRxSO.png" alt="image-20220320102156347"></p><h1 id="CSMA-CA协议"><a href="#CSMA-CA协议" class="headerlink" title="CSMA/CA协议"></a>CSMA/CA协议</h1><p><img src="https://s2.loli.net/2022/03/20/HzFtwS7vKVpZrBk.png" alt="image-20220320102859908"></p><h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><p><img src="https://s2.loli.net/2022/03/20/sNhGPmSir9ZXCFO.png" alt="image-20220320103833947"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSMA/CD协议</title>
     <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMACD%E5%8D%8F%E8%AE%AE/"/>
     <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMACD%E5%8D%8F%E8%AE%AE/</id>
     <published>2022-03-18T12:20:15.000Z</published>
-    <updated>2022-03-18T12:25:42.612Z</updated>
+    <updated>2022-03-20T07:26:01.938Z</updated>
     
     <content type="html"><![CDATA[<h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181537248.png" alt="image-20220318153709101"></p><h1 id="CSMA-CD协议"><a href="#CSMA-CD协议" class="headerlink" title="CSMA/CD协议"></a>CSMA/CD协议</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181540488.png" alt="image-20220318154002350"></p><h2 id="传播时延对载波监听的影响"><a href="#传播时延对载波监听的影响" class="headerlink" title="传播时延对载波监听的影响"></a>传播时延对载波监听的影响</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181546979.png" alt="image-20220318154630829"></p><h2 id="确定重传时机"><a href="#确定重传时机" class="headerlink" title="确定重传时机"></a>确定重传时机</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181550696.png" alt="image-20220318155044543"></p><h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181551190.png" alt="image-20220318155143054"></p><h2 id="最小帧长"><a href="#最小帧长" class="headerlink" title="最小帧长"></a>最小帧长</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181553378.png" alt="image-20220318155333234"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181554619.png" alt="">                                                                                                                                                        </p>]]></content>
     
@@ -307,132 +433,6 @@
     
     
     <category term="微机原理" scheme="http://example.com/tags/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>英语3</title>
-    <link href="http://example.com/2022/03/13/%E8%8B%B1%E8%AF%AD%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/%E8%8B%B1%E8%AF%AD3/"/>
-    <id>http://example.com/2022/03/13/%E8%8B%B1%E8%AF%AD%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/%E8%8B%B1%E8%AF%AD3/</id>
-    <published>2022-03-13T05:30:20.000Z</published>
-    <updated>2022-03-13T10:05:29.060Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="辅音字母得发音规则"><a href="#辅音字母得发音规则" class="headerlink" title="辅音字母得发音规则"></a>辅音字母得发音规则</h1><h2 id="不发音的辅音字母"><a href="#不发音的辅音字母" class="headerlink" title="不发音的辅音字母"></a>不发音的辅音字母</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131239259.png" alt="image-20220313123934143"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131241992.png" alt="image-20220313124104887"></p><ul><li>发音</li></ul><hr><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131242473.png" alt="image-20220313124220355"></p><hr><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131243818.png" alt="image-20220313124359685"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131247936.png" alt="image-20220313124727824"></p><ul><li>由于h在exh中不发音，所以忽略h，所以ex是在元音a的前面，发音不同。</li></ul><hr><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131250580.png" alt="image-20220313125011454"></p><hr><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131251629.png" alt="image-20220313125151510"></p><h2 id="发音的辅音字母"><a href="#发音的辅音字母" class="headerlink" title="发音的辅音字母"></a>发音的辅音字母</h2><ul><li>有规则，考一个对一个</li></ul><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131254288.png" alt="image-20220313125447139"></p><ul><li>第三个发音：Sure、sugar、Russia  只有三个单词    </li></ul><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131300871.png" alt="image-20220313130053749"></p><ul><li>raise a dog  养狗</li><li>单词中有前缀是把他去掉，例如：consist，去掉con，s位于词首，属于（1）的情况。</li></ul>]]></content>
-    
-    
-    <summary type="html">为考试做的准备</summary>
-    
-    
-    
-    <category term="英语" scheme="http://example.com/categories/%E8%8B%B1%E8%AF%AD/"/>
-    
-    
-    <category term="英语" scheme="http://example.com/tags/%E8%8B%B1%E8%AF%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>英语2</title>
-    <link href="http://example.com/2022/03/13/%E8%8B%B1%E8%AF%AD%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/%E8%8B%B1%E8%AF%AD2/"/>
-    <id>http://example.com/2022/03/13/%E8%8B%B1%E8%AF%AD%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/%E8%8B%B1%E8%AF%AD2/</id>
-    <published>2022-03-13T03:30:20.000Z</published>
-    <updated>2022-03-13T05:51:53.223Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="无规律的字母组合"><a href="#无规律的字母组合" class="headerlink" title="无规律的字母组合"></a>无规律的字母组合</h1><ul><li>必须得会读，会读才能拿分。</li></ul><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131107992.png" alt="image-20220313110717857"></p><ul><li>break a leg ==good luck 祝你好运</li><li>leave me alone 让我单独呆一会。</li><li>I have no idea. 我不知道。</li><li>（1）记忆：打破大牛排。</li></ul><hr><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131112812.png" alt="image-20220313111237681"></p><ul><li>（4）只有heart，找到直接选。</li></ul><hr><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131119296.png" alt="image-20220313111928165"></p><ul><li>Don’t trouble trouble until trouble troubles you. 不要自寻烦恼。</li><li>be proud of  为…感到骄傲</li></ul><h2 id="补充："><a href="#补充：" class="headerlink" title="补充："></a>补充：</h2><p>（1）outside、proud</p><p>（2）couple、</p><hr><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131120324.png" alt="image-20220313112041210"></p><hr><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131123084.png" alt="image-20220313112337966"></p><hr><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131125913.png" alt="image-20220313112509756"></p><hr><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131126446.png" alt="image-20220313112636332"></p><hr><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131128972.png" alt="image-20220313112820866"></p><hr><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131236188.png" alt="image-20220313123156855"></p>]]></content>
-    
-    
-    <summary type="html">为考试做的准备</summary>
-    
-    
-    
-    <category term="英语" scheme="http://example.com/categories/%E8%8B%B1%E8%AF%AD/"/>
-    
-    
-    <category term="英语" scheme="http://example.com/tags/%E8%8B%B1%E8%AF%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>物理层设备</title>
-    <link href="http://example.com/2022/03/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%89%A9%E7%90%86%E5%B1%82%E8%AE%BE%E5%A4%87/"/>
-    <id>http://example.com/2022/03/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%89%A9%E7%90%86%E5%B1%82%E8%AE%BE%E5%A4%87/</id>
-    <published>2022-03-12T03:30:07.000Z</published>
-    <updated>2022-03-12T04:58:39.120Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="中继器"><a href="#中继器" class="headerlink" title="中继器"></a>中继器</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121248497.png" alt="image-20220312124838300"></p><ul><li>最多不超过5个网段。</li><li>最多只能有4个网络层的设备。</li><li>只有三个段可以挂接计算机。</li></ul><h1 id="集线器"><a href="#集线器" class="headerlink" title="集线器"></a>集线器</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121253353.png" alt="image-20220312125307180"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121253317.png" alt="image-20220312125353192"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>物理层的传输介质</title>
-    <link href="http://example.com/2022/03/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%89%A9%E7%90%86%E5%B1%82%E7%9A%84%E4%BC%A0%E8%BE%93%E4%BB%8B%E8%B4%A8/"/>
-    <id>http://example.com/2022/03/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%89%A9%E7%90%86%E5%B1%82%E7%9A%84%E4%BC%A0%E8%BE%93%E4%BB%8B%E8%B4%A8/</id>
-    <published>2022-03-12T03:30:06.000Z</published>
-    <updated>2022-03-12T04:58:15.523Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="传输介质与分类"><a href="#传输介质与分类" class="headerlink" title="传输介质与分类"></a>传输介质与分类</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121205461.png" alt="image-20220312120512323"></p><h1 id="导向性传输介质"><a href="#导向性传输介质" class="headerlink" title="导向性传输介质"></a>导向性传输介质</h1><h2 id="双绞线"><a href="#双绞线" class="headerlink" title="双绞线"></a>双绞线</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121212044.png" alt="image-20220312121220890"></p><h2 id="同轴电缆"><a href="#同轴电缆" class="headerlink" title="同轴电缆"></a>同轴电缆</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121212964.png" alt="image-20220312121246802"></p><h2 id="光纤"><a href="#光纤" class="headerlink" title="光纤"></a>光纤</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121215611.png" alt="image-20220312121525460"></p><ul><li>光纤传递的是光脉冲，前两种是电脉冲。</li></ul><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121216280.png" alt="image-20220312121654141"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121218310.png" alt="image-20220312121813183"></p><h1 id="非导向性传输介质"><a href="#非导向性传输介质" class="headerlink" title="非导向性传输介质"></a>非导向性传输介质</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121222326.png" alt="image-20220312122212183"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121222619.png" alt="image-20220312122228489"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>编码、调制</title>
-    <link href="http://example.com/2022/03/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%BC%96%E7%A0%81%E3%80%81%E8%B0%83%E5%88%B6/"/>
-    <id>http://example.com/2022/03/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%BC%96%E7%A0%81%E3%80%81%E8%B0%83%E5%88%B6/</id>
-    <published>2022-03-12T03:30:05.000Z</published>
-    <updated>2022-03-12T04:57:45.144Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="基带信号与宽带信号"><a href="#基带信号与宽带信号" class="headerlink" title="基带信号与宽带信号"></a>基带信号与宽带信号</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121116138.png" alt="image-20220312111559956"></p><h1 id="编码与调制"><a href="#编码与调制" class="headerlink" title="编码与调制"></a>编码与调制</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121118569.png" alt="image-20220312111824440"></p><h1 id="四种编码方法"><a href="#四种编码方法" class="headerlink" title="四种编码方法"></a>四种编码方法</h1><h2 id="非归零编码"><a href="#非归零编码" class="headerlink" title="非归零编码"></a>非归零编码</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121125085.png" alt="image-20220312112542957"></p><h2 id="归零编码"><a href="#归零编码" class="headerlink" title="归零编码"></a>归零编码</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121133300.png" alt="image-20220312112728223"></p><h2 id="反向不归零编码"><a href="#反向不归零编码" class="headerlink" title="反向不归零编码"></a>反向不归零编码</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121133995.png" alt="image-20220312112719951"></p><h2 id="曼彻斯特编码"><a href="#曼彻斯特编码" class="headerlink" title="曼彻斯特编码"></a>曼彻斯特编码</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121136284.png" alt="image-20220312113605116"></p><h2 id="差分曼彻斯特编码"><a href="#差分曼彻斯特编码" class="headerlink" title="差分曼彻斯特编码"></a>差分曼彻斯特编码</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121137450.png" alt="image-20220312113720274"></p><h2 id="4B-5B编码"><a href="#4B-5B编码" class="headerlink" title="4B/5B编码"></a>4B/5B编码</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121138242.png" alt="image-20220312113822072"></p><h1 id="调制"><a href="#调制" class="headerlink" title="调制"></a>调制</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121146824.png" alt="image-20220312114619680"></p><h1 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121153605.png" alt="image-20220312115323446"></p><h1 id="模拟数据调制为模拟信号"><a href="#模拟数据调制为模拟信号" class="headerlink" title="模拟数据调制为模拟信号"></a>模拟数据调制为模拟信号</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121155719.png" alt="image-20220312115500593"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203121155087.png" alt="image-20220312115516966"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>奈氏准则、香农定则</title>
-    <link href="http://example.com/2022/03/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%A5%88%E6%B0%8F%E5%87%86%E5%88%99%E3%80%81%E9%A6%99%E5%86%9C%E5%AE%9A%E5%88%99/"/>
-    <id>http://example.com/2022/03/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%A5%88%E6%B0%8F%E5%87%86%E5%88%99%E3%80%81%E9%A6%99%E5%86%9C%E5%AE%9A%E5%88%99/</id>
-    <published>2022-03-12T03:30:04.000Z</published>
-    <updated>2022-03-12T04:57:05.555Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="失真"><a href="#失真" class="headerlink" title="失真"></a>失真</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111640013.png" alt="image-20220311164026848"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111642201.png" alt="image-20220311164230013"></p><h1 id="奈氏准则（奈奎斯特定理）"><a href="#奈氏准则（奈奎斯特定理）" class="headerlink" title="奈氏准则（奈奎斯特定理）"></a>奈氏准则（奈奎斯特定理）</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111731613.png" alt="image-20220311173153375"></p><ul><li>频带越宽：最高值与最低值的差值越大。</li><li>规定了最高的码元传输速率。</li></ul><h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111733907.png" alt="image-20220311173332708"></p><ul><li>4个相位，4种振幅：4*4=16种变化。</li></ul><h1 id="香农定理"><a href="#香农定理" class="headerlink" title="香农定理"></a>香农定理</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111853015.png" alt="image-20220311185328860"></p><ul><li>规定了比特的最高传输速率。</li></ul><h2 id="四个推论"><a href="#四个推论" class="headerlink" title="四个推论"></a>四个推论</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111854354.png" alt="image-20220311185450207"></p><h2 id="练习-1"><a href="#练习-1" class="headerlink" title="练习"></a>练习</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111856229.png" alt="image-20220311185603095"></p><h1 id="两者对比：选哪个"><a href="#两者对比：选哪个" class="headerlink" title="两者对比：选哪个"></a>两者对比：选哪个</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203111900386.png" alt="image-20220311190015249"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
