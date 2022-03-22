@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-20T07:29:02.949Z</updated>
+  <updated>2022-03-22T13:09:39.110Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微机原理概论3</title>
+    <link href="http://example.com/2022/03/22/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA3/"/>
+    <id>http://example.com/2022/03/22/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA3/</id>
+    <published>2022-03-22T09:30:20.000Z</published>
+    <updated>2022-03-22T13:09:39.110Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="指令系统"><a href="#指令系统" class="headerlink" title="指令系统"></a>指令系统</h1><h2 id="考点"><a href="#考点" class="headerlink" title="考点"></a>考点</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203221959495.png" alt="image-20220322195900327"></p><p><img src="https://s2.loli.net/2022/03/22/geckiOMEr1qTFmG.png" alt="image-20220322200432956"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203222001530.png" alt="image-20220322200146362"></p><p><img src="https://s2.loli.net/2022/03/22/pYwR4VtZqjcBUGD.png" alt="image-20220322204502391"></p><p><img src="https://s2.loli.net/2022/03/22/zBAWjUnQlCI4JZi.png" alt="image-20220322204603261"></p><p><img src="https://s2.loli.net/2022/03/22/wkPqbnROpUIvQ1f.png" alt="image-20220322205259690"></p><p><img src="https://s2.loli.net/2022/03/22/4cawsYTeGL7PKCv.png" alt="image-20220322205223020"></p><p><img src="https://s2.loli.net/2022/03/22/Kb6fZ9HRw1LQmrW.png" alt="image-20220322205428582"></p><p><img src="https://s2.loli.net/2022/03/22/shUG7kqvDxSNTP2.png" alt="image-20220322205503979"></p><p><img src="https://s2.loli.net/2022/03/22/3pu5nWLviq4xSyC.png" alt="image-20220322205647323"></p><p><img src="https://s2.loli.net/2022/03/22/mIcgxApVznqiPoZ.png" alt="image-20220322205729922"></p><p><img src="https://s2.loli.net/2022/03/22/Vz9myqZlX1vFrLe.png" alt="image-20220322205809819"></p><p><img src="https://s2.loli.net/2022/03/22/j4ob5LZ3f7JNRse.png" alt="image-20220322205908329"></p><p><img src="https://s2.loli.net/2022/03/22/p2iCJDx4v3SVrYT.png" alt="image-20220322210001858"></p><p><img src="https://s2.loli.net/2022/03/22/ZtPHUrIzfdCipQK.png" alt="image-20220322210103794"></p><p><img src="https://s2.loli.net/2022/03/22/GSZ5tOw64YibQ3z.png" alt="image-20220322210204970"></p><p><img src="https://s2.loli.net/2022/03/22/ZyFxUYQKm8g3LMC.png" alt="image-20220322210240932"></p><p><img src="https://s2.loli.net/2022/03/22/OHviu2GTI9cofYw.png" alt="image-20220322210325225"></p><p><img src="https://s2.loli.net/2022/03/22/1VxB7cJZqT8AmaE.png" alt="image-20220322210405470"></p><p><img src="https://s2.loli.net/2022/03/22/Q548unWJ7iqROSC.png" alt="image-20220322210503178"></p><p><img src="https://s2.loli.net/2022/03/22/jMhHa9U2Vo1XTDx.png" alt="image-20220322210528753"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203222108280.png" alt="image-20220322210824097"></p><p><img src="https://s2.loli.net/2022/03/22/2CZgKynbcO9pJV8.png" alt="image-20220322210718304"></p>]]></content>
+    
+    
+    <summary type="html">为考试做的准备</summary>
+    
+    
+    
+    <category term="微机原理" scheme="http://example.com/categories/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="微机原理" scheme="http://example.com/tags/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>链路层扩展以太网</title>
@@ -248,13 +269,13 @@
   </entry>
   
   <entry>
-    <title>后退N帧协议</title>
-    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%90%8E%E9%80%80N%E5%B8%A7%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%90%8E%E9%80%80N%E5%B8%A7%E5%8D%8F%E8%AE%AE/</id>
+    <title>选择重传协议</title>
+    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%80%89%E6%8B%A9%E9%87%8D%E4%BC%A0%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%80%89%E6%8B%A9%E9%87%8D%E4%BC%A0%E5%8D%8F%E8%AE%AE/</id>
     <published>2022-03-18T12:20:11.000Z</published>
-    <updated>2022-03-18T12:22:22.730Z</updated>
+    <updated>2022-03-22T11:15:44.714Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="后退N帧协议（GBN）"><a href="#后退N帧协议（GBN）" class="headerlink" title="后退N帧协议（GBN）"></a>后退N帧协议（GBN）</h1><h2 id="停等协议的弊端"><a href="#停等协议的弊端" class="headerlink" title="停等协议的弊端"></a>停等协议的弊端</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181229817.png" alt="image-20220318122928649"></p><h2 id="后退N帧协议的滑动窗口"><a href="#后退N帧协议的滑动窗口" class="headerlink" title="后退N帧协议的滑动窗口"></a>后退N帧协议的滑动窗口</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181233552.png" alt="image-20220318123335410"></p><h2 id="发送方"><a href="#发送方" class="headerlink" title="发送方"></a>发送方</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181236696.png" alt="image-20220318123640539"></p><h2 id="接收方"><a href="#接收方" class="headerlink" title="接收方"></a>接收方</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181238157.png" alt="image-20220318123855013"></p><h2 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181248042.png" alt="image-20220318124854887"></p><h2 id="滑动窗口长度的问题"><a href="#滑动窗口长度的问题" class="headerlink" title="滑动窗口长度的问题"></a>滑动窗口长度的问题</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181250910.png" alt="image-20220318125040786"></p><h2 id="GBN协议重点总结"><a href="#GBN协议重点总结" class="headerlink" title="GBN协议重点总结"></a>GBN协议重点总结</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181252651.png" alt="image-20220318125225507"></p><h2 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181253569.png" alt="image-20220318125342436"></p><ul><li>接收方一定是按序接收并发送的确认帧。</li></ul><h1 id="GBN协议的性能分析"><a href="#GBN协议的性能分析" class="headerlink" title="GBN协议的性能分析"></a>GBN协议的性能分析</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181256026.png" alt="image-20220318125617865"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181256398.png" alt="image-20220318125633275"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="GBN协议的弊端"><a href="#GBN协议的弊端" class="headerlink" title="GBN协议的弊端"></a>GBN协议的弊端</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181258945.png" alt="image-20220318125856800"></p><h1 id="选择重传协议（SR）"><a href="#选择重传协议（SR）" class="headerlink" title="选择重传协议（SR）"></a>选择重传协议（SR）</h1><h2 id="选择重传协议中的滑动窗口"><a href="#选择重传协议中的滑动窗口" class="headerlink" title="选择重传协议中的滑动窗口"></a>选择重传协议中的滑动窗口</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181301951.png" alt="image-20220318130158810"></p><h2 id="发送方"><a href="#发送方" class="headerlink" title="发送方"></a>发送方</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181303009.png" alt="image-20220318130330862"></p><h2 id="接收方"><a href="#接收方" class="headerlink" title="接收方"></a>接收方</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181305714.png" alt="image-20220318130521580"></p><h2 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181307250.png" alt="image-20220318130750094"></p><h2 id="滑动窗口长度"><a href="#滑动窗口长度" class="headerlink" title="滑动窗口长度"></a>滑动窗口长度</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181312866.png" alt="image-20220318131210718"></p><h2 id="SR协议的重点总结"><a href="#SR协议的重点总结" class="headerlink" title="SR协议的重点总结"></a>SR协议的重点总结</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181313400.png" alt="image-20220318131344266"></p><h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181314150.png" alt="image-20220318131450023"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181315370.png" alt="image-20220318131511247"></p>]]></content>
     
     
     <summary type="html">计算机网络</summary>
@@ -269,13 +290,13 @@
   </entry>
   
   <entry>
-    <title>选择重传协议</title>
-    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%80%89%E6%8B%A9%E9%87%8D%E4%BC%A0%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%80%89%E6%8B%A9%E9%87%8D%E4%BC%A0%E5%8D%8F%E8%AE%AE/</id>
+    <title>后退N帧协议</title>
+    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%90%8E%E9%80%80N%E5%B8%A7%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%90%8E%E9%80%80N%E5%B8%A7%E5%8D%8F%E8%AE%AE/</id>
     <published>2022-03-18T12:20:10.000Z</published>
-    <updated>2022-03-18T12:21:55.564Z</updated>
+    <updated>2022-03-22T11:15:34.919Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="GBN协议的弊端"><a href="#GBN协议的弊端" class="headerlink" title="GBN协议的弊端"></a>GBN协议的弊端</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181258945.png" alt="image-20220318125856800"></p><h1 id="选择重传协议（SR）"><a href="#选择重传协议（SR）" class="headerlink" title="选择重传协议（SR）"></a>选择重传协议（SR）</h1><h2 id="选择重传协议中的滑动窗口"><a href="#选择重传协议中的滑动窗口" class="headerlink" title="选择重传协议中的滑动窗口"></a>选择重传协议中的滑动窗口</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181301951.png" alt="image-20220318130158810"></p><h2 id="发送方"><a href="#发送方" class="headerlink" title="发送方"></a>发送方</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181303009.png" alt="image-20220318130330862"></p><h2 id="接收方"><a href="#接收方" class="headerlink" title="接收方"></a>接收方</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181305714.png" alt="image-20220318130521580"></p><h2 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181307250.png" alt="image-20220318130750094"></p><h2 id="滑动窗口长度"><a href="#滑动窗口长度" class="headerlink" title="滑动窗口长度"></a>滑动窗口长度</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181312866.png" alt="image-20220318131210718"></p><h2 id="SR协议的重点总结"><a href="#SR协议的重点总结" class="headerlink" title="SR协议的重点总结"></a>SR协议的重点总结</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181313400.png" alt="image-20220318131344266"></p><h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181314150.png" alt="image-20220318131450023"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181315370.png" alt="image-20220318131511247"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="后退N帧协议（GBN）"><a href="#后退N帧协议（GBN）" class="headerlink" title="后退N帧协议（GBN）"></a>后退N帧协议（GBN）</h1><h2 id="停等协议的弊端"><a href="#停等协议的弊端" class="headerlink" title="停等协议的弊端"></a>停等协议的弊端</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181229817.png" alt="image-20220318122928649"></p><h2 id="后退N帧协议的滑动窗口"><a href="#后退N帧协议的滑动窗口" class="headerlink" title="后退N帧协议的滑动窗口"></a>后退N帧协议的滑动窗口</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181233552.png" alt="image-20220318123335410"></p><h2 id="发送方"><a href="#发送方" class="headerlink" title="发送方"></a>发送方</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181236696.png" alt="image-20220318123640539"></p><h2 id="接收方"><a href="#接收方" class="headerlink" title="接收方"></a>接收方</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181238157.png" alt="image-20220318123855013"></p><h2 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181248042.png" alt="image-20220318124854887"></p><h2 id="滑动窗口长度的问题"><a href="#滑动窗口长度的问题" class="headerlink" title="滑动窗口长度的问题"></a>滑动窗口长度的问题</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181250910.png" alt="image-20220318125040786"></p><h2 id="GBN协议重点总结"><a href="#GBN协议重点总结" class="headerlink" title="GBN协议重点总结"></a>GBN协议重点总结</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181252651.png" alt="image-20220318125225507"></p><h2 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181253569.png" alt="image-20220318125342436"></p><ul><li>接收方一定是按序接收并发送的确认帧。</li></ul><h1 id="GBN协议的性能分析"><a href="#GBN协议的性能分析" class="headerlink" title="GBN协议的性能分析"></a>GBN协议的性能分析</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181256026.png" alt="image-20220318125617865"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203181256398.png" alt="image-20220318125633275"></p>]]></content>
     
     
     <summary type="html">计算机网络</summary>
@@ -412,27 +433,6 @@
     
     
     <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微机原理概论1</title>
-    <link href="http://example.com/2022/03/13/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA1/"/>
-    <id>http://example.com/2022/03/13/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA1/</id>
-    <published>2022-03-13T09:30:20.000Z</published>
-    <updated>2022-03-13T10:04:01.908Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题型分析"><a href="#题型分析" class="headerlink" title="题型分析"></a>题型分析</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131704389.png" alt="image-20220313170405239"></p><p>选择填空加起来就75分了。</p><h1 id="考点一"><a href="#考点一" class="headerlink" title="考点一"></a>考点一</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131704457.png" alt="image-20220313170436292"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131705558.png" alt="image-20220313170525374"></p><p> <img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131740052.png" alt="image-20220313174051904"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131741082.png" alt="image-20220313174120929"></p><ul><li>二进制与十六进制转换：记住8、4、2、1</li></ul><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131746109.png" alt="image-20220313174631951"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131755646.png" alt="image-20220313175553489"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203131757880.png" alt="image-20220313175740639"></p>]]></content>
-    
-    
-    <summary type="html">为考试做的准备</summary>
-    
-    
-    
-    <category term="微机原理" scheme="http://example.com/categories/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
-    
-    
-    <category term="微机原理" scheme="http://example.com/tags/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
     
   </entry>
   
