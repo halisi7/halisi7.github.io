@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-22T13:09:39.110Z</updated>
+  <updated>2022-03-24T03:54:21.986Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网络层数据交换方式</title>
+    <link href="http://example.com/2022/03/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%96%B9%E5%BC%8F/"/>
+    <id>http://example.com/2022/03/24/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%96%B9%E5%BC%8F/</id>
+    <published>2022-03-24T03:20:17.000Z</published>
+    <updated>2022-03-24T03:54:21.986Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203241117269.png" alt="image-20220324111755134"></p><h1 id="数据交换方式"><a href="#数据交换方式" class="headerlink" title="数据交换方式"></a>数据交换方式</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203241120386.png" alt="image-20220324112051247"></p><h2 id="电路交换"><a href="#电路交换" class="headerlink" title="电路交换"></a>电路交换</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203241127337.png" alt="image-20220324112701174"></p><h2 id="报文交换"><a href="#报文交换" class="headerlink" title="报文交换"></a>报文交换</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203241129265.png" alt="image-20220324112932117"></p><h2 id="分组交换"><a href="#分组交换" class="headerlink" title="分组交换"></a>分组交换</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203241131473.png" alt="image-20220324113155321"></p><h2 id="报文交换和分组交换"><a href="#报文交换和分组交换" class="headerlink" title="报文交换和分组交换"></a>报文交换和分组交换</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203241137106.png" alt="image-20220324113751931"></p><h2 id="三者比较"><a href="#三者比较" class="headerlink" title="三者比较"></a>三者比较</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203241139863.png" alt="image-20220324113906710"></p><p>分组交换包括：数据报方式和虚电路方式</p><h3 id="数据报方式和虚电路方式"><a href="#数据报方式和虚电路方式" class="headerlink" title="数据报方式和虚电路方式"></a>数据报方式和虚电路方式</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203241142848.png" alt="image-20220324114205694"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203241150452.png" alt="image-20220324114734374"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203241150866.png" alt="image-20220324115036687"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203241151065.png" alt="image-20220324115108920"></p><h3 id="几种传输单元名词辨析"><a href="#几种传输单元名词辨析" class="headerlink" title="几种传输单元名词辨析"></a>几种传输单元名词辨析</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203241144561.png" alt="image-20220324114435432"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>微机原理概论3</title>
@@ -126,9 +147,9 @@
     <link href="http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%B1%80%E5%9F%9F%E7%BD%91/"/>
     <id>http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%B1%80%E5%9F%9F%E7%BD%91/</id>
     <published>2022-03-20T07:20:17.000Z</published>
-    <updated>2022-03-20T07:27:31.887Z</updated>
+    <updated>2022-03-24T02:42:00.783Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="局域网"><a href="#局域网" class="headerlink" title="局域网"></a>局域网</h1><p><img src="https://s2.loli.net/2022/03/20/Rvf8oKCXF2GxShe.png" alt="image-20220320104653802"></p><ul><li>只覆盖物理层和数据链路层两个层次。</li></ul><h2 id="局域网拓扑结构"><a href="#局域网拓扑结构" class="headerlink" title="局域网拓扑结构"></a>局域网拓扑结构</h2><p><img src="https://s2.loli.net/2022/03/20/OIvc7nGXrdYhCMb.png" alt="image-20220320105340432"></p><h2 id="局域网的传输介质"><a href="#局域网的传输介质" class="headerlink" title="局域网的传输介质"></a>局域网的传输介质</h2><p><img src="https://s2.loli.net/2022/03/20/vFa4qnP5UmJOh7z.png" alt="image-20220320105743881"></p><h2 id="局域介质访问控制方法"><a href="#局域介质访问控制方法" class="headerlink" title="局域介质访问控制方法"></a>局域介质访问控制方法</h2><p><img src="https://s2.loli.net/2022/03/20/oq5esdRrICXOwah.png" alt="image-20220320110154064"></p><h2 id="局域网的分类"><a href="#局域网的分类" class="headerlink" title="局域网的分类"></a>局域网的分类</h2><p><img src="https://s2.loli.net/2022/03/20/YR3DU8jGTOwWmKr.png" alt="image-20220320110431300"></p><ul><li>WIFI是WLAN的一种具体应用。</li></ul><h2 id="IEEE802标准"><a href="#IEEE802标准" class="headerlink" title="IEEE802标准"></a>IEEE802标准</h2><p><img src="https://s2.loli.net/2022/03/20/ij7RlGNO3emuKqH.png" alt="image-20220320110924260"></p><p><img src="https://s2.loli.net/2022/03/20/eCpkd8mti1BJa5Q.png" alt="image-20220320110935908"></p><h2 id="MAC子层和LLC子层"><a href="#MAC子层和LLC子层" class="headerlink" title="MAC子层和LLC子层"></a>MAC子层和LLC子层</h2><p><img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220320111119187.png" alt="image-20220320111119187"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://s2.loli.net/2022/03/20/5dJEkGFhrj1Qxi8.png" alt="image-20220320111138846"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="局域网"><a href="#局域网" class="headerlink" title="局域网"></a>局域网</h1><p><img src="https://s2.loli.net/2022/03/20/Rvf8oKCXF2GxShe.png" alt="image-20220320104653802"></p><ul><li>只覆盖物理层和数据链路层两个层次。</li></ul><h2 id="局域网拓扑结构"><a href="#局域网拓扑结构" class="headerlink" title="局域网拓扑结构"></a>局域网拓扑结构</h2><p><img src="https://s2.loli.net/2022/03/20/OIvc7nGXrdYhCMb.png" alt="image-20220320105340432"></p><h2 id="局域网的传输介质"><a href="#局域网的传输介质" class="headerlink" title="局域网的传输介质"></a>局域网的传输介质</h2><p><img src="https://s2.loli.net/2022/03/20/vFa4qnP5UmJOh7z.png" alt="image-20220320105743881"></p><h2 id="局域介质访问控制方法"><a href="#局域介质访问控制方法" class="headerlink" title="局域介质访问控制方法"></a>局域介质访问控制方法</h2><p><img src="https://s2.loli.net/2022/03/20/oq5esdRrICXOwah.png" alt="image-20220320110154064"></p><h2 id="局域网的分类"><a href="#局域网的分类" class="headerlink" title="局域网的分类"></a>局域网的分类</h2><p><img src="https://s2.loli.net/2022/03/20/YR3DU8jGTOwWmKr.png" alt="image-20220320110431300"></p><ul><li>WIFI是WLAN的一种具体应用。</li></ul><h2 id="IEEE802标准"><a href="#IEEE802标准" class="headerlink" title="IEEE802标准"></a>IEEE802标准</h2><p><img src="https://s2.loli.net/2022/03/20/ij7RlGNO3emuKqH.png" alt="image-20220320110924260"></p><p><img src="https://s2.loli.net/2022/03/20/eCpkd8mti1BJa5Q.png" alt="image-20220320110935908"></p><h2 id="MAC子层和LLC子层"><a href="#MAC子层和LLC子层" class="headerlink" title="MAC子层和LLC子层"></a>MAC子层和LLC子层</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203241041515.png" alt="image-20220320111119187"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://s2.loli.net/2022/03/20/5dJEkGFhrj1Qxi8.png" alt="image-20220320111138846"></p>]]></content>
     
     
     <summary type="html">计算机网络</summary>
@@ -402,27 +423,6 @@
     <updated>2022-03-16T04:59:38.153Z</updated>
     
     <content type="html"><![CDATA[<h1 id="差错控制"><a href="#差错控制" class="headerlink" title="差错控制"></a>差错控制</h1><h2 id="差错从何而来？"><a href="#差错从何而来？" class="headerlink" title="差错从何而来？"></a>差错从何而来？</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161239375.png" alt="image-20220316123959230"></p><h2 id="数据链路层的差错控制"><a href="#数据链路层的差错控制" class="headerlink" title="数据链路层的差错控制"></a>数据链路层的差错控制</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161243433.png" alt="image-20220316124301277"></p><h2 id="检错编码——奇偶校验码"><a href="#检错编码——奇偶校验码" class="headerlink" title="检错编码——奇偶校验码"></a>检错编码——奇偶校验码</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161248392.png" alt="image-20220316124842250"></p><h2 id="检错编码——CRC循环冗余码"><a href="#检错编码——CRC循环冗余码" class="headerlink" title="检错编码——CRC循环冗余码"></a>检错编码——CRC循环冗余码</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161254466.png" alt="image-20220316125448313"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161255222.png" alt="image-20220316125540086"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161256451.png" alt="image-20220316125643313"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>链路层的基本概念与封装成帧</title>
-    <link href="http://example.com/2022/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%93%BE%E8%B7%AF%E5%B1%82%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%B0%81%E8%A3%85%E6%88%90%E5%B8%A7/"/>
-    <id>http://example.com/2022/03/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%93%BE%E8%B7%AF%E5%B1%82%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E4%B8%8E%E5%B0%81%E8%A3%85%E6%88%90%E5%B8%A7/</id>
-    <published>2022-03-16T04:30:07.000Z</published>
-    <updated>2022-03-16T04:59:03.427Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="数据链路层的基本概念"><a href="#数据链路层的基本概念" class="headerlink" title="数据链路层的基本概念"></a>数据链路层的基本概念</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161217438.png" alt="image-20220316121732268"></p><h1 id="数据链路层的功能概述"><a href="#数据链路层的功能概述" class="headerlink" title="数据链路层的功能概述"></a>数据链路层的功能概述</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161219105.png" alt="image-20220316121927945"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161221609.png" alt="image-20220316122100463"></p><h1 id="封装成帧"><a href="#封装成帧" class="headerlink" title="封装成帧"></a>封装成帧</h1><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161222248.png" alt="image-20220316122218113"></p><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161224263.png" alt="image-20220316122402120"></p><h2 id="透明传输"><a href="#透明传输" class="headerlink" title="透明传输"></a>透明传输</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161225782.png" alt="image-20220316122534644"></p><h2 id="1-字符计数法"><a href="#1-字符计数法" class="headerlink" title="1.字符计数法"></a>1.字符计数法</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161227002.png" alt="image-20220316122743865"></p><h2 id="2-字符填充法"><a href="#2-字符填充法" class="headerlink" title="2.字符填充法"></a>2.字符填充法</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161229392.png" alt="image-20220316122932243"></p><h3 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h3><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161230176.png" alt="image-20220316123052047"></p><h2 id="3-零比特填充法"><a href="#3-零比特填充法" class="headerlink" title="3.零比特填充法"></a>3.零比特填充法</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161232846.png" alt="image-20220316123234697"></p><h2 id="4-违规编码法"><a href="#4-违规编码法" class="headerlink" title="4.违规编码法"></a>4.违规编码法</h2><p><img src="https://gitee.com/halisi7/pic-goimage/raw/master/Typora/202203161235646.png" alt="image-20220316123536524"></p>]]></content>
     
     
     <summary type="html">计算机网络</summary>
