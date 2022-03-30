@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-27T09:56:04.674Z</updated>
+  <updated>2022-03-30T12:27:54.837Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网络地址转换与子网划分</title>
+    <link href="http://example.com/2022/03/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%E4%B8%8E%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86/"/>
+    <id>http://example.com/2022/03/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%E4%B8%8E%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86/</id>
+    <published>2022-03-30T12:22:12.000Z</published>
+    <updated>2022-03-30T12:27:54.837Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="网络地址转换（NAT）"><a href="#网络地址转换（NAT）" class="headerlink" title="网络地址转换（NAT）"></a>网络地址转换（NAT）</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301947189.png" alt="image-20220330194739059"></p><ul><li>即私有IP地址在外网中是无效的。</li></ul><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301952422.png" alt="image-20220330195209253"></p><h1 id="子网划分"><a href="#子网划分" class="headerlink" title="子网划分"></a>子网划分</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301954891.png" alt="image-20220330195400751"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301955281.png" alt="image-20220330195544145"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301956237.png" alt="image-20220330195657077"></p><h2 id="子网掩码"><a href="#子网掩码" class="headerlink" title="子网掩码"></a>子网掩码</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203302000044.png" alt="image-20220330200023909"></p><ul><li>子网掩码的前两位全为1，最后一位为全0</li></ul><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203302003598.png" alt="image-20220330200332441"></p><ul><li>IP地址的前两位与子网掩码的全1相与数字不变，最后一位与全0相与得0，所以重点是看第三位。</li></ul><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203302013663.png" alt="image-20220330201306511"></p><ul><li>通过子网掩码看出主机号占几位。</li><li>广播地址的主机号为全1，全1即是十进制的255.</li></ul><h2 id="使用子网的分组转发"><a href="#使用子网的分组转发" class="headerlink" title="使用子网的分组转发"></a>使用子网的分组转发</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203302024431.png" alt="image-20220330202401285"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IPv4地址</title>
+    <link href="http://example.com/2022/03/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/IPv4%E5%9C%B0%E5%9D%80/"/>
+    <id>http://example.com/2022/03/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/IPv4%E5%9C%B0%E5%9D%80/</id>
+    <published>2022-03-30T12:21:12.000Z</published>
+    <updated>2022-03-30T12:26:59.380Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="IPv4地址"><a href="#IPv4地址" class="headerlink" title="IPv4地址"></a>IPv4地址</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301931742.png" alt="image-20220330193126574"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301932218.png" alt="image-20220330193212065"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301933214.png" alt="image-20220330193347064"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301935691.png" alt="image-20220330193558529"></p><ul><li>网桥无法分割广播域。</li></ul><h1 id="IP地址的分类"><a href="#IP地址的分类" class="headerlink" title="IP地址的分类"></a>IP地址的分类</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301937921.png" alt="image-20220330193747793"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301940632.png" alt="image-20220330194051480"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301942031.png" alt="image-20220330194227894"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301946353.png" alt="image-20220330194623219"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TCP/IP协议栈</title>
+    <link href="http://example.com/2022/03/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCPIP%E5%8D%8F%E8%AE%AE%E6%A0%88/"/>
+    <id>http://example.com/2022/03/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCPIP%E5%8D%8F%E8%AE%AE%E6%A0%88/</id>
+    <published>2022-03-30T12:20:12.000Z</published>
+    <updated>2022-03-30T12:26:31.663Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="TCP-IP协议栈"><a href="#TCP-IP协议栈" class="headerlink" title="TCP/IP协议栈"></a>TCP/IP协议栈</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301906513.png" alt="image-20220330190555760"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301907776.png" alt="image-20220330190704638"></p><h1 id="IP数据报格式"><a href="#IP数据报格式" class="headerlink" title="IP数据报格式"></a>IP数据报格式</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301912913.png" alt="image-20220330191258760"></p><h1 id="IP数据报的分片"><a href="#IP数据报的分片" class="headerlink" title="IP数据报的分片"></a>IP数据报的分片</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301914569.png" alt="image-20220330191447420"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301917528.png" alt="image-20220330191735371"></p><ul><li>1字节等于8比特，1Byte=8bit，位就是bit。</li></ul><h2 id="分片例题"><a href="#分片例题" class="headerlink" title="分片例题"></a>分片例题</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301925955.png" alt="image-20220330192559799"></p><ul><li>注意片偏移量的单位是8B，所以用起始位置除以8。</li></ul><h2 id="IP数据报的单位"><a href="#IP数据报的单位" class="headerlink" title="IP数据报的单位"></a>IP数据报的单位</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203301928106.png" alt="image-20220330192831959"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>c与指针2</title>
@@ -360,69 +423,6 @@
     <updated>2022-03-28T08:15:05.587Z</updated>
     
     <content type="html"><![CDATA[<h1 id="后退N帧协议（GBN）"><a href="#后退N帧协议（GBN）" class="headerlink" title="后退N帧协议（GBN）"></a>后退N帧协议（GBN）</h1><h2 id="停等协议的弊端"><a href="#停等协议的弊端" class="headerlink" title="停等协议的弊端"></a>停等协议的弊端</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181229817.png" alt="image-20220318122928649"></p><h2 id="后退N帧协议的滑动窗口"><a href="#后退N帧协议的滑动窗口" class="headerlink" title="后退N帧协议的滑动窗口"></a>后退N帧协议的滑动窗口</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181233552.png" alt="image-20220318123335410"></p><h2 id="发送方"><a href="#发送方" class="headerlink" title="发送方"></a>发送方</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181236696.png" alt="image-20220318123640539"></p><h2 id="接收方"><a href="#接收方" class="headerlink" title="接收方"></a>接收方</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181238157.png" alt="image-20220318123855013"></p><h2 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181248042.png" alt="image-20220318124854887"></p><h2 id="滑动窗口长度的问题"><a href="#滑动窗口长度的问题" class="headerlink" title="滑动窗口长度的问题"></a>滑动窗口长度的问题</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181250910.png" alt="image-20220318125040786"></p><h2 id="GBN协议重点总结"><a href="#GBN协议重点总结" class="headerlink" title="GBN协议重点总结"></a>GBN协议重点总结</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181252651.png" alt="image-20220318125225507"></p><h2 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181253569.png" alt="image-20220318125342436"></p><ul><li>接收方一定是按序接收并发送的确认帧。</li></ul><h1 id="GBN协议的性能分析"><a href="#GBN协议的性能分析" class="headerlink" title="GBN协议的性能分析"></a>GBN协议的性能分析</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181256026.png" alt="image-20220318125617865"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181256398.png" alt="image-20220318125633275"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微机原理概论2</title>
-    <link href="http://example.com/2022/03/18/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA2/"/>
-    <id>http://example.com/2022/03/18/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA2/</id>
-    <published>2022-03-18T09:30:20.000Z</published>
-    <updated>2022-03-28T08:15:05.605Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="考点"><a href="#考点" class="headerlink" title="考点"></a>考点</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181946617.png" alt="image-20220318194650441"></p><ul><li>背的东西变多了。</li></ul><h1 id="8086-8088"><a href="#8086-8088" class="headerlink" title="8086/8088"></a>8086/8088</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181948098.png" alt="image-20220318194826940"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181949973.png" alt="image-20220318194915828"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181950663.png" alt="image-20220318195019504"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181950624.png" alt="image-20220318195056489"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181951671.png" alt="image-20220318195144524"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181952791.png" alt="image-20220318195217621"></p><h1 id="流水线技术"><a href="#流水线技术" class="headerlink" title="流水线技术"></a>流水线技术</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181953716.png" alt="image-20220318195319578"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181954397.png" alt="image-20220318195404206"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181954642.png" alt="image-20220318195420445"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181955664.png" alt="image-20220318195524488"></p><ul><li>一个cpu的总线周期由4个时钟周期组成。</li></ul><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181958287.png" alt="image-20220318195822104"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181958052.png" alt="image-20220318195841874"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181959961.png" alt="image-20220318195928795"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203182000493.png" alt="image-20220318200013317"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203182000763.png" alt="image-20220318200038593"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203182001982.png" alt="image-20220318200134831"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203182002000.png" alt="image-20220318200220860"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203182003938.png" alt="image-20220318200314780"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203182004319.png" alt="image-20220318200406143"></p><ul><li>20位地址码应该是00000H~FFFFFH。</li></ul><p><img src="https://s2.loli.net/2022/03/18/52JzbMULN37TGlO.png" alt="image-20220318200804045"></p><p><img src="https://s2.loli.net/2022/03/18/w6CJOknq7P4EFYN.png" alt="image-20220318200844860"></p><p><img src="https://s2.loli.net/2022/03/18/3cojN2Pv8GlV1pR.png" alt="image-20220318200944028"></p><p><img src="https://s2.loli.net/2022/03/18/bfzh3qIR2BHciXu.png" alt="image-20220318201029960"></p><p><img src="https://s2.loli.net/2022/03/18/16ihgDt5jGdFCBW.png" alt="image-20220318201220585"></p><p><img src="https://s2.loli.net/2022/03/18/uxYETKnPh4ogcAS.png" alt="image-20220318201314850"></p><p><img src="https://s2.loli.net/2022/03/18/GfY7uabxOrhgmK5.png" alt="image-20220318201552107"></p><p><img src="https://s2.loli.net/2022/03/18/jXnv4VlqmrLHW5Z.png" alt="image-20220318201707689"></p><p><img src="https://s2.loli.net/2022/03/18/tQjhfzk5bD182Pi.png" alt="image-20220318201749006"></p>]]></content>
-    
-    
-    <summary type="html">为考试做的准备</summary>
-    
-    
-    
-    <category term="微机原理" scheme="http://example.com/categories/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
-    
-    
-    <category term="微机原理" scheme="http://example.com/tags/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>停止-等待协议</title>
-    <link href="http://example.com/2022/03/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%81%9C%E6%AD%A2-%E7%AD%89%E5%BE%85%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://example.com/2022/03/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%81%9C%E6%AD%A2-%E7%AD%89%E5%BE%85%E5%8D%8F%E8%AE%AE/</id>
-    <published>2022-03-17T04:30:10.000Z</published>
-    <updated>2022-03-28T08:15:05.589Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="停止-等待协议"><a href="#停止-等待协议" class="headerlink" title="停止-等待协议"></a>停止-等待协议</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203171246317.png" alt="image-20220317124604176"></p><h1 id="无差错情况"><a href="#无差错情况" class="headerlink" title="无差错情况"></a>无差错情况</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203171247072.png" alt="image-20220317124741949"></p><h1 id="有差错情况"><a href="#有差错情况" class="headerlink" title="有差错情况"></a>有差错情况</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203171251844.png" alt="image-20220317125114704"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203171252862.png" alt="image-20220317125223730"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203171253392.png" alt="image-20220317125319261"></p><h1 id="停等协议的性能分析"><a href="#停等协议的性能分析" class="headerlink" title="停等协议的性能分析"></a>停等协议的性能分析</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203171255883.png" alt="image-20220317125513746"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203171257689.png" alt="image-20220317125708546"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203171257074.png" alt="image-20220317125738953"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据链路层的流量控制</title>
-    <link href="http://example.com/2022/03/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82%E7%9A%84%E6%B5%81%E9%87%8F%E6%8E%A7%E5%88%B6/"/>
-    <id>http://example.com/2022/03/17/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82%E7%9A%84%E6%B5%81%E9%87%8F%E6%8E%A7%E5%88%B6/</id>
-    <published>2022-03-17T04:30:09.000Z</published>
-    <updated>2022-03-28T08:15:05.587Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="数据链路层的流量控制"><a href="#数据链路层的流量控制" class="headerlink" title="数据链路层的流量控制"></a>数据链路层的流量控制</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203171235278.png" alt="image-20220317123559119"></p><h1 id="流量控制方法"><a href="#流量控制方法" class="headerlink" title="流量控制方法"></a>流量控制方法</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203171239998.png" alt="image-20220317123929847"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203171240168.png" alt="image-20220317124011039"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203171242049.png" alt="image-20220317124226923"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203171242129.png" alt="image-20220317124251015"></p>]]></content>
     
     
     <summary type="html">计算机网络</summary>
