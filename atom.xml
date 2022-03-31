@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-30T12:27:54.837Z</updated>
+  <updated>2022-03-31T09:57:47.712Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,111 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>路由算法与路由协议概述</title>
+    <link href="http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%B7%AF%E7%94%B1%E7%AE%97%E6%B3%95%E4%B8%8E%E8%B7%AF%E7%94%B1%E5%8D%8F%E8%AE%AE%E6%A6%82%E8%BF%B0/"/>
+    <id>http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%B7%AF%E7%94%B1%E7%AE%97%E6%B3%95%E4%B8%8E%E8%B7%AF%E7%94%B1%E5%8D%8F%E8%AE%AE%E6%A6%82%E8%BF%B0/</id>
+    <published>2022-03-31T09:26:12.000Z</published>
+    <updated>2022-03-31T09:57:47.712Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="路由算法与路由协议概述"><a href="#路由算法与路由协议概述" class="headerlink" title="路由算法与路由协议概述"></a>路由算法与路由协议概述</h1><h2 id="路由算法"><a href="#路由算法" class="headerlink" title="路由算法"></a>路由算法</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311737033.png" alt="image-20220331173739899"></p><h3 id="路由算法的分类"><a href="#路由算法的分类" class="headerlink" title="路由算法的分类"></a>路由算法的分类</h3><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311741069.png" alt="image-20220331174147904"></p><ul><li>链路费用：即路径代价。</li></ul><h2 id="分层次的路由选择协议"><a href="#分层次的路由选择协议" class="headerlink" title="分层次的路由选择协议"></a>分层次的路由选择协议</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311752545.png" alt="image-20220331175249389"></p><ul><li>网关：代表路由器。</li></ul><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311753931.png" alt="image-20220331175325774"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IPv6</title>
+    <link href="http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/IPv6/"/>
+    <id>http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/IPv6/</id>
+    <published>2022-03-31T09:25:12.000Z</published>
+    <updated>2022-03-31T09:57:24.396Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="IPv6"><a href="#IPv6" class="headerlink" title="IPv6"></a>IPv6</h1><h2 id="为什么要有IPv6？"><a href="#为什么要有IPv6？" class="headerlink" title="为什么要有IPv6？"></a>为什么要有IPv6？</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311715982.png" alt="image-20220331171532837"></p><h2 id="IPv6数据报格式"><a href="#IPv6数据报格式" class="headerlink" title="IPv6数据报格式"></a>IPv6数据报格式</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311717132.png" alt="image-20220331171746874"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311723214.png" alt="image-20220331172346066"></p><h2 id="IPv6和IPv4"><a href="#IPv6和IPv4" class="headerlink" title="IPv6和IPv4"></a>IPv6和IPv4</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311728463.png" alt="image-20220331172802300"></p><h2 id="IPv6地址表示形式"><a href="#IPv6地址表示形式" class="headerlink" title="IPv6地址表示形式"></a>IPv6地址表示形式</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311729546.png" alt="image-20220331172952412"></p><ul><li>不再使用点分十进制。</li></ul><h2 id="IPv6基本地址类型"><a href="#IPv6基本地址类型" class="headerlink" title="IPv6基本地址类型"></a>IPv6基本地址类型</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311731615.png" alt="image-20220331173119472"></p><h2 id="IPv6向IPv4过渡的策略"><a href="#IPv6向IPv4过渡的策略" class="headerlink" title="IPv6向IPv4过渡的策略"></a>IPv6向IPv4过渡的策略</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311733047.png" alt="image-20220331173345851"></p><ul><li>将IPv6封装到IPv4的数据报中。</li></ul><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311734126.png" alt="image-20220331173416003"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DHCP协议和ICMP协议</title>
+    <link href="http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DHCP%E5%92%8CICMP%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DHCP%E5%92%8CICMP%E5%8D%8F%E8%AE%AE/</id>
+    <published>2022-03-31T09:24:12.000Z</published>
+    <updated>2022-03-31T09:57:02.793Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="DHCP协议"><a href="#DHCP协议" class="headerlink" title="DHCP协议"></a>DHCP协议</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311559308.png" alt="image-20220331155944137"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311606623.png" alt="image-20220331160605447"></p><ul><li>DHCP是应用层协议哦~</li></ul><h1 id="ICMP协议"><a href="#ICMP协议" class="headerlink" title="ICMP协议"></a>ICMP协议</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311608115.png" alt="image-20220331160814986"></p><ul><li>ICMP起一个桥梁的作用，更好地转发IP数据报…</li></ul><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311611004.png" alt="image-20220331161104859"></p><ul><li>将出错的分组丢弃后发送一个ICMP差错报告。</li></ul><h2 id="ICMP差错报告报文"><a href="#ICMP差错报告报文" class="headerlink" title="ICMP差错报告报文"></a>ICMP差错报告报文</h2><p> <img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311614900.png" alt="image-20220331161445718"></p><ul><li>第二种现在已经取消了，不再用了。</li></ul><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311615930.png" alt="image-20220331161516770"></p><ul><li>ICMP差错报告报文是一个IP数据报，    是网络层传输单元的数据部分。</li></ul><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311618795.png" alt="image-20220331161815656"></p><ul><li>组播：是一点到多点，有选择性。</li><li>广播：是一点到所有节点。</li></ul><h2 id="ICMP询问报文"><a href="#ICMP询问报文" class="headerlink" title="ICMP询问报文"></a>ICMP询问报文</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311619298.png" alt="image-20220331161947150"></p><ul><li>具体的应用：ping 网址</li><li>后两种现在已经不再使用了。</li></ul><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311621030.png" alt="image-20220331162126889"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ARP协议</title>
+    <link href="http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/ARP%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/ARP%E5%8D%8F%E8%AE%AE/</id>
+    <published>2022-03-31T09:23:12.000Z</published>
+    <updated>2022-03-31T09:56:27.439Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ARP协议"><a href="#ARP协议" class="headerlink" title="ARP协议"></a>ARP协议</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311131765.png" alt="image-20220331113148625"></p><ul><li>ARP高速缓存内存放的是本局域网内的mac地址。</li></ul><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311138624.png" alt="image-20220331113844482"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>ARP协议帮助找到MAC地址。</p><p>处于链路层和网络层中间的协议，结合了IP地址和MAC地址。</p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311142994.png" alt="image-20220331114218824"></p><ul><li>ARP自动进行用户不知道。</li></ul><h2 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311144642.png" alt="image-20220331114426503"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>无分类编址CIDR与IPv4地址习题</title>
+    <link href="http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CIDR%E4%B8%8E%E4%B9%A0%E9%A2%98/"/>
+    <id>http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CIDR%E4%B8%8E%E4%B9%A0%E9%A2%98/</id>
+    <published>2022-03-31T09:22:12.000Z</published>
+    <updated>2022-03-31T09:55:33.775Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="无分类编址CIDR"><a href="#无分类编址CIDR" class="headerlink" title="无分类编址CIDR"></a>无分类编址CIDR</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311106497.png" alt="image-20220331110630333"></p><ul><li>减缓了IP地址即将消耗殆尽的情况。</li><li>全0是本网络。</li><li>全1是广播地址。</li><li>子网掩码：前缀全1，主机号全0，前缀有多少位就有多少个1.</li></ul><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311109298.png" alt="image-20220331110947168"></p><ul><li>主机号位数组成IP地址，即主机号有n位就有2的n次方个IP地址。</li></ul><h2 id="构成超网"><a href="#构成超网" class="headerlink" title="构成超网"></a>构成超网</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311113101.png" alt="image-20220331111324963"></p><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311118932.png" alt="image-20220331111805774"></p><ul><li>R4为默认路由，即如果找不到转发路由则交给默认路由。</li></ul><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203311122146.png" alt="image-20220331112244016"></p><ul><li>在CIDR中子网号可以全0或全1，也就不用减去2了。</li><li>主机号要减去全0（代表本网络）与全1（代表广播地址）。</li></ul>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>网络地址转换与子网划分</title>
@@ -318,111 +423,6 @@
     <updated>2022-03-28T08:15:05.576Z</updated>
     
     <content type="html"><![CDATA[<h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181521446.png" alt="image-20220318152119299"></p><ul><li>只有随机访问MAC协议会发生冲突。</li></ul><h1 id="轮询协议"><a href="#轮询协议" class="headerlink" title="轮询协议"></a>轮询协议</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181524848.png" alt="image-20220318152403715"></p><h1 id="令牌传递协议"><a href="#令牌传递协议" class="headerlink" title="令牌传递协议"></a>令牌传递协议</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181527762.png" alt="image-20220318152751626"></p><h1 id="MAC协议总结"><a href="#MAC协议总结" class="headerlink" title="MAC协议总结"></a>MAC协议总结</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181531090.png" alt="image-20220318153101957"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSMA协议</title>
-    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMA%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMA%E5%8D%8F%E8%AE%AE/</id>
-    <published>2022-03-18T12:20:13.000Z</published>
-    <updated>2022-03-28T08:15:05.591Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181359126.png" alt="image-20220318135958982"></p><h1 id="CSMA协议"><a href="#CSMA协议" class="headerlink" title="CSMA协议"></a>CSMA协议</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181401894.png" alt="image-20220318140152752"></p><h2 id="1-坚持CSMA"><a href="#1-坚持CSMA" class="headerlink" title="1-坚持CSMA"></a>1-坚持CSMA</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181403272.png" alt="image-20220318140322142"></p><h2 id="非坚持CSMA"><a href="#非坚持CSMA" class="headerlink" title="非坚持CSMA"></a>非坚持CSMA</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181404512.png" alt="image-20220318140435381"></p><h2 id="p-坚持CSMA"><a href="#p-坚持CSMA" class="headerlink" title="p-坚持CSMA"></a>p-坚持CSMA</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181406131.png" alt="image-20220318140636991"></p><h2 id="对比总结"><a href="#对比总结" class="headerlink" title="对比总结"></a>对比总结</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181408274.png" alt="image-20220318140829128"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ALOHA协议</title>
-    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/ALOHA%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/ALOHA%E5%8D%8F%E8%AE%AE/</id>
-    <published>2022-03-18T12:20:12.000Z</published>
-    <updated>2022-03-28T08:15:05.594Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181350045.png" alt="image-20220318135048902"></p><h2 id="动态分配信道-ALOHA协议"><a href="#动态分配信道-ALOHA协议" class="headerlink" title="动态分配信道-ALOHA协议"></a>动态分配信道-ALOHA协议</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181352107.png" alt="image-20220318135226969"></p><h3 id="纯ALOHA协议"><a href="#纯ALOHA协议" class="headerlink" title="纯ALOHA协议"></a>纯ALOHA协议</h3><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181355202.png" alt="image-20220318135522064"></p><h3 id="时隙ALOHA协议"><a href="#时隙ALOHA协议" class="headerlink" title="时隙ALOHA协议"></a>时隙ALOHA协议</h3><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181357908.png" alt="image-20220318135720776"></p><h3 id="ALOHA协议总结"><a href="#ALOHA协议总结" class="headerlink" title="ALOHA协议总结"></a>ALOHA协议总结</h3><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181358305.png" alt="image-20220318135850181"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>介质访问控制-静态划分信道</title>
-    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BB%8B%E8%B4%A8%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E9%9D%99%E6%80%81/"/>
-    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BB%8B%E8%B4%A8%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E9%9D%99%E6%80%81/</id>
-    <published>2022-03-18T12:20:11.000Z</published>
-    <updated>2022-03-28T08:15:05.590Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="传输数据使用的两种链路"><a href="#传输数据使用的两种链路" class="headerlink" title="传输数据使用的两种链路"></a>传输数据使用的两种链路</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181324256.png" alt="image-20220318132400110"></p><h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181325238.png" alt="image-20220318132511094"></p><h2 id="静态划分信道-信道划分介质访问控制"><a href="#静态划分信道-信道划分介质访问控制" class="headerlink" title="静态划分信道-信道划分介质访问控制"></a>静态划分信道-信道划分介质访问控制</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181327042.png" alt="image-20220318132720901"></p><h3 id="频分多路复用FDM"><a href="#频分多路复用FDM" class="headerlink" title="频分多路复用FDM"></a>频分多路复用FDM</h3><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181329955.png" alt="image-20220318132922818"></p><h3 id="时分多路复用TDM"><a href="#时分多路复用TDM" class="headerlink" title="时分多路复用TDM"></a>时分多路复用TDM</h3><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181332029.png" alt="image-20220318133206900"></p><ul><li>并行：同时向前推进。</li><li>并发：一人占用一个时间片。</li></ul><h3 id="改进的时分复用-统计时分复用STDM"><a href="#改进的时分复用-统计时分复用STDM" class="headerlink" title="改进的时分复用-统计时分复用STDM"></a>改进的时分复用-统计时分复用STDM</h3><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181335584.png" alt="image-20220318133519438"></p><h3 id="波分多路复用WDM"><a href="#波分多路复用WDM" class="headerlink" title="波分多路复用WDM"></a>波分多路复用WDM</h3><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181336439.png" alt="image-20220318133616305"></p><h3 id="码分多路复用CDM"><a href="#码分多路复用CDM" class="headerlink" title="码分多路复用CDM"></a>码分多路复用CDM</h3><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181341568.png" alt="image-20220318134109419"></p><ul><li>规格化内积：对应位相乘再相加最后除以总位数。</li><li>相互正交：规格化内积等于0。</li><li>线性相加：各个位相加即可。</li></ul><h2 id="CD和CS的混淆"><a href="#CD和CS的混淆" class="headerlink" title="CD和CS的混淆"></a>CD和CS的混淆</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181348253.png" alt="image-20220318134835114"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>选择重传协议</title>
-    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%80%89%E6%8B%A9%E9%87%8D%E4%BC%A0%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%80%89%E6%8B%A9%E9%87%8D%E4%BC%A0%E5%8D%8F%E8%AE%AE/</id>
-    <published>2022-03-18T12:20:11.000Z</published>
-    <updated>2022-03-28T08:15:05.578Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="GBN协议的弊端"><a href="#GBN协议的弊端" class="headerlink" title="GBN协议的弊端"></a>GBN协议的弊端</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181258945.png" alt="image-20220318125856800"></p><h1 id="选择重传协议（SR）"><a href="#选择重传协议（SR）" class="headerlink" title="选择重传协议（SR）"></a>选择重传协议（SR）</h1><h2 id="选择重传协议中的滑动窗口"><a href="#选择重传协议中的滑动窗口" class="headerlink" title="选择重传协议中的滑动窗口"></a>选择重传协议中的滑动窗口</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181301951.png" alt="image-20220318130158810"></p><h2 id="发送方"><a href="#发送方" class="headerlink" title="发送方"></a>发送方</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181303009.png" alt="image-20220318130330862"></p><h2 id="接收方"><a href="#接收方" class="headerlink" title="接收方"></a>接收方</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181305714.png" alt="image-20220318130521580"></p><h2 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181307250.png" alt="image-20220318130750094"></p><h2 id="滑动窗口长度"><a href="#滑动窗口长度" class="headerlink" title="滑动窗口长度"></a>滑动窗口长度</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181312866.png" alt="image-20220318131210718"></p><h2 id="SR协议的重点总结"><a href="#SR协议的重点总结" class="headerlink" title="SR协议的重点总结"></a>SR协议的重点总结</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181313400.png" alt="image-20220318131344266"></p><h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181314150.png" alt="image-20220318131450023"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181315370.png" alt="image-20220318131511247"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>后退N帧协议</title>
-    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%90%8E%E9%80%80N%E5%B8%A7%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%90%8E%E9%80%80N%E5%B8%A7%E5%8D%8F%E8%AE%AE/</id>
-    <published>2022-03-18T12:20:10.000Z</published>
-    <updated>2022-03-28T08:15:05.587Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="后退N帧协议（GBN）"><a href="#后退N帧协议（GBN）" class="headerlink" title="后退N帧协议（GBN）"></a>后退N帧协议（GBN）</h1><h2 id="停等协议的弊端"><a href="#停等协议的弊端" class="headerlink" title="停等协议的弊端"></a>停等协议的弊端</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181229817.png" alt="image-20220318122928649"></p><h2 id="后退N帧协议的滑动窗口"><a href="#后退N帧协议的滑动窗口" class="headerlink" title="后退N帧协议的滑动窗口"></a>后退N帧协议的滑动窗口</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181233552.png" alt="image-20220318123335410"></p><h2 id="发送方"><a href="#发送方" class="headerlink" title="发送方"></a>发送方</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181236696.png" alt="image-20220318123640539"></p><h2 id="接收方"><a href="#接收方" class="headerlink" title="接收方"></a>接收方</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181238157.png" alt="image-20220318123855013"></p><h2 id="运行流程"><a href="#运行流程" class="headerlink" title="运行流程"></a>运行流程</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181248042.png" alt="image-20220318124854887"></p><h2 id="滑动窗口长度的问题"><a href="#滑动窗口长度的问题" class="headerlink" title="滑动窗口长度的问题"></a>滑动窗口长度的问题</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181250910.png" alt="image-20220318125040786"></p><h2 id="GBN协议重点总结"><a href="#GBN协议重点总结" class="headerlink" title="GBN协议重点总结"></a>GBN协议重点总结</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181252651.png" alt="image-20220318125225507"></p><h2 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h2><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181253569.png" alt="image-20220318125342436"></p><ul><li>接收方一定是按序接收并发送的确认帧。</li></ul><h1 id="GBN协议的性能分析"><a href="#GBN协议的性能分析" class="headerlink" title="GBN协议的性能分析"></a>GBN协议的性能分析</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181256026.png" alt="image-20220318125617865"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="http://r9g3hu7tj.hb-bkt.clouddn.com/202203181256398.png" alt="image-20220318125633275"></p>]]></content>
     
     
     <summary type="html">计算机网络</summary>
