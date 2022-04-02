@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-01T07:36:49.790Z</updated>
+  <updated>2022-04-02T06:28:33.163Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,111 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网络层设备</title>
+    <link href="http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%BD%91%E7%BB%9C%E5%B1%82%E8%AE%BE%E5%A4%87/"/>
+    <id>http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%BD%91%E7%BB%9C%E5%B1%82%E8%AE%BE%E5%A4%87/</id>
+    <published>2022-04-02T06:10:12.000Z</published>
+    <updated>2022-04-02T06:28:33.163Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="网络层设备"><a href="#网络层设备" class="headerlink" title="网络层设备"></a>网络层设备</h1><h2 id="路由器"><a href="#路由器" class="headerlink" title="路由器"></a>路由器</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021409202.png" alt="image-20220402140934024"></p><h2 id="输入端口"><a href="#输入端口" class="headerlink" title="输入端口"></a>输入端口</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021410963.png" alt="image-20220402141043829"></p><h2 id="输出端口"><a href="#输出端口" class="headerlink" title="输出端口"></a>输出端口</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021411647.png" alt="image-20220402141146476"></p><h2 id="三层设备对比"><a href="#三层设备对比" class="headerlink" title="三层设备对比"></a>三层设备对比</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021413876.png" alt="image-20220402141343748"></p><h2 id="转发表与路由表"><a href="#转发表与路由表" class="headerlink" title="转发表与路由表"></a>转发表与路由表</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021415442.png" alt="image-20220402141519292"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>移动IP</title>
+    <link href="http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%A7%BB%E5%8A%A8IP/"/>
+    <id>http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%A7%BB%E5%8A%A8IP/</id>
+    <published>2022-04-02T06:09:12.000Z</published>
+    <updated>2022-04-02T06:28:05.811Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="移动IP"><a href="#移动IP" class="headerlink" title="移动IP"></a>移动IP</h1><h2 id="移动IP相关术语"><a href="#移动IP相关术语" class="headerlink" title="移动IP相关术语"></a>移动IP相关术语</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021401675.png" alt="image-20220402140137509"></p><h2 id="移动IP的通信过程"><a href="#移动IP的通信过程" class="headerlink" title="移动IP的通信过程"></a>移动IP的通信过程</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021404935.png" alt="image-20220402140448771"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021406118.png" alt="image-20220402140602970"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IP组播</title>
+    <link href="http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/IP%E7%BB%84%E6%92%AD/"/>
+    <id>http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/IP%E7%BB%84%E6%92%AD/</id>
+    <published>2022-04-02T06:08:12.000Z</published>
+    <updated>2022-04-02T06:27:36.018Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="IP组播"><a href="#IP组播" class="headerlink" title="IP组播"></a>IP组播</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021106033.png" alt="image-20220402110642849"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021107945.png" alt="image-20220402110726799"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021107918.png" alt="image-20220402110739774"></p><ul><li>组播路由器指可以运行组播协议的路由器。</li></ul><h2 id="IP组播地址"><a href="#IP组播地址" class="headerlink" title="IP组播地址"></a>IP组播地址</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021234962.png" alt="image-20220402123417780"></p><ul><li>D类地址用于组播或多播。</li><li>IP组播地址只能作为目的地址。</li><li>源地址一定是单播地址。</li></ul><h2 id="硬件组播"><a href="#硬件组播" class="headerlink" title="硬件组播"></a>硬件组播</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021348889.png" alt="image-20220402134812729"></p><ul><li>映射到MAC地址时只有最后23位不同。</li><li>丢弃是为了避免中间5位不一样而别的数据一样的情况。</li></ul><h2 id="IGMP协议与组播路由选择协议"><a href="#IGMP协议与组播路由选择协议" class="headerlink" title="IGMP协议与组播路由选择协议"></a>IGMP协议与组播路由选择协议</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021351869.png" alt="image-20220402135126730"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021352576.png" alt="image-20220402135241423"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021352551.png" alt="image-20220402135257430"></p><ul><li>网络层的上层。</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021354886.png" alt="image-20220402135449722"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021355453.png" alt="image-20220402135530328"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021356662.png" alt="image-20220402135615508"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021356584.png" alt="image-20220402135634438"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021357854.png" alt="image-20220402135702729"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>路由算法-BGP协议</title>
+    <link href="http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/BGP%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/BGP%E5%8D%8F%E8%AE%AE/</id>
+    <published>2022-04-02T06:07:12.000Z</published>
+    <updated>2022-04-02T06:26:59.126Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="BGP协议"><a href="#BGP协议" class="headerlink" title="BGP协议"></a>BGP协议</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021046693.png" alt="image-20220402104646543"></p><h2 id="BGP协议-1"><a href="#BGP协议-1" class="headerlink" title="BGP协议"></a>BGP协议</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021048414.png" alt="image-20220402104809261"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021050677.png" alt="image-20220402105009535"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021051411.png" alt="image-20220402105104262"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021052491.png" alt="image-20220402105218341"></p><ul><li>BGP是应用层协议，借助TCP传送。</li></ul><h2 id="BGP协议的特点"><a href="#BGP协议的特点" class="headerlink" title="BGP协议的特点"></a>BGP协议的特点</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021053527.png" alt="image-20220402105306372"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021054688.png" alt="image-20220402105422550"></p><h2 id="三种协议对比"><a href="#三种协议对比" class="headerlink" title="三种协议对比"></a>三种协议对比</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021056680.png" alt="image-20220402105604490"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021056075.png" alt="image-20220402105611937"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>路由算法-OSPF协议</title>
+    <link href="http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/OSPF%E5%8D%8F%E8%AE%AE%E4%B8%8E%E9%93%BE%E8%B7%AF%E7%8A%B6%E6%80%81%E7%AE%97%E6%B3%95/"/>
+    <id>http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/OSPF%E5%8D%8F%E8%AE%AE%E4%B8%8E%E9%93%BE%E8%B7%AF%E7%8A%B6%E6%80%81%E7%AE%97%E6%B3%95/</id>
+    <published>2022-04-02T06:06:12.000Z</published>
+    <updated>2022-04-02T06:25:50.224Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="OSPF协议与链路状态算法"><a href="#OSPF协议与链路状态算法" class="headerlink" title="OSPF协议与链路状态算法"></a>OSPF协议与链路状态算法</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021035361.png" alt="image-20220402103513210"></p><h2 id="OSPF协议"><a href="#OSPF协议" class="headerlink" title="OSPF协议"></a>OSPF协议</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021038653.png" alt="image-20220402103824486"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021041531.png" alt="image-20220402104117364"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021042645.png" alt="image-20220402104257474"></p><h2 id="OSPF分组"><a href="#OSPF分组" class="headerlink" title="OSPF分组"></a>OSPF分组</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021044149.png" alt="image-20220402104405019"></p><ul><li>OSPF网络层协议。</li></ul><h2 id="OSPF的其它特点"><a href="#OSPF的其它特点" class="headerlink" title="OSPF的其它特点"></a>OSPF的其它特点</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021045097.png" alt="image-20220402104543962"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>路由算法与路由协议概述</title>
@@ -59,11 +164,11 @@
   </entry>
   
   <entry>
-    <title>DHCP协议和ICMP协议</title>
+    <title>IPv4-DHCP协议和ICMP协议</title>
     <link href="http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DHCP%E5%92%8CICMP%E5%8D%8F%E8%AE%AE/"/>
     <id>http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/DHCP%E5%92%8CICMP%E5%8D%8F%E8%AE%AE/</id>
     <published>2022-03-31T09:24:12.000Z</published>
-    <updated>2022-04-01T07:36:49.797Z</updated>
+    <updated>2022-04-02T06:20:57.864Z</updated>
     
     <content type="html"><![CDATA[<h1 id="DHCP协议"><a href="#DHCP协议" class="headerlink" title="DHCP协议"></a>DHCP协议</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311559308.png" alt="image-20220331155944137"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311606623.png" alt="image-20220331160605447"></p><ul><li>DHCP是应用层协议哦~</li></ul><h1 id="ICMP协议"><a href="#ICMP协议" class="headerlink" title="ICMP协议"></a>ICMP协议</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311608115.png" alt="image-20220331160814986"></p><ul><li>ICMP起一个桥梁的作用，更好地转发IP数据报…</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311611004.png" alt="image-20220331161104859"></p><ul><li>将出错的分组丢弃后发送一个ICMP差错报告。</li></ul><h2 id="ICMP差错报告报文"><a href="#ICMP差错报告报文" class="headerlink" title="ICMP差错报告报文"></a>ICMP差错报告报文</h2><p> <img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311614900.png" alt="image-20220331161445718"></p><ul><li>第二种现在已经取消了，不再用了。</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311615930.png" alt="image-20220331161516770"></p><ul><li>ICMP差错报告报文是一个IP数据报，    是网络层传输单元的数据部分。</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311618795.png" alt="image-20220331161815656"></p><ul><li>组播：是一点到多点，有选择性。</li><li>广播：是一点到所有节点。</li></ul><h2 id="ICMP询问报文"><a href="#ICMP询问报文" class="headerlink" title="ICMP询问报文"></a>ICMP询问报文</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311619298.png" alt="image-20220331161947150"></p><ul><li>具体的应用：ping 网址</li><li>后两种现在已经不再使用了。</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311621030.png" alt="image-20220331162126889"></p>]]></content>
     
@@ -80,11 +185,11 @@
   </entry>
   
   <entry>
-    <title>ARP协议</title>
+    <title>IPv4-ARP协议</title>
     <link href="http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/ARP%E5%8D%8F%E8%AE%AE/"/>
     <id>http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/ARP%E5%8D%8F%E8%AE%AE/</id>
     <published>2022-03-31T09:23:12.000Z</published>
-    <updated>2022-04-01T07:36:49.797Z</updated>
+    <updated>2022-04-02T06:19:29.534Z</updated>
     
     <content type="html"><![CDATA[<h1 id="ARP协议"><a href="#ARP协议" class="headerlink" title="ARP协议"></a>ARP协议</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311131765.png" alt="image-20220331113148625"></p><ul><li>ARP高速缓存内存放的是本局域网内的mac地址。</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311138624.png" alt="image-20220331113844482"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>ARP协议帮助找到MAC地址。</p><p>处于链路层和网络层中间的协议，结合了IP地址和MAC地址。</p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311142994.png" alt="image-20220331114218824"></p><ul><li>ARP自动进行用户不知道。</li></ul><h2 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311144642.png" alt="image-20220331114426503"></p>]]></content>
     
@@ -101,11 +206,11 @@
   </entry>
   
   <entry>
-    <title>无分类编址CIDR与IPv4地址习题</title>
+    <title>IPv4-无分类编址CIDR与IPv4地址习题</title>
     <link href="http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CIDR%E4%B8%8E%E4%B9%A0%E9%A2%98/"/>
     <id>http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CIDR%E4%B8%8E%E4%B9%A0%E9%A2%98/</id>
     <published>2022-03-31T09:22:12.000Z</published>
-    <updated>2022-04-01T07:36:49.797Z</updated>
+    <updated>2022-04-02T06:20:43.717Z</updated>
     
     <content type="html"><![CDATA[<h1 id="无分类编址CIDR"><a href="#无分类编址CIDR" class="headerlink" title="无分类编址CIDR"></a>无分类编址CIDR</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311106497.png" alt="image-20220331110630333"></p><ul><li>减缓了IP地址即将消耗殆尽的情况。</li><li>全0是本网络。</li><li>全1是广播地址。</li><li>子网掩码：前缀全1，主机号全0，前缀有多少位就有多少个1.</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311109298.png" alt="image-20220331110947168"></p><ul><li>主机号位数组成IP地址，即主机号有n位就有2的n次方个IP地址。</li></ul><h2 id="构成超网"><a href="#构成超网" class="headerlink" title="构成超网"></a>构成超网</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311113101.png" alt="image-20220331111324963"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311118932.png" alt="image-20220331111805774"></p><ul><li>R4为默认路由，即如果找不到转发路由则交给默认路由。</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203311122146.png" alt="image-20220331112244016"></p><ul><li>在CIDR中子网号可以全0或全1，也就不用减去2了。</li><li>主机号要减去全0（代表本网络）与全1（代表广播地址）。</li></ul>]]></content>
     
@@ -122,11 +227,11 @@
   </entry>
   
   <entry>
-    <title>网络地址转换与子网划分</title>
+    <title>IPv4-网络地址转换与子网划分</title>
     <link href="http://example.com/2022/03/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%E4%B8%8E%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86/"/>
     <id>http://example.com/2022/03/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%E4%B8%8E%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86/</id>
     <published>2022-03-30T12:22:12.000Z</published>
-    <updated>2022-04-01T07:36:49.790Z</updated>
+    <updated>2022-04-02T06:20:20.910Z</updated>
     
     <content type="html"><![CDATA[<h1 id="网络地址转换（NAT）"><a href="#网络地址转换（NAT）" class="headerlink" title="网络地址转换（NAT）"></a>网络地址转换（NAT）</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301947189.png" alt="image-20220330194739059"></p><ul><li>即私有IP地址在外网中是无效的。</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301952422.png" alt="image-20220330195209253"></p><h1 id="子网划分"><a href="#子网划分" class="headerlink" title="子网划分"></a>子网划分</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301954891.png" alt="image-20220330195400751"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301955281.png" alt="image-20220330195544145"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301956237.png" alt="image-20220330195657077"></p><h2 id="子网掩码"><a href="#子网掩码" class="headerlink" title="子网掩码"></a>子网掩码</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203302000044.png" alt="image-20220330200023909"></p><ul><li>子网掩码的前两位全为1，最后一位为全0</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203302003598.png" alt="image-20220330200332441"></p><ul><li>IP地址的前两位与子网掩码的全1相与数字不变，最后一位与全0相与得0，所以重点是看第三位。</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203302013663.png" alt="image-20220330201306511"></p><ul><li>通过子网掩码看出主机号占几位。</li><li>广播地址的主机号为全1，全1即是十进制的255.</li></ul><h2 id="使用子网的分组转发"><a href="#使用子网的分组转发" class="headerlink" title="使用子网的分组转发"></a>使用子网的分组转发</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203302024431.png" alt="image-20220330202401285"></p>]]></content>
     
@@ -311,118 +416,13 @@
   </entry>
   
   <entry>
-    <title>无线局域网</title>
+    <title>局域网-无线局域网</title>
     <link href="http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E6%97%A0%E7%BA%BF%E5%B1%80%E5%9F%9F%E7%BD%91/"/>
     <id>http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E6%97%A0%E7%BA%BF%E5%B1%80%E5%9F%9F%E7%BD%91/</id>
     <published>2022-03-20T07:20:19.000Z</published>
-    <updated>2022-04-01T07:36:49.790Z</updated>
+    <updated>2022-04-02T03:19:45.824Z</updated>
     
     <content type="html"><![CDATA[<h1 id="IΕΕE-802-11"><a href="#IΕΕE-802-11" class="headerlink" title="IΕΕE 802.11"></a>IΕΕE 802.11</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201135652.png" alt="image-20220320113539514"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201142658.png" alt="image-20220320114144503"></p><ul><li>AP无线接入点。</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201142621.png" alt="image-20220320114129787"></p><h2 id="无线局域网的分类"><a href="#无线局域网的分类" class="headerlink" title="无线局域网的分类"></a>无线局域网的分类</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201143732.png" alt="image-20220320114302566"></p><h2 id="有固定基础设施无线局域网"><a href="#有固定基础设施无线局域网" class="headerlink" title="有固定基础设施无线局域网"></a>有固定基础设施无线局域网</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201145742.png" alt="image-20220320114527592"></p><h2 id="无固定基础设施无线局域网"><a href="#无固定基础设施无线局域网" class="headerlink" title="无固定基础设施无线局域网"></a>无固定基础设施无线局域网</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201400615.png" alt="image-20220320140016477"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>以太网</title>
-    <link href="http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BB%A5%E5%A4%AA%E7%BD%91/"/>
-    <id>http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BB%A5%E5%A4%AA%E7%BD%91/</id>
-    <published>2022-03-20T07:20:18.000Z</published>
-    <updated>2022-04-01T07:36:49.791Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="以太网概述"><a href="#以太网概述" class="headerlink" title="以太网概述"></a>以太网概述</h1><p><img src="https://s2.loli.net/2022/03/20/fz4TZkeVJbKmnra.png" alt="image-20220320111444379"></p><p><img src="https://s2.loli.net/2022/03/20/sXSpO7o95xQgIDk.png" alt="image-20220320111606073"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201130160.png" alt="image-20220320113020017"></p><h2 id="10BASE-T以太网"><a href="#10BASE-T以太网" class="headerlink" title="10BASE-T以太网"></a>10BASE-T以太网</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201130884.png" alt="image-20220320111918035"></p><p><img src="https://s2.loli.net/2022/03/20/Vtl3NqJv6Ky5Ps8.png" alt="image-20220320112310337"></p><p><img src="https://s2.loli.net/2022/03/20/kd4OtJZW2igGrsm.png" alt="image-20220320112758734"></p><h2 id="高速以太网"><a href="#高速以太网" class="headerlink" title="高速以太网"></a>高速以太网</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201131158.png" alt="image-20220320113118977"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201131006.png" alt="image-20220320113135859"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>局域网</title>
-    <link href="http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%B1%80%E5%9F%9F%E7%BD%91/"/>
-    <id>http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%B1%80%E5%9F%9F%E7%BD%91/</id>
-    <published>2022-03-20T07:20:17.000Z</published>
-    <updated>2022-04-01T07:36:49.790Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="局域网"><a href="#局域网" class="headerlink" title="局域网"></a>局域网</h1><p><img src="https://s2.loli.net/2022/03/20/Rvf8oKCXF2GxShe.png" alt="image-20220320104653802"></p><ul><li>只覆盖物理层和数据链路层两个层次。</li></ul><h2 id="局域网拓扑结构"><a href="#局域网拓扑结构" class="headerlink" title="局域网拓扑结构"></a>局域网拓扑结构</h2><p><img src="https://s2.loli.net/2022/03/20/OIvc7nGXrdYhCMb.png" alt="image-20220320105340432"></p><h2 id="局域网的传输介质"><a href="#局域网的传输介质" class="headerlink" title="局域网的传输介质"></a>局域网的传输介质</h2><p><img src="https://s2.loli.net/2022/03/20/vFa4qnP5UmJOh7z.png" alt="image-20220320105743881"></p><h2 id="局域介质访问控制方法"><a href="#局域介质访问控制方法" class="headerlink" title="局域介质访问控制方法"></a>局域介质访问控制方法</h2><p><img src="https://s2.loli.net/2022/03/20/oq5esdRrICXOwah.png" alt="image-20220320110154064"></p><h2 id="局域网的分类"><a href="#局域网的分类" class="headerlink" title="局域网的分类"></a>局域网的分类</h2><p><img src="https://s2.loli.net/2022/03/20/YR3DU8jGTOwWmKr.png" alt="image-20220320110431300"></p><ul><li>WIFI是WLAN的一种具体应用。</li></ul><h2 id="IEEE802标准"><a href="#IEEE802标准" class="headerlink" title="IEEE802标准"></a>IEEE802标准</h2><p><img src="https://s2.loli.net/2022/03/20/ij7RlGNO3emuKqH.png" alt="image-20220320110924260"></p><p><img src="https://s2.loli.net/2022/03/20/eCpkd8mti1BJa5Q.png" alt="image-20220320110935908"></p><h2 id="MAC子层和LLC子层"><a href="#MAC子层和LLC子层" class="headerlink" title="MAC子层和LLC子层"></a>MAC子层和LLC子层</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203241041515.png" alt="image-20220320111119187"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://s2.loli.net/2022/03/20/5dJEkGFhrj1Qxi8.png" alt="image-20220320111138846"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSMA/CA协议</title>
-    <link href="http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMACA%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMACA%E5%8D%8F%E8%AE%AE/</id>
-    <published>2022-03-20T07:20:16.000Z</published>
-    <updated>2022-03-20T07:27:16.401Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="https://s2.loli.net/2022/03/20/2vtGK9YdjEqRxSO.png" alt="image-20220320102156347"></p><h1 id="CSMA-CA协议"><a href="#CSMA-CA协议" class="headerlink" title="CSMA/CA协议"></a>CSMA/CA协议</h1><p><img src="https://s2.loli.net/2022/03/20/HzFtwS7vKVpZrBk.png" alt="image-20220320102859908"></p><h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><p><img src="https://s2.loli.net/2022/03/20/sNhGPmSir9ZXCFO.png" alt="image-20220320103833947"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSMA/CD协议</title>
-    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMACD%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CSMACD%E5%8D%8F%E8%AE%AE/</id>
-    <published>2022-03-18T12:20:15.000Z</published>
-    <updated>2022-04-01T07:36:49.797Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203181537248.png" alt="image-20220318153709101"></p><h1 id="CSMA-CD协议"><a href="#CSMA-CD协议" class="headerlink" title="CSMA/CD协议"></a>CSMA/CD协议</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203181540488.png" alt="image-20220318154002350"></p><h2 id="传播时延对载波监听的影响"><a href="#传播时延对载波监听的影响" class="headerlink" title="传播时延对载波监听的影响"></a>传播时延对载波监听的影响</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203181546979.png" alt="image-20220318154630829"></p><h2 id="确定重传时机"><a href="#确定重传时机" class="headerlink" title="确定重传时机"></a>确定重传时机</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203181550696.png" alt="image-20220318155044543"></p><h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203181551190.png" alt="image-20220318155143054"></p><h2 id="最小帧长"><a href="#最小帧长" class="headerlink" title="最小帧长"></a>最小帧长</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203181553378.png" alt="image-20220318155333234"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203181554619.png" alt="">                                                                                                                                                        </p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>随机访问MAC协议</title>
-    <link href="http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%9A%8F%E6%9C%BA%E8%AE%BF%E9%97%AEMAC%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://example.com/2022/03/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%9A%8F%E6%9C%BA%E8%AE%BF%E9%97%AEMAC%E5%8D%8F%E8%AE%AE/</id>
-    <published>2022-03-18T12:20:14.000Z</published>
-    <updated>2022-04-01T07:36:49.790Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203181521446.png" alt="image-20220318152119299"></p><ul><li>只有随机访问MAC协议会发生冲突。</li></ul><h1 id="轮询协议"><a href="#轮询协议" class="headerlink" title="轮询协议"></a>轮询协议</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203181524848.png" alt="image-20220318152403715"></p><h1 id="令牌传递协议"><a href="#令牌传递协议" class="headerlink" title="令牌传递协议"></a>令牌传递协议</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203181527762.png" alt="image-20220318152751626"></p><h1 id="MAC协议总结"><a href="#MAC协议总结" class="headerlink" title="MAC协议总结"></a>MAC协议总结</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203181531090.png" alt="image-20220318153101957"></p>]]></content>
     
     
     <summary type="html">计算机网络</summary>
