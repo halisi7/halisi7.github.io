@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-02T06:28:33.163Z</updated>
+  <updated>2022-04-02T08:59:50.923Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>传输层概述</title>
+    <link href="http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BC%A0%E8%BE%93%E5%B1%82%E6%A6%82%E8%BF%B0/"/>
+    <id>http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BC%A0%E8%BE%93%E5%B1%82%E6%A6%82%E8%BF%B0/</id>
+    <published>2022-04-02T08:10:12.000Z</published>
+    <updated>2022-04-02T08:59:50.923Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="传输层概述"><a href="#传输层概述" class="headerlink" title="传输层概述"></a>传输层概述</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021651521.png" alt="image-20220402165159380"></p><ul><li>复用就是多个应用层进程 汇聚 成一个传输层进程（八车道变一车道）</li><li>分用传输层的多个进程相应的通向多个应用层进程（单车道变八车道）</li></ul><h2 id="传输层的两个协议"><a href="#传输层的两个协议" class="headerlink" title="传输层的两个协议"></a>传输层的两个协议</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021653448.png" alt="image-20220402165355306"></p><h2 id="传输层的寻址与端口"><a href="#传输层的寻址与端口" class="headerlink" title="传输层的寻址与端口"></a>传输层的寻址与端口</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021657079.png" alt="image-20220402165718940"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021658737.png" alt="image-20220402165850606"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>网络层设备</title>
@@ -402,27 +423,6 @@
     <updated>2022-04-01T07:36:49.790Z</updated>
     
     <content type="html"><![CDATA[<h1 id="广域网"><a href="#广域网" class="headerlink" title="广域网"></a>广域网</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201407091.png" alt="image-20220320140701943"></p><ul><li>覆盖物理层、数据链路层和网络层。</li></ul><h1 id="广域网中的两个数据链路层协议"><a href="#广域网中的两个数据链路层协议" class="headerlink" title="广域网中的两个数据链路层协议"></a>广域网中的两个数据链路层协议</h1><h2 id="PPP协议"><a href="#PPP协议" class="headerlink" title="PPP协议"></a>PPP协议</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201409985.png" alt="image-20220320140926855"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201438259.png" alt="image-20220320143837106"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201439817.png" alt="image-20220320143901685"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201440521.png" alt="image-20220320144016366"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201441710.png" alt="image-20220320144107578"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201442551.png" alt="image-20220320144241418"></p><h2 id="HDLC协议"><a href="#HDLC协议" class="headerlink" title="HDLC协议"></a>HDLC协议</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201444154.png" alt="image-20220320144456019"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201445252.png" alt="image-20220320144545111"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201447515.png" alt="image-20220320144724372"></p><h2 id="两种协议对比"><a href="#两种协议对比" class="headerlink" title="两种协议对比"></a>两种协议对比</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201450539.png" alt="image-20220320145007401"></p><h1 id="脑图时刻"><a href="#脑图时刻" class="headerlink" title="脑图时刻"></a>脑图时刻</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201450053.png" alt="image-20220320145034928"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>局域网-无线局域网</title>
-    <link href="http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E6%97%A0%E7%BA%BF%E5%B1%80%E5%9F%9F%E7%BD%91/"/>
-    <id>http://example.com/2022/03/20/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E6%97%A0%E7%BA%BF%E5%B1%80%E5%9F%9F%E7%BD%91/</id>
-    <published>2022-03-20T07:20:19.000Z</published>
-    <updated>2022-04-02T03:19:45.824Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="IΕΕE-802-11"><a href="#IΕΕE-802-11" class="headerlink" title="IΕΕE 802.11"></a>IΕΕE 802.11</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201135652.png" alt="image-20220320113539514"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201142658.png" alt="image-20220320114144503"></p><ul><li>AP无线接入点。</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201142621.png" alt="image-20220320114129787"></p><h2 id="无线局域网的分类"><a href="#无线局域网的分类" class="headerlink" title="无线局域网的分类"></a>无线局域网的分类</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201143732.png" alt="image-20220320114302566"></p><h2 id="有固定基础设施无线局域网"><a href="#有固定基础设施无线局域网" class="headerlink" title="有固定基础设施无线局域网"></a>有固定基础设施无线局域网</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201145742.png" alt="image-20220320114527592"></p><h2 id="无固定基础设施无线局域网"><a href="#无固定基础设施无线局域网" class="headerlink" title="无固定基础设施无线局域网"></a>无固定基础设施无线局域网</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203201400615.png" alt="image-20220320140016477"></p>]]></content>
     
     
     <summary type="html">计算机网络</summary>

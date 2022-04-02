@@ -20,33 +20,25 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":"ture","show_result":"ture","style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":"ture"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="为考试做的准备">
+  <meta name="description" content="计算机网络">
 <meta property="og:type" content="article">
-<meta property="og:title" content="c语言-8">
-<meta property="og:url" content="http://example.com/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%808/index.html">
+<meta property="og:title" content="传输层概述">
+<meta property="og:url" content="http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BC%A0%E8%BE%93%E5%B1%82%E6%A6%82%E8%BF%B0/index.html">
 <meta property="og:site_name" content="halisi7">
-<meta property="og:description" content="为考试做的准备">
+<meta property="og:description" content="计算机网络">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061245239.png">
-<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061247900.png">
-<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061247382.png">
-<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061249511.png">
-<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061250287.png">
-<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061252468.png">
-<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061301226.png">
-<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061302461.png">
-<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061305731.png">
-<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061309979.png">
-<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061313933.png">
-<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061316817.png">
-<meta property="article:published_time" content="2022-03-06T04:40:18.000Z">
-<meta property="article:modified_time" content="2022-04-01T07:36:49.802Z">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021651521.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021653448.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021657079.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021658737.png">
+<meta property="article:published_time" content="2022-04-02T08:10:12.000Z">
+<meta property="article:modified_time" content="2022-04-02T08:59:50.923Z">
 <meta property="article:author" content="halisi7">
-<meta property="article:tag" content="c语言">
+<meta property="article:tag" content="计算机网络">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061245239.png">
+<meta name="twitter:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021651521.png">
 
-<link rel="canonical" href="http://example.com/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%808/">
+<link rel="canonical" href="http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BC%A0%E8%BE%93%E5%B1%82%E6%A6%82%E8%BF%B0/">
 
 
 <script id="page-configurations">
@@ -59,7 +51,7 @@
   };
 </script>
 
-  <title>c语言-8 | halisi7</title>
+  <title>传输层概述 | halisi7</title>
   
 
 
@@ -211,7 +203,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%808/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BC%A0%E8%BE%93%E5%B1%82%E6%A6%82%E8%BF%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -224,7 +216,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          c语言-8
+          传输层概述
         </h1>
 
         <div class="post-meta">
@@ -233,28 +225,22 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2022-03-06 12:40:18" itemprop="dateCreated datePublished" datetime="2022-03-06T12:40:18+08:00">2022-03-06</time>
+              <time title="创建时间：2022-04-02 16:10:12 / 修改时间：16:59:50" itemprop="dateCreated datePublished" datetime="2022-04-02T16:10:12+08:00">2022-04-02</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-01 15:36:49" itemprop="dateModified" datetime="2022-04-01T15:36:49+08:00">2022-04-01</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">c语言学习</span></a>
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" itemprop="url" rel="index"><span itemprop="name">计算机网络</span></a>
                 </span>
             </span>
 
           
-            <span id="/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%808/" class="post-meta-item leancloud_visitors" data-flag-title="c语言-8" title="阅读次数">
+            <span id="/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BC%A0%E8%BE%93%E5%B1%82%E6%A6%82%E8%BF%B0/" class="post-meta-item leancloud_visitors" data-flag-title="传输层概述" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -269,13 +255,13 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%808/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%808/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BC%A0%E8%BE%93%E5%B1%82%E6%A6%82%E8%BF%B0/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%BC%A0%E8%BE%93%E5%B1%82%E6%A6%82%E8%BF%B0/" itemprop="commentCount"></span>
     </a>
   </span>
   
   
-            <div class="post-description">为考试做的准备</div>
+            <div class="post-description">计算机网络</div>
 
         </div>
       </header>
@@ -286,25 +272,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="指针与数组的关系"><a href="#指针与数组的关系" class="headerlink" title="指针与数组的关系"></a>指针与数组的关系</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061245239.png" alt="image-20220306124546110"></p>
-<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061247900.png" alt="image-20220306124712746"></p>
-<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061247382.png" alt="image-20220306124748237"></p>
-<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061249511.png" alt="image-20220306124941394"></p>
-<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061250287.png" alt="image-20220306125037147"></p>
-<h1 id="指针的运算"><a href="#指针的运算" class="headerlink" title="指针的运算"></a>指针的运算</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061252468.png" alt="image-20220306125246267"></p>
-<ol>
-<li>指针可以比较大小。</li>
-<li>指针可以p++，p—；</li>
-</ol>
-<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061301226.png" alt="image-20220306130144109"></p>
-<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061302461.png" alt="image-20220306130210345"></p>
-<h1 id="字符串指针"><a href="#字符串指针" class="headerlink" title="字符串指针"></a>字符串指针</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061305731.png" alt="image-20220306130525592"></p>
-<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061309979.png" alt="image-20220306130936813"></p>
-<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061313933.png" alt="image-20220306131344811"></p>
+        <h1 id="传输层概述"><a href="#传输层概述" class="headerlink" title="传输层概述"></a>传输层概述</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021651521.png" alt="image-20220402165159380"></p>
 <ul>
-<li>指针指向字符串时，字符串是一个常量，不能操作字符串。</li>
+<li>复用就是多个应用层进程 汇聚 成一个传输层进程（八车道变一车道）</li>
+<li>分用传输层的多个进程相应的通向多个应用层进程（单车道变八车道）</li>
 </ul>
-<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203061316817.png" alt="image-20220306131644686"></p>
+<h2 id="传输层的两个协议"><a href="#传输层的两个协议" class="headerlink" title="传输层的两个协议"></a>传输层的两个协议</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021653448.png" alt="image-20220402165355306"></p>
+<h2 id="传输层的寻址与端口"><a href="#传输层的寻址与端口" class="headerlink" title="传输层的寻址与端口"></a>传输层的寻址与端口</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021657079.png" alt="image-20220402165718940"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021658737.png" alt="image-20220402165850606"></p>
 
     </div>
 
@@ -335,7 +310,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/c%E8%AF%AD%E8%A8%80/" rel="tag"><i class="fa fa-tag"></i> c语言</a>
+              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag"><i class="fa fa-tag"></i> 计算机网络</a>
           </div>
 
         
@@ -344,13 +319,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%807/" rel="prev" title="c语言-7">
-      <i class="fa fa-chevron-left"></i> c语言-7
+    <a href="/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%BD%91%E7%BB%9C%E5%B1%82%E8%AE%BE%E5%A4%87/" rel="prev" title="网络层设备">
+      <i class="fa fa-chevron-left"></i> 网络层设备
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/03/06/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E8%AF%AD%E8%A8%809/" rel="next" title="c语言-9">
-      c语言-9 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -410,7 +382,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8C%87%E9%92%88%E4%B8%8E%E6%95%B0%E7%BB%84%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-number">1.</span> <span class="nav-text">指针与数组的关系</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8C%87%E9%92%88%E7%9A%84%E8%BF%90%E7%AE%97"><span class="nav-number">2.</span> <span class="nav-text">指针的运算</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8C%87%E9%92%88"><span class="nav-number">3.</span> <span class="nav-text">字符串指针</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BC%A0%E8%BE%93%E5%B1%82%E6%A6%82%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">传输层概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%A0%E8%BE%93%E5%B1%82%E7%9A%84%E4%B8%A4%E4%B8%AA%E5%8D%8F%E8%AE%AE"><span class="nav-number">1.1.</span> <span class="nav-text">传输层的两个协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%A0%E8%BE%93%E5%B1%82%E7%9A%84%E5%AF%BB%E5%9D%80%E4%B8%8E%E7%AB%AF%E5%8F%A3"><span class="nav-number">1.2.</span> <span class="nav-text">传输层的寻址与端口</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
