@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-02T11:58:01.248Z</updated>
+  <updated>2022-04-10T05:53:02.246Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java-JUC并发编程</title>
+    <link href="http://example.com/2022/04/10/java/java-JUC%E5%B9%B6%E5%8F%91/"/>
+    <id>http://example.com/2022/04/10/java/java-JUC%E5%B9%B6%E5%8F%91/</id>
+    <published>2022-04-10T05:30:02.000Z</published>
+    <updated>2022-04-10T05:53:02.246Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="JUC并发编程"><a href="#JUC并发编程" class="headerlink" title="JUC并发编程"></a>JUC并发编程</h1><p>笔记地址</p><p>链接：<a href="https://pan.baidu.com/s/1kZP28Wld9Cnd1GsyyA28yg">百度网盘</a><br>提取码：hls7</p>]]></content>
+    
+    
+    <summary type="html">Java-JUC并发编程</summary>
+    
+    
+    
+    <category term="Java" scheme="http://example.com/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="http://example.com/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>应用层-万维网和HTTP协议</title>
@@ -402,27 +423,6 @@
     <updated>2022-04-04T07:53:25.914Z</updated>
     
     <content type="html"><![CDATA[<h1 id="网络地址转换（NAT）"><a href="#网络地址转换（NAT）" class="headerlink" title="网络地址转换（NAT）"></a>网络地址转换（NAT）</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301947189.png" alt="image-20220330194739059"></p><ul><li>即私有IP地址在外网中是无效的。</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301952422.png" alt="image-20220330195209253"></p><h1 id="子网划分"><a href="#子网划分" class="headerlink" title="子网划分"></a>子网划分</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301954891.png" alt="image-20220330195400751"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301955281.png" alt="image-20220330195544145"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301956237.png" alt="image-20220330195657077"></p><h2 id="子网掩码"><a href="#子网掩码" class="headerlink" title="子网掩码"></a>子网掩码</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203302000044.png" alt="image-20220330200023909"></p><ul><li>子网掩码的前两位为全1，最后一位为全0</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203302003598.png" alt="image-20220330200332441"></p><ul><li>IP地址的前两位与子网掩码的全1相与数字不变，最后一位与全0相与得0，所以重点是看第三位。</li></ul><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204041548780.png" alt="image-20220330201306511"></p><ul><li>通过子网掩码看出主机号占几位。</li><li>广播地址的主机号为全1，全1即是十进制的255.</li></ul><h2 id="使用子网的分组转发"><a href="#使用子网的分组转发" class="headerlink" title="使用子网的分组转发"></a>使用子网的分组转发</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203302024431.png" alt="image-20220330202401285"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IPv4地址</title>
-    <link href="http://example.com/2022/03/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/IPv4%E5%9C%B0%E5%9D%80/"/>
-    <id>http://example.com/2022/03/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/IPv4%E5%9C%B0%E5%9D%80/</id>
-    <published>2022-03-30T12:21:12.000Z</published>
-    <updated>2022-04-01T07:36:49.792Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="IPv4地址"><a href="#IPv4地址" class="headerlink" title="IPv4地址"></a>IPv4地址</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301931742.png" alt="image-20220330193126574"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301932218.png" alt="image-20220330193212065"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301933214.png" alt="image-20220330193347064"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301935691.png" alt="image-20220330193558529"></p><ul><li>网桥无法分割广播域。</li></ul><h1 id="IP地址的分类"><a href="#IP地址的分类" class="headerlink" title="IP地址的分类"></a>IP地址的分类</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301937921.png" alt="image-20220330193747793"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301940632.png" alt="image-20220330194051480"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301942031.png" alt="image-20220330194227894"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202203301946353.png" alt="image-20220330194623219"></p>]]></content>
     
     
     <summary type="html">计算机网络</summary>
