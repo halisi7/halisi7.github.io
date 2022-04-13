@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-04-10T05:53:02.246Z</updated>
+  <updated>2022-04-13T05:34:06.385Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微型计算机基础</title>
+    <link href="http://example.com/2022/04/13/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
+    <id>http://example.com/2022/04/13/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/</id>
+    <published>2022-04-13T05:31:20.000Z</published>
+    <updated>2022-04-13T05:34:06.385Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="微型计算机基础"><a href="#微型计算机基础" class="headerlink" title="微型计算机基础"></a>微型计算机基础</h1><h2 id="考点"><a href="#考点" class="headerlink" title="考点"></a>考点</h2><p><img src="https://two.halisi7.space/202204121418832.png" alt="image-20220412141843677"></p><h2 id="四个小节"><a href="#四个小节" class="headerlink" title="四个小节"></a>四个小节</h2><p><img src="https://two.halisi7.space/202204121419755.png" alt="image-20220412141907634"></p><h2 id="微型计算机概述"><a href="#微型计算机概述" class="headerlink" title="微型计算机概述"></a>微型计算机概述</h2><p><img src="https://two.halisi7.space/202204121420683.png" alt="image-20220412142052545"></p><p><img src="https://two.halisi7.space/202204121422012.png" alt="image-20220412142252870"></p><p><img src="https://two.halisi7.space/202204121424262.png" alt="image-20220412142401145"></p><p><img src="https://two.halisi7.space/202204121425211.png" alt="image-20220412142519078"></p><p><img src="https://two.halisi7.space/202204121427149.png" alt="image-20220412142729012"></p><h2 id="微型计算机的组成"><a href="#微型计算机的组成" class="headerlink" title="微型计算机的组成"></a>微型计算机的组成</h2><p><img src="https://two.halisi7.space/202204121430147.png" alt="image-20220412143031982"></p><p><img src="https://two.halisi7.space/202204121435624.png" alt="image-20220412143546450"></p><p><img src="https://two.halisi7.space/202204121440858.png" alt="image-20220412144011686"></p><p><img src="https://two.halisi7.space/202204121440197.png" alt="image-20220412144052068"></p><p><img src="https://two.halisi7.space/202204121441719.png" alt="image-20220412144134583"></p><p><img src="https://two.halisi7.space/202204121442896.png" alt="image-20220412144223777"></p><p><img src="https://two.halisi7.space/202204121504606.png" alt="image-20220412150407454"></p><p><img src="https://two.halisi7.space/202204121504912.png" alt="image-20220412150426785"></p><p><img src="https://two.halisi7.space/202204121505424.png" alt="image-20220412150524299"></p><p><img src="https://two.halisi7.space/202204121505730.png" alt="image-20220412150549597"></p><p><img src="https://two.halisi7.space/202204121506631.png" alt="image-20220412150620506"></p><p><img src="https://two.halisi7.space/202204121508304.png" alt="image-20220412150811142"></p><p><img src="https://two.halisi7.space/202204121508840.png" alt="image-20220412150826725"></p><p><img src="https://two.halisi7.space/202204121509895.png" alt="image-20220412150940758"></p><h2 id="计算机中数据的表示"><a href="#计算机中数据的表示" class="headerlink" title="计算机中数据的表示"></a>计算机中数据的表示</h2><p><img src="https://two.halisi7.space/202204121514623.png" alt="image-20220412151403474"></p><p><img src="https://two.halisi7.space/202204121514639.png" alt="image-20220412151419508"></p><p><img src="https://two.halisi7.space/202204131240112.png" alt="image-20220413124007915"></p><h3 id="数制的转换"><a href="#数制的转换" class="headerlink" title="数制的转换"></a>数制的转换</h3><p>以10—&gt;2为例</p><p><img src="https://two.halisi7.space/202204131244257.png" alt="image-20220413124446080"></p><p><img src="https://two.halisi7.space/202204131245149.png" alt="image-20220413124507028"></p><p><img src="https://two.halisi7.space/202204131245516.png" alt="image-20220413124537396"></p><p>转为10进制</p><p><img src="https://two.halisi7.space/202204131250685.png" alt="image-20220413125033509"></p><p>2—&gt;8&amp;8—2</p><p><img src="https://two.halisi7.space/202204131252482.png" alt="image-20220413125249338"></p><p>同理</p><p><img src="https://two.halisi7.space/202204131254230.png" alt="image-20220413125434099"></p><p><img src="https://two.halisi7.space/202204131256979.png" alt="image-20220413125620843"></p><p>例题<img src="https://two.halisi7.space/202204131257314.png" alt="image-20220413125705189"></p><p><img src="https://two.halisi7.space/202204131257940.png" alt="image-20220413125730825"></p><h3 id="机器数的表示"><a href="#机器数的表示" class="headerlink" title="机器数的表示"></a>机器数的表示</h3><p><img src="https://two.halisi7.space/202204131259475.png" alt="image-20220413125907345"></p><p><img src="https://two.halisi7.space/202204131302703.png" alt="image-20220413130224534"></p><p>真值：只要带+/-号的就是真值，不分进制。</p><p>​    <img src="https://two.halisi7.space/202204131303711.png" alt="image-20220413130353585"></p><p>1.原码</p><p><img src="https://two.halisi7.space/202204131306673.png" alt="image-20220413130617522"></p><p>2.反码</p><ul><li>正数的原码、反码、补码是相同的。</li><li>复数的不同，规则：符号位不变，其它位取反。</li></ul><p><img src="https://two.halisi7.space/202204131309386.png" alt="image-20220413130917232"></p><p>3.补码</p><ul><li>书写特点：字母开头的数一般在开头加一个0（在程序中经常出现）。</li></ul><p><img src="https://two.halisi7.space/202204131311496.png" alt="image-20220413131149342"></p><p>4.移码（了解）</p><ul><li>主要用于浮点数的运算。</li></ul><p><img src="https://two.halisi7.space/202204131313668.png" alt="image-20220413131309548"></p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p><img src="https://two.halisi7.space/202204131315478.png" alt="image-20220413131538356"></p><p><img src="https://two.halisi7.space/202204131316414.png" alt="image-20220413131606286"></p><p>例题</p><p><img src="https://two.halisi7.space/202204131315274.png" alt="image-20220413131555157"></p><ul><li>在小数中：小数点的左侧的一位是符号位。</li><li>整数中是最高位。</li></ul><h3 id="运算（几个公式）"><a href="#运算（几个公式）" class="headerlink" title="运算（几个公式）"></a>运算（几个公式）</h3><p><img src="https://two.halisi7.space/202204131319340.png" alt="image-20220413131957191"></p><p>运算结果溢出的判定</p><p><img src="https://two.halisi7.space/202204131322513.png" alt="image-20220413132253371"></p><h3 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h3><p>ASCII</p><p><img src="https://two.halisi7.space/202204131324979.png" alt="image-20220413132407847"></p><p>BCD</p><p><img src="https://two.halisi7.space/202204131325855.png" alt="image-20220413132550710"></p><p>例题</p><p><img src="https://two.halisi7.space/202204131326935.png" alt="image-20220413132602824"></p><p><img src="https://two.halisi7.space/202204131326035.png" alt="image-20220413132613924"></p><p><img src="https://two.halisi7.space/202204131326567.png" alt="image-20220413132621454"></p><p><img src="https://two.halisi7.space/202204131326466.png" alt="image-20220413132637354"></p><h2 id="微型计算机的工作过程"><a href="#微型计算机的工作过程" class="headerlink" title="微型计算机的工作过程"></a>微型计算机的工作过程</h2><p><img src="https://two.halisi7.space/202204131327291.png" alt="image-20220413132743168"></p><p><img src="https://two.halisi7.space/202204131328089.png" alt="image-20220413132808984"></p><p><img src="https://two.halisi7.space/202204131328411.png" alt="image-20220413132825296"></p><p><img src="https://two.halisi7.space/202204131328562.png" alt="image-20220413132835436"></p><p><img src="https://two.halisi7.space/202204131328814.png" alt="image-20220413132842688"></p><h3 id="三态门电路"><a href="#三态门电路" class="headerlink" title="三态门电路"></a>三态门电路</h3><p><img src="https://two.halisi7.space/202204131329068.png" alt="image-20220413132934949"></p><h3 id="译码器"><a href="#译码器" class="headerlink" title="译码器"></a>译码器</h3><p><img src="https://two.halisi7.space/202204131330519.png" alt="image-20220413133027397"></p><ul><li>包括：2：4译码器&amp;3：8译码器。</li></ul><h3 id="工作过程"><a href="#工作过程" class="headerlink" title="工作过程"></a>工作过程</h3><p><img src="https://two.halisi7.space/202204131331640.png" alt="image-20220413133146523"></p><h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p><img src="https://two.halisi7.space/202204131332908.png" alt="image-20220413133208766"></p>]]></content>
+    
+    
+    <summary type="html">为考试做的准备</summary>
+    
+    
+    
+    <category term="微机原理" scheme="http://example.com/categories/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="微机原理" scheme="http://example.com/tags/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微机原理概论4</title>
+    <link href="http://example.com/2022/04/13/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA4/"/>
+    <id>http://example.com/2022/04/13/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E6%A6%82%E8%AE%BA4/</id>
+    <published>2022-04-13T05:30:20.000Z</published>
+    <updated>2022-04-13T05:33:43.783Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="汇编程序设计（39分）"><a href="#汇编程序设计（39分）" class="headerlink" title="汇编程序设计（39分）"></a>汇编程序设计（39分）</h1><h2 id="考点"><a href="#考点" class="headerlink" title="考点"></a>考点</h2><p><img src="https://two.halisi7.space/202204121358448.png" alt="image-20220412135800294"></p><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p><img src="https://two.halisi7.space/202204121359922.png" alt="image-20220412135924761"></p><p><img src="https://two.halisi7.space/202204121401750.png" alt="image-20220412140122600"></p><p><img src="https://two.halisi7.space/202204121402332.png" alt="image-20220412140210181"></p><p><img src="https://two.halisi7.space/202204121403530.png" alt="image-20220412140307386"></p><p><img src="https://two.halisi7.space/202204121404093.png" alt="image-20220412140455867"></p><p><img src="https://two.halisi7.space/202204121405641.png" alt="image-20220412140538446"></p><p><img src="https://two.halisi7.space/202204121406872.png" alt="image-20220412140600645"></p><p><img src="https://two.halisi7.space/202204121407155.png" alt="image-20220412140704901"></p><p><img src="https://two.halisi7.space/202204121408439.png" alt="image-20220412140823268"></p><p><img src="https://two.halisi7.space/202204121409796.png" alt="image-20220412140941634"></p><p><img src="https://two.halisi7.space/202204121410479.png" alt="image-20220412141019191"></p><p><img src="https://two.halisi7.space/202204121411138.png" alt="image-20220412141115975"></p><p><img src="https://two.halisi7.space/202204121411186.png" alt="image-20220412141143042"></p><p><img src="https://two.halisi7.space/202204121411071.png" alt="image-20220412141150925"></p><p><img src="https://two.halisi7.space/202204121412596.png" alt="image-20220412141235348"></p><ul><li>第八个 SF=0.</li></ul><p><img src="https://two.halisi7.space/202204121414437.png" alt="image-20220412141405304"></p><p><img src="https://two.halisi7.space/202204121414113.png" alt="image-20220412141418961"></p>]]></content>
+    
+    
+    <summary type="html">为考试做的准备</summary>
+    
+    
+    
+    <category term="微机原理" scheme="http://example.com/categories/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="微机原理" scheme="http://example.com/tags/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>Java-JUC并发编程</title>
@@ -381,48 +423,6 @@
     <updated>2022-04-12T14:46:41.789Z</updated>
     
     <content type="html"><![CDATA[<h1 id="ARP协议"><a href="#ARP协议" class="headerlink" title="ARP协议"></a>ARP协议</h1><p><img src="https://two.halisi7.space/202203311131765.png" alt="image-20220331113148625"></p><ul><li>ARP高速缓存内存放的是本局域网内的mac地址。</li></ul><p><img src="https://two.halisi7.space/202203311138624.png" alt="image-20220331113844482"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>ARP协议帮助找到MAC地址。</p><p>处于链路层和网络层中间的协议，结合了IP地址和MAC地址。</p><p><img src="https://two.halisi7.space/202203311142994.png" alt="image-20220331114218824"></p><ul><li>ARP自动进行用户不知道。</li></ul><h2 id="习题"><a href="#习题" class="headerlink" title="习题"></a>习题</h2><p><img src="https://two.halisi7.space/202203311144642.png" alt="image-20220331114426503"></p>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IPv4-无分类编址CIDR与IPv4地址习题</title>
-    <link href="http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CIDR%E4%B8%8E%E4%B9%A0%E9%A2%98/"/>
-    <id>http://example.com/2022/03/31/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/CIDR%E4%B8%8E%E4%B9%A0%E9%A2%98/</id>
-    <published>2022-03-31T09:22:12.000Z</published>
-    <updated>2022-04-12T14:46:41.789Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="无分类编址CIDR"><a href="#无分类编址CIDR" class="headerlink" title="无分类编址CIDR"></a>无分类编址CIDR</h1><p><img src="https://two.halisi7.space/202203311106497.png" alt="image-20220331110630333"></p><ul><li>减缓了IP地址即将消耗殆尽的情况。</li><li>全0是本网络。</li><li>全1是广播地址。</li><li>子网掩码：前缀全1，主机号全0，前缀有多少位就有多少个1.</li></ul><p><img src="https://two.halisi7.space/202203311109298.png" alt="image-20220331110947168"></p><ul><li>主机号位数组成IP地址，即主机号有n位就有2的n次方个IP地址。</li></ul><h2 id="构成超网"><a href="#构成超网" class="headerlink" title="构成超网"></a>构成超网</h2><p><img src="https://two.halisi7.space/202203311113101.png" alt="image-20220331111324963"></p><p><img src="https://two.halisi7.space/202203311118932.png" alt="image-20220331111805774"></p><ul><li>R4为默认路由，即如果找不到转发路由则交给默认路由。</li></ul><p><img src="https://two.halisi7.space/202203311122146.png" alt="image-20220331112244016"></p><ul><li>在CIDR中子网号可以全0或全1，也就不用减去2了。</li><li>主机号要减去全0（代表本网络）与全1（代表广播地址）。</li><li>前面的24位是网络号。</li><li>定长子网划分：即剩余的位数中一部分是子网号，一部分是主机号。</li></ul>]]></content>
-    
-    
-    <summary type="html">计算机网络</summary>
-    
-    
-    
-    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-    
-    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IPv4-网络地址转换与子网划分</title>
-    <link href="http://example.com/2022/03/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%E4%B8%8E%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86/"/>
-    <id>http://example.com/2022/03/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%E4%B8%8E%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86/</id>
-    <published>2022-03-30T12:22:12.000Z</published>
-    <updated>2022-04-12T14:46:41.780Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="网络地址转换（NAT）"><a href="#网络地址转换（NAT）" class="headerlink" title="网络地址转换（NAT）"></a>网络地址转换（NAT）</h1><p><img src="https://two.halisi7.space/202203301947189.png" alt="image-20220330194739059"></p><ul><li>即私有IP地址在外网中是无效的。</li></ul><p><img src="https://two.halisi7.space/202203301952422.png" alt="image-20220330195209253"></p><h1 id="子网划分"><a href="#子网划分" class="headerlink" title="子网划分"></a>子网划分</h1><p><img src="https://two.halisi7.space/202203301954891.png" alt="image-20220330195400751"></p><p><img src="https://two.halisi7.space/202203301955281.png" alt="image-20220330195544145"></p><p><img src="https://two.halisi7.space/202203301956237.png" alt="image-20220330195657077"></p><h2 id="子网掩码"><a href="#子网掩码" class="headerlink" title="子网掩码"></a>子网掩码</h2><p><img src="https://two.halisi7.space/202203302000044.png" alt="image-20220330200023909"></p><ul><li>子网掩码的前两位为全1，最后一位为全0</li></ul><p><img src="https://two.halisi7.space/202203302003598.png" alt="image-20220330200332441"></p><ul><li>IP地址的前两位与子网掩码的全1相与数字不变，最后一位与全0相与得0，所以重点是看第三位。</li></ul><p><img src="https://two.halisi7.space/202204041548780.png" alt="image-20220330201306511"></p><ul><li>通过子网掩码看出主机号占几位。</li><li>广播地址的主机号为全1，全1即是十进制的255.</li></ul><h2 id="使用子网的分组转发"><a href="#使用子网的分组转发" class="headerlink" title="使用子网的分组转发"></a>使用子网的分组转发</h2><p><img src="https://two.halisi7.space/202203302024431.png" alt="image-20220330202401285"></p>]]></content>
     
     
     <summary type="html">计算机网络</summary>
