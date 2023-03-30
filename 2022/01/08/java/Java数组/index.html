@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":"ture","show_result":"ture","style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":"ture"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Java数组的总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java数组怎么用">
+<meta property="og:url" content="http://example.com/2022/01/08/java/Java%E6%95%B0%E7%BB%84/index.html">
+<meta property="og:site_name" content="halisi7">
+<meta property="og:description" content="Java数组的总结">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-01-08T08:54:00.000Z">
+<meta property="article:modified_time" content="2022-12-03T03:24:22.811Z">
+<meta property="article:author" content="halisi7">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2022/01/08/java/Java%E6%95%B0%E7%BB%84/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Java数组怎么用 | halisi7</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="halisi7" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">halisi7</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个专注技术的组织</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-留言板">
+
+    <a href="/guestbook/" rel="section"><i class="book fa-fw"></i>留言板</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/halisi7/halisi7.github.io" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/08/java/Java%E6%95%B0%E7%BB%84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="halisi7">
+      <meta itemprop="description" content="涉猎的方面为 c语言、Java、mysql、linux、docker，领域涵盖算法、服务器和数据库等，微信：17638342348 QQ：2548825576">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="halisi7">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Java数组怎么用
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-01-08 16:54:00" itemprop="dateCreated datePublished" datetime="2022-01-08T16:54:00+08:00">2022-01-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-03 11:24:22" itemprop="dateModified" datetime="2022-12-03T11:24:22+08:00">2022-12-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/01/08/java/Java%E6%95%B0%E7%BB%84/" class="post-meta-item leancloud_visitors" data-flag-title="Java数组怎么用" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/01/08/java/Java%E6%95%B0%E7%BB%84/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/08/java/Java%E6%95%B0%E7%BB%84/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+            <div class="post-description">Java数组的总结</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="1-一维数组。"><a href="#1-一维数组。" class="headerlink" title="1.一维数组。"></a>1.一维数组。</h1><h2 id="1-1-数组的概述"><a href="#1-1-数组的概述" class="headerlink" title="1.1 数组的概述"></a>1.1 数组的概述</h2><p>数组的理解：数组(Array)，是多个相同类型数据按一定顺序排列的集合，并使用一个名字命名，并通过编号的方式对这些数据进行统一管理。</p>
+<h2 id="1-2-数组相关的概念："><a href="#1-2-数组相关的概念：" class="headerlink" title="1.2 数组相关的概念："></a>1.2 数组相关的概念：</h2><ul>
+<li><p>数组名</p>
+</li>
+<li><p>元素</p>
+</li>
+<li><p>角标、下标、索引</p>
+</li>
+<li><p>数组的长度：元素的个数</p>
+</li>
+</ul>
+<h2 id="1-3-数组的特点："><a href="#1-3-数组的特点：" class="headerlink" title="1.3 数组的特点："></a>1.3 数组的特点：</h2><p>  1）数组是有序排列的<br>  2）数组属于<strong>引用数据类型</strong>的变量。数组的<strong>元素</strong>，既可以是<strong>基本数据类型</strong>，        也可以是<strong>引用数据类型</strong><br>  3）创建数组对象会在内存中开辟一整块连续的空间<br>  4）数组的长度<strong>一旦确定，就不能修改</strong>。</p>
+<h2 id="1-4-数组的分类："><a href="#1-4-数组的分类：" class="headerlink" title="1.4 数组的分类："></a>1.4 数组的分类：</h2><p>   ① 按照维数：一维数组、二维数组、。。。<br>   ② 按照数组元素的类型：基本数据类型元素的数组、引用数据类型元素的数组</p>
+<h2 id="1-5-一维数组的使用"><a href="#1-5-一维数组的使用" class="headerlink" title="1.5 一维数组的使用"></a>1.5 一维数组的使用</h2><p>   ① 一维数组的声明和初始化<br>   ② 如何调用数组的指定位置的元素<br>   ③ 如何获取数组的长度<br>   ④ 如何遍历数组<br>   ⑤ 数组元素的默认初始化值 </p>
+<h2 id="1-6-Demo"><a href="#1-6-Demo" class="headerlink" title="1.6 Demo."></a>1.6 Demo.</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArrayTest</span> </span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//1. 一维数组的声明和初始化</span></span><br><span class="line">		<span class="keyword">int</span> num;<span class="comment">//声明</span></span><br><span class="line">		num = <span class="number">10</span>;<span class="comment">//初始化</span></span><br><span class="line">		<span class="keyword">int</span> id = <span class="number">1001</span>;<span class="comment">//声明 + 初始化</span></span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span>[] ids;<span class="comment">//声明</span></span><br><span class="line">		<span class="comment">//1.1 静态初始化:数组的初始化和数组元素的赋值操作同时进行</span></span><br><span class="line">		ids = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1001</span>,<span class="number">1002</span>,<span class="number">1003</span>,<span class="number">1004</span>&#125;;</span><br><span class="line">		<span class="comment">//1.2动态初始化:数组的初始化和数组元素的赋值操作分开进行</span></span><br><span class="line">		String[] names = <span class="keyword">new</span> String[<span class="number">5</span>];</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//错误的写法：</span></span><br><span class="line"><span class="comment">//		int[] arr1 = new int[];</span></span><br><span class="line"><span class="comment">//		int[5] arr2 = new int[5];</span></span><br><span class="line"><span class="comment">//		int[] arr3 = new int[3]&#123;1,2,3&#125;;</span></span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//也是正确的写法：</span></span><br><span class="line">		<span class="keyword">int</span>[] arr4 = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;<span class="comment">//类型推断</span></span><br><span class="line">		<span class="comment">//总结：数组一旦初始化完成，其长度就确定了。</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">//2.如何调用数组的指定位置的元素:通过角标的方式调用。</span></span><br><span class="line">		<span class="comment">//数组的角标（或索引）从0开始的，到数组的长度-1结束。</span></span><br><span class="line">		names[<span class="number">0</span>] = <span class="string">&quot;王铭&quot;</span>;</span><br><span class="line">		names[<span class="number">1</span>] = <span class="string">&quot;王赫&quot;</span>;</span><br><span class="line">		names[<span class="number">2</span>] = <span class="string">&quot;张学良&quot;</span>;</span><br><span class="line">		names[<span class="number">3</span>] = <span class="string">&quot;孙居龙&quot;</span>;</span><br><span class="line">		names[<span class="number">4</span>] = <span class="string">&quot;王宏志&quot;</span>;<span class="comment">//charAt(0)</span></span><br><span class="line"><span class="comment">//		names[5] = &quot;周扬&quot;;</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">//3.如何获取数组的长度。</span></span><br><span class="line">		<span class="comment">//属性:length</span></span><br><span class="line">		System.out.println(names.length);<span class="comment">//5</span></span><br><span class="line">		System.out.println(ids.length);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//4.如何遍历数组</span></span><br><span class="line">		<span class="comment">/*System.out.println(names[0]);</span></span><br><span class="line"><span class="comment">		System.out.println(names[1]);</span></span><br><span class="line"><span class="comment">		System.out.println(names[2]);</span></span><br><span class="line"><span class="comment">		System.out.println(names[3]);</span></span><br><span class="line"><span class="comment">		System.out.println(names[4]);*/</span></span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; names.length;i++)&#123;</span><br><span class="line">			System.out.println(names[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="1-6-1-Eclipse快捷键积累："><a href="#1-6-1-Eclipse快捷键积累：" class="headerlink" title="1.6.1 Eclipse快捷键积累："></a>1.6.1 Eclipse快捷键积累：</h3><ol>
+<li><p>ctrl + /     快速注释选中的代码（再按一次取消注释）。</p>
+</li>
+<li><p>ctrl + shift + /       也能快速注释选中的代码。</p>
+<p>ctrl + shift + \        取消用2快捷键注释选中的代码。</p>
+</li>
+<li><p>shift + enter         在光标所在位置的下一行插入空行</p>
+</li>
+<li><p>ctrl + shift + enter    在光标所在位置的上一行插入空行</p>
+</li>
+<li><p>输入syso 然后 alt + /   快速输出System.out.println();</p>
+</li>
+</ol>
+<h2 id="1-7-初始化值。"><a href="#1-7-初始化值。" class="headerlink" title="1.7 初始化值。"></a>1.7 初始化值。</h2><p> 数组元素的默认初始化值</p>
+<pre><code>      &gt;数组元素是整型：0
+      &gt; 数组元素是浮点型：0.0
+      &gt; 数组元素是char型：0或 &#39; \u0000 &#39;，而非&#39;0&#39;
+      &gt; 数组元素是boolean型：false
+</code></pre><p>​          >数组元素是引用数据类型：null</p>
+<h2 id="1-8-总结。"><a href="#1-8-总结。" class="headerlink" title="1.8 总结。"></a>1.8 总结。</h2><ul>
+<li>数组<strong>声明</strong>后的[]里<strong>永远为空</strong>。</li>
+<li>数组<strong>初始化</strong>后的第一个[]里<strong>必须有数</strong>，除了静态初始化。</li>
+<li>数组的长度是数组的<strong>属性</strong>，length是一种属性,用.调用。</li>
+</ul>
+<h1 id="2-二维数组。"><a href="#2-二维数组。" class="headerlink" title="2.二维数组。"></a>2.二维数组。</h1><h2 id="2-1-对二维数组的理解："><a href="#2-1-对二维数组的理解：" class="headerlink" title="2.1 对二维数组的理解："></a>2.1 对二维数组的理解：</h2><p>  对于二维数组的理解，我们可以看成是一维数组array1又作为另一个一维数组array2的元素而存在。<br>  其实，从数组底层的运行机制来看，其实没有多维数组。</p>
+<h2 id="2-2-二维数组的使用"><a href="#2-2-二维数组的使用" class="headerlink" title="2.2 二维数组的使用:"></a>2.2 二维数组的使用:</h2><p>   ① 二维数组的声明和初始化<br>   ② 如何调用数组的指定位置的元素<br>   ③ 如何获取数组的长度<br>   ④ 如何遍历数组<br>   ⑤ 数组元素的默认初始化值 </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArrayTest2</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">//1.二维数组的声明和初始化</span></span><br><span class="line">		<span class="keyword">int</span>[] arr = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;<span class="comment">//一维数组</span></span><br><span class="line">		<span class="comment">//静态初始化</span></span><br><span class="line">		<span class="keyword">int</span>[][] arr1 = <span class="keyword">new</span> <span class="keyword">int</span>[][]&#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">4</span>,<span class="number">5</span>&#125;,&#123;<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>&#125;&#125;;</span><br><span class="line">		<span class="comment">//动态初始化1</span></span><br><span class="line">		String[][] arr2 = <span class="keyword">new</span> String[<span class="number">3</span>][<span class="number">2</span>];</span><br><span class="line">		<span class="comment">//动态初始化2</span></span><br><span class="line">		String[][] arr3 = <span class="keyword">new</span> String[<span class="number">3</span>][];</span><br><span class="line">		<span class="comment">//错误的情况 </span></span><br><span class="line"><span class="comment">//		String[][] arr4 = new String[][4];</span></span><br><span class="line"><span class="comment">//		String[4][3] arr5 = new String[][];</span></span><br><span class="line"><span class="comment">//		int[][] arr6 = new int[4][3]&#123;&#123;1,2,3&#125;,&#123;4,5&#125;,&#123;6,7,8&#125;&#125;;</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">//也是正确的写法：</span></span><br><span class="line">		<span class="keyword">int</span>[] arr4[] = <span class="keyword">new</span> <span class="keyword">int</span>[][]&#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">4</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">10</span>&#125;,&#123;<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>&#125;&#125;;</span><br><span class="line">		<span class="keyword">int</span>[] arr5[] = &#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">4</span>,<span class="number">5</span>&#125;,&#123;<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>&#125;&#125;;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//2.如何调用数组的指定位置的元素</span></span><br><span class="line">		System.out.println(arr1[<span class="number">0</span>][<span class="number">1</span>]);<span class="comment">//2</span></span><br><span class="line">		System.out.println(arr2[<span class="number">1</span>][<span class="number">1</span>]);<span class="comment">//null</span></span><br><span class="line">		</span><br><span class="line">		arr3[<span class="number">1</span>] = <span class="keyword">new</span> String[<span class="number">4</span>];</span><br><span class="line">		System.out.println(arr3[<span class="number">1</span>][<span class="number">0</span>]);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//3.获取数组的长度</span></span><br><span class="line">		System.out.println(arr4.length);<span class="comment">//3</span></span><br><span class="line">		System.out.println(arr4[<span class="number">0</span>].length);<span class="comment">//3</span></span><br><span class="line">		System.out.println(arr4[<span class="number">1</span>].length);<span class="comment">//4</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">//4.如何遍历二维数组</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; arr4.length;i++)&#123;</span><br><span class="line">			</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>;j &lt; arr4[i].length;j++)&#123;</span><br><span class="line">				System.out.print(arr4[i][j] + <span class="string">&quot;  &quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			System.out.println();</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="2-4-二维数组的初始化值。"><a href="#2-4-二维数组的初始化值。" class="headerlink" title="2.4 二维数组的初始化值。"></a>2.4 二维数组的初始化值。</h2><h3 id="2-4-1-规定：二维数组分为外层数组的元素，内层数组的元素"><a href="#2-4-1-规定：二维数组分为外层数组的元素，内层数组的元素" class="headerlink" title="2.4.1 规定：二维数组分为外层数组的元素，内层数组的元素"></a>2.4.1 规定：二维数组分为外层数组的元素，内层数组的元素</h3><pre><code>      int[][] arr = new int[4][3];
+      外层元素：arr[0],arr[1]等
+      内层元素：arr[0][0],arr[1][2]等
+</code></pre><h3 id="2-4-2-数组元素的默认初始化值"><a href="#2-4-2-数组元素的默认初始化值" class="headerlink" title="2.4.2 数组元素的默认初始化值"></a>2.4.2 数组元素的默认初始化值</h3><h4 id="a-针对于初始化方式一：比如：int-arr-new-int-4-3"><a href="#a-针对于初始化方式一：比如：int-arr-new-int-4-3" class="headerlink" title="a. 针对于初始化方式一：比如：int[][] arr = new int[4][3];"></a>a. 针对于初始化方式一：比如：int[][] arr = new int[4][3];</h4><p>​       外层元素的初始化值为：地址值<br>​       内层元素的初始化值为：与一维数组初始化情况相同<br>​       </p>
+<h4 id="b-针对于初始化方式二：比如：int-arr-new-int-4"><a href="#b-针对于初始化方式二：比如：int-arr-new-int-4" class="headerlink" title="b. 针对于初始化方式二：比如：int[][] arr = new int[4][];"></a>b. 针对于初始化方式二：比如：int[][] arr = new int[4][];</h4><p>​       外层元素的初始化值为：null<br>​       内层元素的初始化值为：不能调用，否则报错。</p>
+<h3 id="代码实例："><a href="#代码实例：" class="headerlink" title="代码实例："></a>代码实例：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArrayTest3</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span>[][] arr = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">4</span>][<span class="number">3</span>];</span><br><span class="line">		System.out.println(arr[<span class="number">0</span>]);<span class="comment">//[I@15db9742 </span></span><br><span class="line">		System.out.println(arr[<span class="number">0</span>][<span class="number">0</span>]);<span class="comment">//0</span></span><br><span class="line">		</span><br><span class="line"><span class="comment">//		System.out.println(arr);//[[I@6d06d69c</span></span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;*****************&quot;</span>);</span><br><span class="line">		<span class="keyword">float</span>[][] arr1 = <span class="keyword">new</span> <span class="keyword">float</span>[<span class="number">4</span>][<span class="number">3</span>];</span><br><span class="line">		System.out.println(arr1[<span class="number">0</span>]);<span class="comment">//地址值</span></span><br><span class="line">		System.out.println(arr1[<span class="number">0</span>][<span class="number">0</span>]);<span class="comment">//0.0</span></span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;*****************&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		String[][] arr2 = <span class="keyword">new</span> String[<span class="number">4</span>][<span class="number">2</span>];</span><br><span class="line">		System.out.println(arr2[<span class="number">1</span>]);<span class="comment">//地址值</span></span><br><span class="line">		System.out.println(arr2[<span class="number">1</span>][<span class="number">1</span>]);<span class="comment">//null</span></span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;*****************&quot;</span>);</span><br><span class="line">		<span class="keyword">double</span>[][] arr3 = <span class="keyword">new</span> <span class="keyword">double</span>[<span class="number">4</span>][];</span><br><span class="line">		System.out.println(arr3[<span class="number">1</span>]);<span class="comment">//null</span></span><br><span class="line"><span class="comment">//		System.out.println(arr3[1][0]);//报错</span></span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="2-5-二维数组的遍历"><a href="#2-5-二维数组的遍历" class="headerlink" title="2.5 二维数组的遍历"></a>2.5 二维数组的遍历</h2><h3 id="2-5-1-如何遍历如下的二维数组"><a href="#2-5-1-如何遍历如下的二维数组" class="headerlink" title="2.5.1 如何遍历如下的二维数组"></a>2.5.1 如何遍历如下的二维数组</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arr = <span class="keyword">new</span> <span class="keyword">int</span>[][]&#123;&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;,&#123;<span class="number">4</span>,<span class="number">5</span>&#125;,&#123;<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; arr.length;i++)&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>;j &lt; arr[i].length;j++)&#123;</span><br><span class="line">		System.out.print(arr[i][j] + <span class="string">&quot;\t&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	System.out.println();</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="注意点："><a href="#注意点：" class="headerlink" title="注意点："></a>注意点：</h3><ul>
+<li>内层循环条件为  arr[i].length     ！！！</li>
+</ul>
+<h2 id="2-6-总结。"><a href="#2-6-总结。" class="headerlink" title="2.6 总结。"></a>2.6 总结。</h2><ul>
+<li>二维数组是一维数组的集合！！</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>打赏一下作者~  ฅ( ̳• ◡ • ̳)ฅ</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay2.jpg" alt="halisi7 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="halisi7 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/01/08/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/%E6%8C%87%E9%92%88%E9%93%BE%E8%A1%A8%E7%9A%84%E5%AE%9E%E7%8E%B0/" rel="prev" title="指针链表">
+      <i class="fa fa-chevron-left"></i> 指针链表
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/01/09/java/Java%E6%95%B0%E7%BB%84%E4%B9%8B%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/" rel="next" title="Java打印杨辉三角">
+      Java打印杨辉三角 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84%E3%80%82"><span class="nav-number">1.</span> <span class="nav-text">1.一维数组。</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-%E6%95%B0%E7%BB%84%E7%9A%84%E6%A6%82%E8%BF%B0"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 数组的概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-%E6%95%B0%E7%BB%84%E7%9B%B8%E5%85%B3%E7%9A%84%E6%A6%82%E5%BF%B5%EF%BC%9A"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 数组相关的概念：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-%E6%95%B0%E7%BB%84%E7%9A%84%E7%89%B9%E7%82%B9%EF%BC%9A"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 数组的特点：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-%E6%95%B0%E7%BB%84%E7%9A%84%E5%88%86%E7%B1%BB%EF%BC%9A"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 数组的分类：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-5-%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.5.</span> <span class="nav-text">1.5 一维数组的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-6-Demo"><span class="nav-number">1.6.</span> <span class="nav-text">1.6 Demo.</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-6-1-Eclipse%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%A7%AF%E7%B4%AF%EF%BC%9A"><span class="nav-number">1.6.1.</span> <span class="nav-text">1.6.1 Eclipse快捷键积累：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-7-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%80%BC%E3%80%82"><span class="nav-number">1.7.</span> <span class="nav-text">1.7 初始化值。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-8-%E6%80%BB%E7%BB%93%E3%80%82"><span class="nav-number">1.8.</span> <span class="nav-text">1.8 总结。</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E3%80%82"><span class="nav-number">2.</span> <span class="nav-text">2.二维数组。</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E5%AF%B9%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 对二维数组的理解：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 二维数组的使用:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E5%80%BC%E3%80%82"><span class="nav-number">2.3.</span> <span class="nav-text">2.4 二维数组的初始化值。</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-1-%E8%A7%84%E5%AE%9A%EF%BC%9A%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E5%88%86%E4%B8%BA%E5%A4%96%E5%B1%82%E6%95%B0%E7%BB%84%E7%9A%84%E5%85%83%E7%B4%A0%EF%BC%8C%E5%86%85%E5%B1%82%E6%95%B0%E7%BB%84%E7%9A%84%E5%85%83%E7%B4%A0"><span class="nav-number">2.3.1.</span> <span class="nav-text">2.4.1 规定：二维数组分为外层数组的元素，内层数组的元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-2-%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9A%84%E9%BB%98%E8%AE%A4%E5%88%9D%E5%A7%8B%E5%8C%96%E5%80%BC"><span class="nav-number">2.3.2.</span> <span class="nav-text">2.4.2 数组元素的默认初始化值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a-%E9%92%88%E5%AF%B9%E4%BA%8E%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E5%BC%8F%E4%B8%80%EF%BC%9A%E6%AF%94%E5%A6%82%EF%BC%9Aint-arr-new-int-4-3"><span class="nav-number">2.3.2.1.</span> <span class="nav-text">a. 针对于初始化方式一：比如：int[][] arr &#x3D; new int[4][3];</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b-%E9%92%88%E5%AF%B9%E4%BA%8E%E5%88%9D%E5%A7%8B%E5%8C%96%E6%96%B9%E5%BC%8F%E4%BA%8C%EF%BC%9A%E6%AF%94%E5%A6%82%EF%BC%9Aint-arr-new-int-4"><span class="nav-number">2.3.2.2.</span> <span class="nav-text">b. 针对于初始化方式二：比如：int[][] arr &#x3D; new int[4][];</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E4%BE%8B%EF%BC%9A"><span class="nav-number">2.3.3.</span> <span class="nav-text">代码实例：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E7%9A%84%E9%81%8D%E5%8E%86"><span class="nav-number">2.4.</span> <span class="nav-text">2.5 二维数组的遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-1-%E5%A6%82%E4%BD%95%E9%81%8D%E5%8E%86%E5%A6%82%E4%B8%8B%E7%9A%84%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="nav-number">2.4.1.</span> <span class="nav-text">2.5.1 如何遍历如下的二维数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%E7%82%B9%EF%BC%9A"><span class="nav-number">2.4.2.</span> <span class="nav-text">注意点：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-6-%E6%80%BB%E7%BB%93%E3%80%82"><span class="nav-number">2.5.</span> <span class="nav-text">2.6 总结。</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="halisi7"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">halisi7</p>
+  <div class="site-description" itemprop="description">涉猎的方面为 c语言、Java、mysql、linux、docker，领域涵盖算法、服务器和数据库等，微信：17638342348 QQ：2548825576</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">172</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/halisi7" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;halisi7" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://blog.csdn.net/qq_42912469?spm=1010.2135.3001.5343" title="CSDN → https:&#x2F;&#x2F;blog.csdn.net&#x2F;qq_42912469?spm&#x3D;1010.2135.3001.5343" rel="noopener" target="_blank"><i class="CSDN fa-fw"></i>CSDN</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://juejin.cn/user/853691327067198" title="掘金 → https:&#x2F;&#x2F;juejin.cn&#x2F;user&#x2F;853691327067198" rel="noopener" target="_blank"><i class="掘金 fa-fw"></i>掘金</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/li-jia-cheng-32-78-7" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;li-jia-cheng-32-78-7" rel="noopener" target="_blank"><i class="知乎 fa-fw"></i>知乎</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">halisi7</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'IghlQJHO7BhPTvcj5tR942MR-gzGzoHsz',
+      appKey     : 'omb9tQNxVorMPUvyhyAwbKpX',
+      placeholder: " 我是小哈1号。\n 请输入你的评论。\n 昵称为必填!\n 填写emall可以收到推送通知哦！",
+      avatar     : 'wavatar',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'en,zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

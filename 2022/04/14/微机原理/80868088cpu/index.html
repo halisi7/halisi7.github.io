@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":"ture","show_result":"ture","style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":"ture"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="为考试做的准备">
+<meta property="og:type" content="article">
+<meta property="og:title" content="8086&#x2F;8088cpu">
+<meta property="og:url" content="http://example.com/2022/04/14/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/80868088cpu/index.html">
+<meta property="og:site_name" content="halisi7">
+<meta property="og:description" content="为考试做的准备">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204140957163.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204140958301.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204140958679.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141003472.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141001110.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141007462.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141008975.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141011340.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141012580.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141013759.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141024097.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141024998.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141028329.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141028593.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141029535.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141032054.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141034644.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141037880.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141037313.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141038634.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141038614.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141040187.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141040377.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141041228.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141041908.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141042711.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141043181.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141044808.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141044626.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141056867.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141059320.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141104704.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141107805.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141108988.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141111472.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141112296.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141114117.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141114020.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141216242.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141217727.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141218801.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141219595.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141220313.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141223081.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141224779.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141227714.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141228089.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141229151.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141231757.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141232343.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141234705.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141303305.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141303782.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141303961.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141304529.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141304508.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141305925.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141305172.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141305595.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141306157.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141306950.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141306558.png">
+<meta property="og:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141306565.png">
+<meta property="article:published_time" content="2022-04-14T05:09:20.000Z">
+<meta property="article:modified_time" content="2023-03-30T02:32:37.452Z">
+<meta property="article:author" content="halisi7">
+<meta property="article:tag" content="微机原理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204140957163.png">
+
+<link rel="canonical" href="http://example.com/2022/04/14/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/80868088cpu/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>8086/8088cpu | halisi7</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="halisi7" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">halisi7</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个专注技术的组织</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-留言板">
+
+    <a href="/guestbook/" rel="section"><i class="book fa-fw"></i>留言板</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/halisi7/halisi7.github.io" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/14/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/80868088cpu/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="halisi7">
+      <meta itemprop="description" content="涉猎的方面为 c语言、Java、mysql、linux、docker，领域涵盖算法、服务器和数据库等，微信：17638342348 QQ：2548825576">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="halisi7">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          8086/8088cpu
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-04-14 13:09:20" itemprop="dateCreated datePublished" datetime="2022-04-14T13:09:20+08:00">2022-04-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-03-30 10:32:37" itemprop="dateModified" datetime="2023-03-30T10:32:37+08:00">2023-03-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">微机原理</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/04/14/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/80868088cpu/" class="post-meta-item leancloud_visitors" data-flag-title="8086/8088cpu" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/04/14/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/80868088cpu/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/04/14/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/80868088cpu/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+            <div class="post-description">为考试做的准备</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="8086-8088cpu"><a href="#8086-8088cpu" class="headerlink" title="8086/8088cpu"></a>8086/8088cpu</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204140957163.png" alt="image-20220414095748034"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204140958301.png" alt="image-20220414095802167"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204140958679.png" alt="image-20220414095856535"></p>
+<h1 id="8086-8088的功能结构"><a href="#8086-8088的功能结构" class="headerlink" title="8086/8088的功能结构"></a>8086/8088的功能结构</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141003472.png" alt="image-20220414100311324"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141001110.png" alt="image-20220414100138967"></p>
+<h2 id="工作过程"><a href="#工作过程" class="headerlink" title="工作过程"></a>工作过程</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141007462.png" alt="image-20220414100708310"></p>
+<h1 id="8086-8088的寄存器结构"><a href="#8086-8088的寄存器结构" class="headerlink" title="8086/8088的寄存器结构"></a>8086/8088的寄存器结构</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141008975.png" alt="image-20220414100817845"></p>
+<h2 id="通用寄存器"><a href="#通用寄存器" class="headerlink" title="通用寄存器"></a>通用寄存器</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141011340.png" alt="image-20220414101111185"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141012580.png" alt="image-20220414101237440"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141013759.png" alt="image-20220414101334621"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141024097.png" alt="image-20220414102411944"></p>
+<blockquote>
+<h3 id="一、寄存器的英文全称"><a href="#一、寄存器的英文全称" class="headerlink" title="一、寄存器的英文全称"></a>一、<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=寄存器&amp;spm=1001.2101.3001.7020">寄存器</a>的英文全称</h3><p>AH&amp;AL＝AX(accumulator)：累加寄存器<br>BH&amp;BL＝BX(base)：基址寄存器<br>CH&amp;CL＝CX(count)：计数寄存器<br>DH&amp;DL＝DX(data)：数据寄存器<br>SP（Stack Pointer）：<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=堆栈&amp;spm=1001.2101.3001.7020">堆栈</a>指针寄存器<br>BP（Base Pointer）：基址指针寄存器<br>SI（Source Index）：源变址寄存器<br>DI（Destination Index）：目的变址寄存器<br>IP（Instruction Pointer）：指令指针寄存器<br>CS（Code Segment）代码段寄存器<br>DS（Data Segment）：数据段寄存器<br>SS（Stack Segment）：堆栈段寄存器<br>ES（Extra Segment）：附加段寄存器 </p>
+<h3 id="二、标志寄存器"><a href="#二、标志寄存器" class="headerlink" title="二、标志寄存器"></a>二、标志寄存器</h3><p>OF overflow flag 溢出标志 操作数超出机器能表示的范围表示溢出,溢出时为1.</p>
+<p> SF sign Flag 符号标志 记录运算结果的符号,结果负时为1.<br>ZF zero flag 零标志 运算结果等于0时为1,否则为0.<br>CF carry flag 进位标志 最高有效位产生进位时为1,否则为0.<br>AF auxiliary carry flag 辅助进位标志 运算时,第3位向第4位产生进位时为1,否则为0.<br>PF parity flag 奇偶标志 运算结果操作数位为1的个数为偶数个时为1,否则为0.<br>DF direcion flag 方向标志 用于串处理.DF=1时,每次操作后使SI和DI减小.DF=0时则增大.<br>IF interrupt flag 中断标志 IF=1时,允许CPU响应可屏蔽中断,否则关闭中断.<br>TF trap flag 陷阱标志 用于调试单步操作.</p>
+</blockquote>
+<h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141024998.png" alt="image-20220414102444883"></p>
+<h1 id="8086-8088cpu引脚"><a href="#8086-8088cpu引脚" class="headerlink" title="8086/8088cpu引脚"></a>8086/8088cpu引脚</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141028329.png" alt="image-20220414102818164"></p>
+<ul>
+<li>分时复用：不能同时。</li>
+</ul>
+<h3 id="8088"><a href="#8088" class="headerlink" title="8088"></a>8088</h3><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141028593.png" alt="image-20220414102846470"></p>
+<h3 id="8086"><a href="#8086" class="headerlink" title="8086"></a>8086</h3><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141029535.png" alt="image-20220414102901418"></p>
+<h3 id="总结对比记忆"><a href="#总结对比记忆" class="headerlink" title="总结对比记忆"></a>总结对比记忆</h3><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141032054.png" alt="image-20220414103217904"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141034644.png" alt="image-20220414103443497"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141037880.png" alt="image-20220414103700728"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141037313.png" alt="image-20220414103737200"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141038634.png" alt="image-20220414103811528"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141038614.png" alt="image-20220414103851496"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141040187.png" alt="image-20220414104033047"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141040377.png" alt="image-20220414104058264"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141041228.png" alt="image-20220414104150103"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141041908.png" alt="image-20220414104155784"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141042711.png" alt="image-20220414104226585"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141043181.png" alt="image-20220414104325057"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141044808.png" alt="image-20220414104402691"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141044626.png" alt="image-20220414104433509"></p>
+<h1 id="8086-8088cpu两种工作模式"><a href="#8086-8088cpu两种工作模式" class="headerlink" title="8086/8088cpu两种工作模式"></a>8086/8088cpu两种工作模式</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141056867.png" alt="image-20220414105623749"></p>
+<h3 id="最小模式"><a href="#最小模式" class="headerlink" title="最小模式"></a>最小模式</h3><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141059320.png" alt="image-20220414105912195"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141104704.png" alt="image-20220414110407573"></p>
+<h3 id="最大模式"><a href="#最大模式" class="headerlink" title="最大模式"></a>最大模式</h3><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141107805.png" alt="image-20220414110713689"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141108988.png" alt="image-20220414110819877"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141111472.png" alt="image-20220414111133358"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141112296.png" alt="image-20220414111228190"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141114117.png" alt="image-20220414111404004"></p>
+<h3 id="例题-1"><a href="#例题-1" class="headerlink" title="例题"></a>例题</h3><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141114020.png" alt="image-20220414111427923"></p>
+<h2 id="8086-8088cpu主要操作"><a href="#8086-8088cpu主要操作" class="headerlink" title="8086/8088cpu主要操作"></a>8086/8088cpu主要操作</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141216242.png" alt="image-20220414121600091"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141217727.png" alt="image-20220414121716608"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141218801.png" alt="image-20220414121856674"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141219595.png" alt="image-20220414121951481"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141220313.png" alt="image-20220414122013207"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141223081.png" alt="image-20220414122343964"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141224779.png" alt="image-20220414122439665"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141227714.png" alt="image-20220414122743592"></p>
+<h3 id="例题-2"><a href="#例题-2" class="headerlink" title="例题"></a>例题</h3><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141228089.png" alt="image-20220414122827989"></p>
+<h1 id="中断系统"><a href="#中断系统" class="headerlink" title="中断系统"></a>中断系统</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141229151.png" alt="image-20220414122931042"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141231757.png" alt="image-20220414123157633"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141232343.png" alt="image-20220414123250238"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141234705.png" alt="image-20220414123432592"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141303305.png" alt="image-20220414130306198"></p>
+<h3 id="中断类型"><a href="#中断类型" class="headerlink" title="中断类型"></a>中断类型</h3><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141303782.png" alt="image-20220414130336685"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141303961.png" alt="image-20220414130342872"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141304529.png" alt="image-20220414130436438"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141304508.png" alt="image-20220414130453409"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141305925.png" alt="image-20220414130502830"></p>
+<p>例题</p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141305172.png" alt="image-20220414130541088"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141305595.png" alt="image-20220414130548501"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141306157.png" alt="image-20220414130613054"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141306950.png" alt="image-20220414130624858"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141306558.png" alt="image-20220414130630469"></p>
+<p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204141306565.png" alt="image-20220414130638472"></p>
+<h2 id=""><a href="#" class="headerlink" title=" "></a> </h2>
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>打赏一下作者~  ฅ( ̳• ◡ • ̳)ฅ</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay2.jpg" alt="halisi7 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="halisi7 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/" rel="tag"><i class="fa fa-tag"></i> 微机原理</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/04/13/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%BE%AE%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" rel="prev" title="微型计算机基础">
+      <i class="fa fa-chevron-left"></i> 微型计算机基础
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/04/15/%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86/%E5%AD%98%E5%82%A8%E5%99%A8%E7%B3%BB%E7%BB%9F/" rel="next" title="存储器系统">
+      存储器系统 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8086-8088cpu"><span class="nav-number">1.</span> <span class="nav-text">8086&#x2F;8088cpu</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8086-8088%E7%9A%84%E5%8A%9F%E8%83%BD%E7%BB%93%E6%9E%84"><span class="nav-number">2.</span> <span class="nav-text">8086&#x2F;8088的功能结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B"><span class="nav-number">2.1.</span> <span class="nav-text">工作过程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8086-8088%E7%9A%84%E5%AF%84%E5%AD%98%E5%99%A8%E7%BB%93%E6%9E%84"><span class="nav-number">3.</span> <span class="nav-text">8086&#x2F;8088的寄存器结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E7%94%A8%E5%AF%84%E5%AD%98%E5%99%A8"><span class="nav-number">3.1.</span> <span class="nav-text">通用寄存器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%AF%84%E5%AD%98%E5%99%A8%E7%9A%84%E8%8B%B1%E6%96%87%E5%85%A8%E7%A7%B0"><span class="nav-number">3.1.1.</span> <span class="nav-text">一、寄存器的英文全称</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%A0%87%E5%BF%97%E5%AF%84%E5%AD%98%E5%99%A8"><span class="nav-number">3.1.2.</span> <span class="nav-text">二、标志寄存器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98"><span class="nav-number">3.2.</span> <span class="nav-text">例题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8086-8088cpu%E5%BC%95%E8%84%9A"><span class="nav-number">4.</span> <span class="nav-text">8086&#x2F;8088cpu引脚</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8088"><span class="nav-number">4.0.1.</span> <span class="nav-text">8088</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8086"><span class="nav-number">4.0.2.</span> <span class="nav-text">8086</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%BB%E7%BB%93%E5%AF%B9%E6%AF%94%E8%AE%B0%E5%BF%86"><span class="nav-number">4.0.3.</span> <span class="nav-text">总结对比记忆</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8086-8088cpu%E4%B8%A4%E7%A7%8D%E5%B7%A5%E4%BD%9C%E6%A8%A1%E5%BC%8F"><span class="nav-number">5.</span> <span class="nav-text">8086&#x2F;8088cpu两种工作模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E5%B0%8F%E6%A8%A1%E5%BC%8F"><span class="nav-number">5.0.1.</span> <span class="nav-text">最小模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E5%A4%A7%E6%A8%A1%E5%BC%8F"><span class="nav-number">5.0.2.</span> <span class="nav-text">最大模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98-1"><span class="nav-number">5.0.3.</span> <span class="nav-text">例题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8086-8088cpu%E4%B8%BB%E8%A6%81%E6%93%8D%E4%BD%9C"><span class="nav-number">5.1.</span> <span class="nav-text">8086&#x2F;8088cpu主要操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98-2"><span class="nav-number">5.1.1.</span> <span class="nav-text">例题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%AD%E6%96%AD%E7%B3%BB%E7%BB%9F"><span class="nav-number">6.</span> <span class="nav-text">中断系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%AD%E6%96%AD%E7%B1%BB%E5%9E%8B"><span class="nav-number">6.0.1.</span> <span class="nav-text">中断类型</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">6.1.</span> <span class="nav-text"> </span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="halisi7"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">halisi7</p>
+  <div class="site-description" itemprop="description">涉猎的方面为 c语言、Java、mysql、linux、docker，领域涵盖算法、服务器和数据库等，微信：17638342348 QQ：2548825576</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">172</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/halisi7" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;halisi7" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://blog.csdn.net/qq_42912469?spm=1010.2135.3001.5343" title="CSDN → https:&#x2F;&#x2F;blog.csdn.net&#x2F;qq_42912469?spm&#x3D;1010.2135.3001.5343" rel="noopener" target="_blank"><i class="CSDN fa-fw"></i>CSDN</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://juejin.cn/user/853691327067198" title="掘金 → https:&#x2F;&#x2F;juejin.cn&#x2F;user&#x2F;853691327067198" rel="noopener" target="_blank"><i class="掘金 fa-fw"></i>掘金</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/li-jia-cheng-32-78-7" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;li-jia-cheng-32-78-7" rel="noopener" target="_blank"><i class="知乎 fa-fw"></i>知乎</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">halisi7</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'IghlQJHO7BhPTvcj5tR942MR-gzGzoHsz',
+      appKey     : 'omb9tQNxVorMPUvyhyAwbKpX',
+      placeholder: " 我是小哈1号。\n 请输入你的评论。\n 昵称为必填!\n 填写emall可以收到推送通知哦！",
+      avatar     : 'wavatar',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'en,zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

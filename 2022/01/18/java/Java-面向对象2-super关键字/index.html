@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":"ture","show_result":"ture","style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":"ture"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Java类的属性">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java面向对象2-super关键字">
+<meta property="og:url" content="http://example.com/2022/01/18/java/Java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A12-super%E5%85%B3%E9%94%AE%E5%AD%97/index.html">
+<meta property="og:site_name" content="halisi7">
+<meta property="og:description" content="Java类的属性">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/01/18/VkoMZt5JOnSEvjU.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/18/JpsWz17xQUq6THi.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/18/YgBk5zwIjK8DSm9.png">
+<meta property="og:image" content="https://s2.loli.net/2022/01/18/UXmZ91uAEDMqSGQ.png">
+<meta property="article:published_time" content="2022-01-18T05:12:10.000Z">
+<meta property="article:modified_time" content="2022-12-03T03:24:22.803Z">
+<meta property="article:author" content="halisi7">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/01/18/VkoMZt5JOnSEvjU.png">
+
+<link rel="canonical" href="http://example.com/2022/01/18/java/Java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A12-super%E5%85%B3%E9%94%AE%E5%AD%97/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Java面向对象2-super关键字 | halisi7</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="halisi7" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">halisi7</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个专注技术的组织</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-留言板">
+
+    <a href="/guestbook/" rel="section"><i class="book fa-fw"></i>留言板</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/halisi7/halisi7.github.io" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/01/18/java/Java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A12-super%E5%85%B3%E9%94%AE%E5%AD%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="halisi7">
+      <meta itemprop="description" content="涉猎的方面为 c语言、Java、mysql、linux、docker，领域涵盖算法、服务器和数据库等，微信：17638342348 QQ：2548825576">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="halisi7">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Java面向对象2-super关键字
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-01-18 13:12:10" itemprop="dateCreated datePublished" datetime="2022-01-18T13:12:10+08:00">2022-01-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-03 11:24:22" itemprop="dateModified" datetime="2022-12-03T11:24:22+08:00">2022-12-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/01/18/java/Java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A12-super%E5%85%B3%E9%94%AE%E5%AD%97/" class="post-meta-item leancloud_visitors" data-flag-title="Java面向对象2-super关键字" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/01/18/java/Java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A12-super%E5%85%B3%E9%94%AE%E5%AD%97/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/01/18/java/Java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A12-super%E5%85%B3%E9%94%AE%E5%AD%97/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+            <div class="post-description">Java类的属性</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="super关键字的使用"><a href="#super关键字的使用" class="headerlink" title="super关键字的使用"></a>super关键字的使用</h1><h3 id="1-super理解为：父类的"><a href="#1-super理解为：父类的" class="headerlink" title="1.super理解为：父类的"></a>1.super理解为：父类的</h3><h3 id="2-super可以用来调用：属性、方法、构造器"><a href="#2-super可以用来调用：属性、方法、构造器" class="headerlink" title="2.super可以用来调用：属性、方法、构造器"></a>2.super可以用来调用：属性、方法、构造器</h3><h3 id="3-super的使用：调用属性和方法"><a href="#3-super的使用：调用属性和方法" class="headerlink" title="3.super的使用：调用属性和方法"></a>3.super的使用：调用属性和方法</h3><pre><code>3.1 我们可以在子类的方法或构造器中。通过使用&quot;super.属性&quot;或&quot;super.方法&quot;的方式，显式的调用
+父类中声明的属性或方法。但是，通常情况下，我们习惯省略&quot;super.&quot;
+3.2 特殊情况：当子类和父类中定义了同名的属性时，我们要想在子类中调用父类中声明的属性，则必须显式的
+使用&quot;super.属性&quot;的方式，表明调用的是父类中声明的属性。
+3.3 特殊情况：当子类重写了父类中的方法以后，我们想在子类的方法中调用父类中被重写的方法时，则必须显式的
+使用&quot;super.方法&quot;的方式，表明调用的是父类中被重写的方法。
+</code></pre><h3 id="4-super调用构造器"><a href="#4-super调用构造器" class="headerlink" title="4.super调用构造器"></a>4.super调用构造器</h3><pre><code>   4.1  我们可以在子类的构造器中显式的使用&quot;super(形参列表)&quot;的方式，调用父类中声明的指定的构造器
+</code></pre><p>​    4.2 “super(形参列表)”的使用，必须声明在子类构造器的首行！</p>
+<p>​    4.3 我们在类的构造器中，针对于”this(形参列表)”或”super(形参列表)”只能二选一，不能同时出现</p>
+<p>​    4.4 在构造器的首行，没有显式的声明”this(形参列表)”或”super(形参列表)”，则默认调用的是父类中空参的构造器：super()</p>
+<p>​    4.5 在类的多个构造器中，至少有一个类的构造器中使用了”super(形参列表)”，调用父类中的构造器</p>
+<p><img src="https://s2.loli.net/2022/01/18/VkoMZt5JOnSEvjU.png" alt="Snipaste20220118111057"></p>
+<h1 id="子类对象实例化的全过程"><a href="#子类对象实例化的全过程" class="headerlink" title="子类对象实例化的全过程"></a>子类对象实例化的全过程</h1><ol>
+<li><p>从结果上来看：（继承性）</p>
+<pre><code> 子类继承父类以后，就获取了父类中声明的属性或方法。
+创建子类的对象，在堆空间中，就会加载所有父类中声明的属性。
+</code></pre></li>
+<li><p>从过程上来看：</p>
+<pre><code> 当我们通过子类的构造器创建子类对象时，我们一定会直接或间接的调用其父类的构造器，进而调用父类的父类的构造器，...
+</code></pre><p>  直到调用了java.lang.Object类中空参的构造器为止。正因为加载过所有的父类的结构，所以才可以看到内存中有<br>  父类中的结构，子类对象才可以考虑进行调用。</p>
+</li>
+</ol>
+<p>  明确：虽然创建子类对象时，调用了父类的构造器，但是自始至终就创建过一个对象，即为new的子类对象。</p>
+<p><img src="https://s2.loli.net/2022/01/18/JpsWz17xQUq6THi.png" alt="Snipaste20220118111645"></p>
+<h1 id="综合练习："><a href="#综合练习：" class="headerlink" title="综合练习："></a>综合练习：</h1><p><img src="https://s2.loli.net/2022/01/18/YgBk5zwIjK8DSm9.png" alt="Snipaste20220118113152"></p>
+<p><img src="https://s2.loli.net/2022/01/18/UXmZ91uAEDMqSGQ.png" alt="Snipaste20220118113201"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Account</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> id;<span class="comment">//账号</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">double</span> balance;<span class="comment">//余额</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">double</span> annualInterestRate;<span class="comment">//年利率</span></span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Account</span><span class="params">(<span class="keyword">int</span> id, <span class="keyword">double</span> balance, <span class="keyword">double</span> annualInterestRate)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">super</span>();</span><br><span class="line">		<span class="keyword">this</span>.id = id;</span><br><span class="line">		<span class="keyword">this</span>.balance = balance;</span><br><span class="line">		<span class="keyword">this</span>.annualInterestRate = annualInterestRate;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getId</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> id;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span><span class="params">(<span class="keyword">int</span> id)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.id = id;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getBalance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> balance;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setBalance</span><span class="params">(<span class="keyword">double</span> balance)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.balance = balance;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getAnnualInterestRate</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> annualInterestRate;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAnnualInterestRate</span><span class="params">(<span class="keyword">double</span> annualInterestRate)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.annualInterestRate = annualInterestRate;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//返回月利率</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getMonthlyInterest</span><span class="params">()</span></span>&#123;	</span><br><span class="line">		<span class="keyword">return</span> annualInterestRate / <span class="number">12</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//取钱</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">withdraw</span> <span class="params">(<span class="keyword">double</span> amount)</span></span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(balance &gt;= amount)&#123;</span><br><span class="line">			balance -= amount;</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println(<span class="string">&quot;余额不足&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">//存钱</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">deposit</span> <span class="params">(<span class="keyword">double</span> amount)</span></span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(amount &gt; <span class="number">0</span>)&#123;</span><br><span class="line">			balance += amount;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 写一个用户程序测试Account类。在用户程序中，</span></span><br><span class="line"><span class="comment"> * 创建一个账号为1122、余额为20000、年利率4.5%的Account对象。</span></span><br><span class="line"><span class="comment"> * 使用withdraw方法提款30000元，并打印余额。</span></span><br><span class="line"><span class="comment"> * 再使用withdraw方法提款2500元，</span></span><br><span class="line"><span class="comment"> * 使用deposit方法存款3000元，然后打印余额和月利率。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AccountTest</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		Account acct = <span class="keyword">new</span> Account(<span class="number">1122</span>, <span class="number">20000</span>, <span class="number">0.045</span>);</span><br><span class="line">		</span><br><span class="line">		acct.withdraw(<span class="number">30000</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;您的账户余额为：&quot;</span> + acct.getBalance());</span><br><span class="line">		acct.withdraw(<span class="number">2500</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;您的账户余额为：&quot;</span> + acct.getBalance());</span><br><span class="line">		acct.deposit(<span class="number">3000</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;您的账户余额为：&quot;</span> + acct.getBalance());</span><br><span class="line">		</span><br><span class="line">		System.out.println(<span class="string">&quot;月利率为：&quot;</span> + (acct.getMonthlyInterest() * <span class="number">100</span>) +<span class="string">&quot;%&quot;</span>);</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 创建Account类的一个子类CheckAccount代表可透支的账户，该账户中定义一个属性overdraft代表可透支限额。</span></span><br><span class="line"><span class="comment"> * 在CheckAccount类中重写withdraw方法，其算法如下：</span></span><br><span class="line"><span class="comment">		如果（取款金额&lt;账户余额），</span></span><br><span class="line"><span class="comment">		可直接取款</span></span><br><span class="line"><span class="comment">		如果（取款金额&gt;账户余额），</span></span><br><span class="line"><span class="comment">		计算需要透支的额度</span></span><br><span class="line"><span class="comment">		判断可透支额overdraft是否足够支付本次透支需要，如果可以</span></span><br><span class="line"><span class="comment">			将账户余额修改为0，冲减可透支金额</span></span><br><span class="line"><span class="comment">		如果不可以</span></span><br><span class="line"><span class="comment">			提示用户超过可透支额的限额</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CheckAccount</span> <span class="keyword">extends</span> <span class="title">Account</span></span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">double</span> overdraft;<span class="comment">//可透支限额</span></span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">CheckAccount</span><span class="params">(<span class="keyword">int</span> id, <span class="keyword">double</span> balance, <span class="keyword">double</span> annualInterestRate,<span class="keyword">double</span> overdraft)</span></span>&#123;</span><br><span class="line">		<span class="keyword">super</span>(id, balance, annualInterestRate);</span><br><span class="line">		<span class="keyword">this</span>.overdraft = overdraft;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">getOverdraft</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> overdraft;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setOverdraft</span><span class="params">(<span class="keyword">double</span> overdraft)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.overdraft = overdraft;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">withdraw</span><span class="params">(<span class="keyword">double</span> amount)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(getBalance() &gt;= amount)&#123;<span class="comment">//余额就足够消费</span></span><br><span class="line"><span class="comment">//			getBalance() -= amount;</span></span><br><span class="line">			<span class="comment">//方式一：</span></span><br><span class="line"><span class="comment">//			setBalance(getBalance() - amount); </span></span><br><span class="line">			<span class="comment">//方式二：</span></span><br><span class="line">			<span class="keyword">super</span>.withdraw(amount);</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(overdraft &gt;= amount - getBalance())&#123;<span class="comment">//透支额度+余额足够消费</span></span><br><span class="line">			</span><br><span class="line">			overdraft -= (amount - getBalance());</span><br><span class="line">			</span><br><span class="line"><span class="comment">//			setBalance(0);</span></span><br><span class="line">			<span class="comment">//或</span></span><br><span class="line">			<span class="keyword">super</span>.withdraw(getBalance());</span><br><span class="line">			</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;超过可透支限额！&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * 写一个用户程序测试CheckAccount类。</span></span><br><span class="line"><span class="comment"> * 在用户程序中，创建一个账号为1122、余额为20000、年利率4.5%，可透支限额为5000元的CheckAccount对象。</span></span><br><span class="line"><span class="comment">	使用withdraw方法提款5000元，并打印账户余额和可透支额。</span></span><br><span class="line"><span class="comment">	再使用withdraw方法提款18000元，并打印账户余额和可透支额。</span></span><br><span class="line"><span class="comment">	再使用withdraw方法提款3000元，并打印账户余额和可透支额。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CheckAccountTest</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		CheckAccount acct = <span class="keyword">new</span> CheckAccount(<span class="number">1122</span>, <span class="number">20000</span>, <span class="number">0.045</span>, <span class="number">5000</span>);</span><br><span class="line">		</span><br><span class="line">		acct.withdraw(<span class="number">5000</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;您的账户余额为：&quot;</span> + acct.getBalance());</span><br><span class="line">		System.out.println(<span class="string">&quot;您的可透支额度为：&quot;</span> + acct.getOverdraft());</span><br><span class="line">		acct.withdraw(<span class="number">18000</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;您的账户余额为：&quot;</span> + acct.getBalance());</span><br><span class="line">		System.out.println(<span class="string">&quot;您的可透支额度为：&quot;</span> + acct.getOverdraft());</span><br><span class="line">		acct.withdraw(<span class="number">3000</span>);</span><br><span class="line">		System.out.println(<span class="string">&quot;您的账户余额为：&quot;</span> + acct.getBalance());</span><br><span class="line">		System.out.println(<span class="string">&quot;您的可透支额度为：&quot;</span> + acct.getOverdraft());</span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>打赏一下作者~  ฅ( ̳• ◡ • ̳)ฅ</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay2.jpg" alt="halisi7 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="halisi7 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/01/17/java/Java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A12-Debug%E8%B0%83%E8%AF%95/" rel="prev" title="Java-Eclipse-Debug调试">
+      <i class="fa fa-chevron-left"></i> Java-Eclipse-Debug调试
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/01/18/java/Java-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A12-%E5%A4%9A%E6%80%81/" rel="next" title="Java面向对象2-多态">
+      Java面向对象2-多态 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#super%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.</span> <span class="nav-text">super关键字的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-super%E7%90%86%E8%A7%A3%E4%B8%BA%EF%BC%9A%E7%88%B6%E7%B1%BB%E7%9A%84"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.super理解为：父类的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-super%E5%8F%AF%E4%BB%A5%E7%94%A8%E6%9D%A5%E8%B0%83%E7%94%A8%EF%BC%9A%E5%B1%9E%E6%80%A7%E3%80%81%E6%96%B9%E6%B3%95%E3%80%81%E6%9E%84%E9%80%A0%E5%99%A8"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.super可以用来调用：属性、方法、构造器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-super%E7%9A%84%E4%BD%BF%E7%94%A8%EF%BC%9A%E8%B0%83%E7%94%A8%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95"><span class="nav-number">1.0.3.</span> <span class="nav-text">3.super的使用：调用属性和方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-super%E8%B0%83%E7%94%A8%E6%9E%84%E9%80%A0%E5%99%A8"><span class="nav-number">1.0.4.</span> <span class="nav-text">4.super调用构造器</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%90%E7%B1%BB%E5%AF%B9%E8%B1%A1%E5%AE%9E%E4%BE%8B%E5%8C%96%E7%9A%84%E5%85%A8%E8%BF%87%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">子类对象实例化的全过程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%BC%E5%90%88%E7%BB%83%E4%B9%A0%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">综合练习：</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="halisi7"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">halisi7</p>
+  <div class="site-description" itemprop="description">涉猎的方面为 c语言、Java、mysql、linux、docker，领域涵盖算法、服务器和数据库等，微信：17638342348 QQ：2548825576</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">172</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/halisi7" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;halisi7" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://blog.csdn.net/qq_42912469?spm=1010.2135.3001.5343" title="CSDN → https:&#x2F;&#x2F;blog.csdn.net&#x2F;qq_42912469?spm&#x3D;1010.2135.3001.5343" rel="noopener" target="_blank"><i class="CSDN fa-fw"></i>CSDN</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://juejin.cn/user/853691327067198" title="掘金 → https:&#x2F;&#x2F;juejin.cn&#x2F;user&#x2F;853691327067198" rel="noopener" target="_blank"><i class="掘金 fa-fw"></i>掘金</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/li-jia-cheng-32-78-7" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;li-jia-cheng-32-78-7" rel="noopener" target="_blank"><i class="知乎 fa-fw"></i>知乎</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">halisi7</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'IghlQJHO7BhPTvcj5tR942MR-gzGzoHsz',
+      appKey     : 'omb9tQNxVorMPUvyhyAwbKpX',
+      placeholder: " 我是小哈1号。\n 请输入你的评论。\n 昵称为必填!\n 填写emall可以收到推送通知哦！",
+      avatar     : 'wavatar',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'en,zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

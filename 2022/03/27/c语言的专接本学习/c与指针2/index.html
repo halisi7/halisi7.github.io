@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":"ture","show_result":"ture","style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":"ture"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="自学">
+<meta property="og:type" content="article">
+<meta property="og:title" content="c与指针2">
+<meta property="og:url" content="http://example.com/2022/03/27/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E4%B8%8E%E6%8C%87%E9%92%882/index.html">
+<meta property="og:site_name" content="halisi7">
+<meta property="og:description" content="自学">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2022/03/27/RbJDpvOWdGcL56V.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/27/JCShFRZgH5DE9t4.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/27/vxkDjWm2e69sK8c.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/27/9S82mUhseAVnWOc.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/27/71ZprouTdheWCwF.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/27/YmhnUeEN72l15IB.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/27/vmr7QD4tOobMRxe.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/27/kQO35duCAieG6JM.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/27/c5zdJQb3rKojpuU.png">
+<meta property="og:image" content="https://s2.loli.net/2022/03/27/drlMDJZUxwgYPV7.png">
+<meta property="article:published_time" content="2022-03-27T09:40:20.000Z">
+<meta property="article:modified_time" content="2022-12-03T03:24:22.774Z">
+<meta property="article:author" content="halisi7">
+<meta property="article:tag" content="c语言">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2022/03/27/RbJDpvOWdGcL56V.png">
+
+<link rel="canonical" href="http://example.com/2022/03/27/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E4%B8%8E%E6%8C%87%E9%92%882/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>c与指针2 | halisi7</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="halisi7" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">halisi7</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个专注技术的组织</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-留言板">
+
+    <a href="/guestbook/" rel="section"><i class="book fa-fw"></i>留言板</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/halisi7/halisi7.github.io" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/27/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E4%B8%8E%E6%8C%87%E9%92%882/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="halisi7">
+      <meta itemprop="description" content="涉猎的方面为 c语言、Java、mysql、linux、docker，领域涵盖算法、服务器和数据库等，微信：17638342348 QQ：2548825576">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="halisi7">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          c与指针2
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-03-27 17:40:20" itemprop="dateCreated datePublished" datetime="2022-03-27T17:40:20+08:00">2022-03-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-12-03 11:24:22" itemprop="dateModified" datetime="2022-12-03T11:24:22+08:00">2022-12-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">c语言学习</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/03/27/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E4%B8%8E%E6%8C%87%E9%92%882/" class="post-meta-item leancloud_visitors" data-flag-title="c与指针2" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/03/27/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E4%B8%8E%E6%8C%87%E9%92%882/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/03/27/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E4%B8%8E%E6%8C%87%E9%92%882/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+            <div class="post-description">自学</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><h2 id="1-三字母词"><a href="#1-三字母词" class="headerlink" title="1.三字母词"></a>1.三字母词</h2><p>​    三字母词就是几个字符的序列，合起来表示另一个字符。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">??(　[　　　　??&lt;　&#123;　　　　??=　#</span><br><span class="line">　　??)　]　　　　??&gt;　&#125;　　　　??/　\</span><br><span class="line">　　??!　|　　　　??’　^　　　　??-　~</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Delete file (are you really sure??): &quot;</span> );</span><br></pre></td></tr></table></figure>
+<p>输出</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Delete <span class="title">file</span> <span class="params">(are you really sure ]:</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="2-typedef"><a href="#2-typedef" class="headerlink" title="2. typedef"></a>2. typedef</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span>　　　<span class="keyword">char</span>　 *ptr_to_char;</span><br></pre></td></tr></table></figure>
+<p>这个声明把标识符ptr_to_char作为指向字符的指针类型的新名字。你可以像使用任何预定义名字一样在下面的声明中使用这个新名字。例如：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ptr_to_char　　　a;</span><br></pre></td></tr></table></figure>
+<p>好处：</p>
+<ol>
+<li>使用typedef声明类型可以减少使声明变得又臭又长的危险，尤其是那些复杂的声明  。</li>
+<li>而且，如果你以后觉得应该修改程序所使用的一些数据的类型时，修改一个typedef声明比修改程序中与这种类型有关的所有变量（和函数）的所有声明要容易得多。</li>
+</ol>
+<h2 id="3-goto语句"><a href="#3-goto语句" class="headerlink" title="3. goto语句"></a>3. goto语句</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">goto</span> 语句标签;</span><br></pre></td></tr></table></figure>
+<p>例如：</p>
+<p><img src="https://s2.loli.net/2022/03/27/RbJDpvOWdGcL56V.png" alt="image-20220326121510141"></p>
+<h2 id="4-零为假，非零为真。"><a href="#4-零为假，非零为真。" class="headerlink" title="4.零为假，非零为真。"></a>4.零为假，非零为真。</h2><h2 id="5-间接访问操作符"><a href="#5-间接访问操作符" class="headerlink" title="5.间接访问操作符"></a>5.间接访问操作符</h2><p>通过一个指针访问它所指向的地址的过程称为间接访问</p>
+<p>这个用于执行间接访问的操作符是单目操作符 * 。</p>
+<h2 id="6-NULL指针"><a href="#6-NULL指针" class="headerlink" title="6. NULL指针"></a>6. NULL指针</h2><p>NULL指针——表示不指向任何东西。</p>
+<p>要使一个指针变量为NULL，你可以给它赋一个零值。</p>
+<p>为了测试一个指针变量是否为NULL，你可以将它与零值进行比较。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> *p=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">if</span>(p==<span class="literal">NULL</span>)</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;Delete file (are you really sure ??): &quot;</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="7-stdarg宏"><a href="#7-stdarg宏" class="headerlink" title="7. stdarg宏"></a>7. stdarg宏</h2><p>可变参数列表是通过宏来实现的，这些宏定义于stdarg.h头文件，它是标准库的一部分。</p>
+<p>这个头文件声明了一个类型va_list和三个宏——va_start、va_arg和va_end。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">** 计算指定数量的值的平均值。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdarg.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">float</span></span></span><br><span class="line"><span class="function"><span class="title">average</span><span class="params">( <span class="keyword">int</span> n_values, ... )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">　　　　　 va_list　 var_arg;</span><br><span class="line">    <span class="comment">//va_list是一个类型。</span></span><br><span class="line">    <span class="comment">//var_arg的变量，它用于访问参数列表的未确定部分。</span></span><br><span class="line">　　　　　 <span class="keyword">int</span>　　count;</span><br><span class="line">　　　　　 <span class="keyword">float</span> sum = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">　　　　　 <span class="comment">/*</span></span><br><span class="line"><span class="comment">　　　　　 ** 准备访问可变参数。</span></span><br><span class="line"><span class="comment">　　　　　 */</span></span><br><span class="line">　　　　　 va_start( var_arg, n_values );</span><br><span class="line">	<span class="comment">//var_arg通过调用va_start来初始化。</span></span><br><span class="line">    <span class="comment">//它的第1个参数是va_list变量的名字，第2个参数是省略号前</span></span><br><span class="line">    <span class="comment">//最后一个有名字的参数。</span></span><br><span class="line">　　　　　 <span class="comment">/*</span></span><br><span class="line"><span class="comment">　　　　　 ** 添加取自可变参数列表的值。</span></span><br><span class="line"><span class="comment">　　　　　 */</span></span><br><span class="line">　　　　　 <span class="keyword">for</span>( count = <span class="number">0</span>; count &lt; n_values; count += <span class="number">1</span> )&#123;</span><br><span class="line">          </span><br><span class="line">　　　　　　　　 sum += va_arg( var_arg, <span class="keyword">int</span> );</span><br><span class="line">　　　　　 &#125;</span><br><span class="line"></span><br><span class="line">　　　　　 <span class="comment">/*</span></span><br><span class="line"><span class="comment">　　　　　 ** 完成处理可变参数。</span></span><br><span class="line"><span class="comment">　　　　　 */</span></span><br><span class="line">　　　　　 va_end( var_arg );</span><br><span class="line">	<span class="comment">//当访问完毕最后一个可变参数之后，我们需要调用va_end。</span></span><br><span class="line">　　　　　 <span class="keyword">return</span> sum / n_values;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>char和short类型的实参被转换为int类型，float类型的实参被转换为double类型。所以你在va_arg中使用后面这些类型时应该小心。</p>
+</blockquote>
+<h2 id="8-ap-6相当于表达式array-2-6。"><a href="#8-ap-6相当于表达式array-2-6。" class="headerlink" title="8. *ap+6相当于表达式array[2]+6。"></a>8. *ap+6相当于表达式array[2]+6。</h2><h2 id="9-2-array-等于-array-2-，array为数组。"><a href="#9-2-array-等于-array-2-，array为数组。" class="headerlink" title="9.   2[array]等于*( array + 2 )，array为数组。"></a>9.   2[array]等于*( array + 2 )，array为数组。</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a[<span class="number">3</span>]=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> t=<span class="number">1</span>[a];</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,t);  <span class="comment">//2</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这个诡异技巧之所以可行，缘于C实现下标的方法。对编译器来说，这两种形式并无差别。但是，你绝不应该编写2[array]，因为它会大大影响程序的可读性。</p>
+</blockquote>
+<p>下标绝不会比指针更有效率，但指针有时会比下标更有效率。</p>
+<h2 id="10-字符数组初始化"><a href="#10-字符数组初始化" class="headerlink" title="10.字符数组初始化"></a>10.字符数组初始化</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span>　message[] = &#123; <span class="string">&#x27;H&#x27;</span>, <span class="string">&#x27;e&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;o&#x27;</span>, <span class="number">0</span> &#125;;</span><br></pre></td></tr></table></figure>
+<p>方式二</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> message[] = <span class="string">&quot;Hello&quot;</span>;<span class="comment">//双引号括起来</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> 　 message1[] = <span class="string">&quot;Hello&quot;</span>;<span class="comment">//初始化一个字符数组的元素</span></span><br><span class="line"><span class="keyword">char</span> 　 *message2 = <span class="string">&quot;Hello&quot;</span>;<span class="comment">//一个字符串常量</span></span><br></pre></td></tr></table></figure>
+<h2 id="11-二维数组"><a href="#11-二维数组" class="headerlink" title="11.二维数组"></a>11.二维数组</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>  matrix[<span class="number">3</span>][<span class="number">10</span>];</span><br><span class="line">matrix <span class="comment">//1</span></span><br></pre></td></tr></table></figure>
+<p>1.<img src="https://s2.loli.net/2022/03/27/JCShFRZgH5DE9t4.png" alt="image-20220327111428545"></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">matrix + <span class="number">1</span> <span class="comment">//2</span></span><br></pre></td></tr></table></figure>
+<p>2.<img src="https://s2.loli.net/2022/03/27/vxkDjWm2e69sK8c.png" alt="image-20220327111518184"></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>  <span class="built_in">vector</span>[<span class="number">10</span>], *vp = <span class="built_in">vector</span>;<span class="comment">//合法</span></span><br><span class="line"><span class="keyword">int</span>  matrix[<span class="number">3</span>][<span class="number">10</span>], *mp = matrix;<span class="comment">//不合法</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>原因：mp的初始化是不正确的，因为matrix并不是一个指向整型的指针，而是一个指向整型数组的指针。</li>
+</ul>
+<h2 id="12-字符串的长度并不包括NUL字节。"><a href="#12-字符串的长度并不包括NUL字节。" class="headerlink" title="12. 字符串的长度并不包括NUL字节。"></a>12. 字符串的长度并不包括NUL字节。</h2><p>string.h包含了使用字符串函数所需的原型和声明。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>( <span class="built_in">strlen</span>( x ) &gt;= <span class="built_in">strlen</span>( y ) ) ...</span><br><span class="line"><span class="keyword">if</span>( <span class="built_in">strlen</span>( x ) – <span class="built_in">strlen</span>( y ) &gt;= <span class="number">0</span> ) ...<span class="comment">//strlen的结果是个</span></span><br><span class="line"> <span class="comment">//无符号数，所以操作符&gt;=左边的表达式也将是无符号数，而无符号数绝</span></span><br><span class="line"> <span class="comment">//不可能是负的。</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>上面的两者并不相等！</li>
+</ul>
+<p>库函数strlen的原型如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">size_t</span>　<span class="title">strlen</span><span class="params">( <span class="keyword">char</span> <span class="keyword">const</span> *<span class="built_in">string</span> )</span></span>;</span><br><span class="line"><span class="comment">//注意strlen返回一个类型为size_t的值。这个类型是在头文件stddef.h</span></span><br><span class="line"><span class="comment">//中定义的，它是一个无符号整数类型。</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">** 计算字符串参数的长度。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stddef.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">size_t</span></span></span><br><span class="line"><span class="function"><span class="title">strlen</span><span class="params">( <span class="keyword">char</span> <span class="keyword">const</span> *<span class="built_in">string</span> )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">　 <span class="keyword">int</span> length;</span><br><span class="line"></span><br><span class="line">　 <span class="keyword">for</span>( length = <span class="number">0</span>; *<span class="built_in">string</span>++ != <span class="string">&#x27;\0&#x27;</span>; )</span><br><span class="line">　　　 length += <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">　 <span class="keyword">return</span> length;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="13-复制字符串"><a href="#13-复制字符串" class="headerlink" title="13.复制字符串"></a>13.复制字符串</h2><p>用于复制字符串的函数是strcpy，它的原型如下所示：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">char</span>　　*<span class="title">strcpy</span><span class="params">( <span class="keyword">char</span> *dst, <span class="keyword">char</span> <span class="keyword">const</span> *src )</span></span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span>　　　message[] = <span class="string">&quot;Original message&quot;</span>;</span><br><span class="line">...</span><br><span class="line"><span class="built_in">strcpy</span>( message, <span class="string">&quot;A different message&quot;</span> );</span><br><span class="line"><span class="comment">/*第2个字符串太长了，无法容纳于message字符数组中。因此，</span></span><br><span class="line"><span class="comment">strcpy函数将侵占数组后面的部分内存空间，改写原先恰好存储在那里的</span></span><br><span class="line"><span class="comment">变量。*/</span></span><br></pre></td></tr></table></figure>
+<h2 id="14-连接字符串"><a href="#14-连接字符串" class="headerlink" title="14.连接字符串"></a>14.连接字符串</h2><p>要想把一个字符串添加（连接）到另一个字符串的后面，你可以使用strcat函数。它的原型如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">char</span>　　*<span class="title">strcat</span><span class="params">( <span class="keyword">char</span> *dst, <span class="keyword">char</span> <span class="keyword">const</span> *src )</span></span>;</span><br></pre></td></tr></table></figure>
+<p>和前面一样，程序员必须保证目标字符数组剩余的空间足以保存整个源字符串。</p>
+<h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><p>strcpy和strcat都返回它们第1个参数的一份拷贝，就是一个指向目标字符数组的指针。由于它们返回这种类型的值，所以你可以嵌套地调用这些函数，如下面的例子所示：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">strcat</span>( <span class="built_in">strcpy</span>( dst, a ), b );</span><br><span class="line"><span class="comment">/*strcpy首先执行。它把字符串从a复制到dst并返回dst。然后这个返回值</span></span><br><span class="line"><span class="comment">成为strcat函数的第1个参数，strcat函数把b添加到dst的后面。*/</span></span><br></pre></td></tr></table></figure>
+<h2 id="15-字符串比较"><a href="#15-字符串比较" class="headerlink" title="15.字符串比较"></a>15.字符串比较</h2><p>库函数strcmp用于比较两个字符串，它的原型如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span>　 <span class="title">strcmp</span><span class="params">( <span class="keyword">char</span> <span class="keyword">const</span> *s1, <span class="keyword">char</span> <span class="keyword">const</span> *s2 )</span></span>;</span><br><span class="line"><span class="comment">/*如果s1小于s2，strcmp函数返回一个小于零的值。如果s1大于s2，函数</span></span><br><span class="line"><span class="comment">返回一个大于零的值。如果两个字符串相等，函数就返回零。*/</span></span><br></pre></td></tr></table></figure>
+<h2 id="16-长度受限的字符串函数"><a href="#16-长度受限的字符串函数" class="headerlink" title="16.长度受限的字符串函数"></a>16.长度受限的字符串函数</h2><p><img src="https://s2.loli.net/2022/03/27/9S82mUhseAVnWOc.png" alt="image-20220327120125021"></p>
+<p>1.strncpy把源字符串的字符复制到目标数组。然而，它总是正好向dst写入len个字符。如果strlen( src )的值小于len，dst数组就用额外的NUL字节填充到len长度。如果strlen( src )的值大于或等于len，那么只有len个字符被复制到dst中。注意！它的结果将不会以NUL字节结尾 。</p>
+<p>使用了一个不是以NUL字节结尾的字符序列，会发生什么情况呢？</p>
+<blockquote>
+<p>strlen函数将无法知道NUL字节是没有的，所以它将继续进行查找，一个字符接一个字符，直到它发现一个NUL字节为止。或许它找了几百个字符才找到，而strlen函数的这个返回值从本质上说是一个随机数。或者，如果函数试图访问系统分配给这个程序以外的内存范围，程序就会崩溃。</p>
+</blockquote>
+<p>这个问题只有当你使用strncpy函数创建字符串，然后或者对它们使用str开头的库函数，或者在printf中使用%s格式码打印它们时才会发生。</p>
+<p>例如，考虑下面这个代码段：</p>
+<p><img src="https://s2.loli.net/2022/03/27/71ZprouTdheWCwF.png" alt="image-20220327120331838"></p>
+<blockquote>
+<p>如果name的内容可以容纳于buffer中，最后那个赋值语句没有任何效果。但是，如果name太长，这条赋值语句可以保证buffer中的字符串是以NUL结尾的。以后对这个数组使用strlen或其他不受限制的字符串函数将能够正确工作。</p>
+</blockquote>
+<p>2.strncat也是一个长度受限的函数，但它和strncpy存在不同之外。它从src中最多复制len个字符到目标数组的后面。但是，strncat总是在结果字符串后面添加一个NUL字节，而且它不会像strncpy那样对目标数组用NUL字节进行填充。注意目标数组中原先的字符串并没有算在strncat的长度中。strncat最多向目标数组复制len个字符（再加一个结尾的NUL字节），它才不管目标参数除去原先存在的字符串之后留下的空间够不够。</p>
+<p>3.strncmp也用于比较两个字符串，但它最多比较len个字节。如果两个字符串在第len个字符之前存在不相等的字符，这个函数就像strcmp一样停止比较，返回结果。如果两个字符串的前len个字符相等，函数就返回零。</p>
+<h2 id="17-查找一个字符"><a href="#17-查找一个字符" class="headerlink" title="17.查找一个字符"></a>17.查找一个字符</h2><p>在一个字符串中查找一个特定字符最容易的方法是使用strchr和strrchr函数，它们的原型如下所示：</p>
+<p><img src="https://s2.loli.net/2022/03/27/YmhnUeEN72l15IB.png" alt="image-20220327120747965"></p>
+<p>1.strchr在字符串str中查找字符ch第1次出现的位置，找到后函数返回一个指向该位置的指针。如果该字符并不存在于字符串中，函数就返回一个NULL指针。</p>
+<p>2.trrchr的功能和strchr基本一致，只是它所返回的是一个指向字符串中该字符最后一次出现的位置.</p>
+<p>3.注意这里大小写是有区别的。</p>
+<p><img src="https://s2.loli.net/2022/03/27/vmr7QD4tOobMRxe.png" alt="image-20220327121255307"></p>
+<h2 id="18-查找任何几个字符"><a href="#18-查找任何几个字符" class="headerlink" title="18.查找任何几个字符"></a>18.查找任何几个字符</h2><p>strpbrk是个更为常见的函数。它并不是查找某个特定的字符，而是查找任何一组字符第1次在字符串中出现的位置。它的原型如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">char</span>　　*<span class="title">strpbrk</span><span class="params">( <span class="keyword">char</span> <span class="keyword">const</span> *str, <span class="keyword">char</span> <span class="keyword">const</span> *group )</span></span>;</span><br></pre></td></tr></table></figure>
+<p>这个函数返回一个指向str中第1个匹配group中任何一个字符的字符位置。如果未找到匹配，函数返回一个NULL指针。</p>
+<p><img src="https://s2.loli.net/2022/03/27/kQO35duCAieG6JM.png" alt="image-20220327121311754"></p>
+<h2 id="19-查找一个子串"><a href="#19-查找一个子串" class="headerlink" title="19.查找一个子串"></a>19.查找一个子串</h2><p>为了在字符串中查找一个子串，我们可以使用strstr函数，它的原型如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">char</span> *<span class="title">strstr</span><span class="params">( <span class="keyword">char</span> <span class="keyword">const</span> *s1, <span class="keyword">char</span> <span class="keyword">const</span> *s2 )</span></span>;</span><br></pre></td></tr></table></figure>
+<p>这个函数在s1中查找整个s2第1次出现的起始位置，<strong>并返回一个指向该位置的指针。</strong>如果s2并没有完整地出现在s1的任何地方，函数将返回一个NULL指针。如果第2个参数是一个空字符串，函数就返回s1。</p>
+<p>标准库中并不存在strstr或strpbrk函数。不过，如果你需要它们，它们是很容易实现的。程序9.2显示了一种实现strstr的方法。这个技巧同样也可以用于实现strpbrk。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">** 在字符串s1中查找字符串s2最右出现的位置，并返回一个指向该位置的指针。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">char</span>*</span></span><br><span class="line"><span class="function"><span class="title">my_strrstr</span><span class="params">( <span class="keyword">char</span> <span class="keyword">const</span> *s1, <span class="keyword">char</span> <span class="keyword">const</span> *s2 )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">　　　 <span class="keyword">register</span> <span class="keyword">char</span>*last;</span><br><span class="line">　　　 <span class="keyword">register</span> <span class="keyword">char</span>*current;</span><br><span class="line">　　　 <span class="comment">/*</span></span><br><span class="line"><span class="comment">　　　 ** 把指针初始化为我们已经找到的前一次匹配位置。</span></span><br><span class="line"><span class="comment">　　　 */</span></span><br><span class="line">　　　 last = <span class="literal">NULL</span>;</span><br><span class="line"></span><br><span class="line">　　　 <span class="comment">/*</span></span><br><span class="line"><span class="comment">　　　 **只在第2个字符串不为空时才进行查找，如果S2为空，返回NULL。</span></span><br><span class="line"><span class="comment">　　　 */</span></span><br><span class="line">    <span class="keyword">if</span>( *s2 != <span class="string">&#x27;\0&#x27;</span> )&#123;</span><br><span class="line">　　　　　　<span class="comment">/*</span></span><br><span class="line"><span class="comment">　　　　　　** 查找s2在s1中第1次出现的位置。</span></span><br><span class="line"><span class="comment">　　　　　　*/</span></span><br><span class="line">　　　　　　current = <span class="built_in">strstr</span>( s1, s2 );</span><br><span class="line"></span><br><span class="line">　　　 <span class="comment">/*</span></span><br><span class="line"><span class="comment">　　　 ** 我们每次找到字符串时，让指针指向它的起始位置。然后查找该字符串下一个匹配位置。</span></span><br><span class="line"><span class="comment">　　　 */</span></span><br><span class="line">　　　　　　　　　 <span class="keyword">while</span>( current != <span class="literal">NULL</span> )&#123;</span><br><span class="line">　　　　　　　　　　　　last = current;</span><br><span class="line">　　　　　　　　　　　　current = <span class="built_in">strstr</span>( last + <span class="number">1</span>, s2 );</span><br><span class="line">　　　　　　　　　　&#125;</span><br><span class="line">　　　　　　&#125;</span><br><span class="line"></span><br><span class="line">　　　　　　<span class="comment">/* 返回指向我们找到的最后一次匹配的起始位置的指针。*/</span></span><br><span class="line">　　　　　　<span class="keyword">return</span> last;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>实测:标准库里是有这两个函数的不用自己写.</li>
+</ul>
+<h2 id="20-查找一个字符串前缀"><a href="#20-查找一个字符串前缀" class="headerlink" title="20.查找一个字符串前缀"></a>20.查找一个字符串前缀</h2><p>strspn和strcspn函数用于在字符串的起始位置对字符计数。它们的原型如下所示：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">size_t</span>　<span class="title">strspn</span><span class="params">( <span class="keyword">char</span> <span class="keyword">const</span> *str, <span class="keyword">char</span> <span class="keyword">const</span> *group )</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">size_t</span>　<span class="title">strcspn</span><span class="params">( <span class="keyword">char</span> cosnt *str, <span class="keyword">char</span> <span class="keyword">const</span> *group )</span></span>;</span><br></pre></td></tr></table></figure>
+<p>group字符串指定一个或多个字符。strspn返回str起始部分匹配group中任意字符的字符数。例如，如果group包含了空格、制表符等空白字符，那么这个函数将返回str起始部分空白字符的数目。str的下一个字符就是它的第1个非空白字符。</p>
+<p><img src="https://s2.loli.net/2022/03/27/c5zdJQb3rKojpuU.png" alt="image-20220327123341760"></p>
+<p><img src="https://s2.loli.net/2022/03/27/drlMDJZUxwgYPV7.png" alt="image-20220327123357521"></p>
+<p>strcspn函数和strspn函数正好相反，它对str字符串起始部分中不与group中任何字符匹配的字符进行计数。返回起始到匹配的字符数.</p>
+<p>如果你使用“ \n\r\f\t\v”作为group参数，这个函数将返回第1个参数字符串起始部分所有非空白字符的值。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> q[]=<span class="string">&quot;hello world&quot;</span>;</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line">len=<span class="built_in">strspn</span>(q,<span class="string">&quot;hellq&quot;</span>);<span class="comment">//返回起始到不匹配的字符数.</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,len);<span class="comment">//4</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> q[]=<span class="string">&quot;hello world&quot;</span>;</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line">len=<span class="built_in">strcspn</span>(q,<span class="string">&quot;oq&quot;</span>);<span class="comment">//返回起始到匹配的字符数.</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,len);<span class="comment">//4</span></span><br></pre></td></tr></table></figure>
+<h2 id="21-查找标记"><a href="#21-查找标记" class="headerlink" title="21.查找标记"></a>21.查找标记</h2><p>这个任务正是strtok函数所实现的功能。它从字符串中隔离各个单独的称为标记(token)的部分，并丢弃分隔符。它的原型如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">char</span>　　*<span class="title">strtok</span><span class="params">( <span class="keyword">char</span> *str, <span class="keyword">char</span> <span class="keyword">const</span> *sep )</span></span>;</span><br></pre></td></tr></table></figure>
+<p>strtok找到str的下一个标记，并将其用NUL结尾，然后返回一个指向这个标记的指针。</p>
+<blockquote>
+<p>当strtok函数执行任务时，它将会修改它所处理的字符串。如果源字符串不能被修改，那就复制一份，将这份拷贝传递给strtok函数。</p>
+</blockquote>
+<p>如果字符串内不存在更多的标记，strtok函数就返回一个NULL指针。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">** 从一个字符数组中提取空白字符分隔的标记并把它们打印出来（每行一个）。 </span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print_tokens</span><span class="params">( <span class="keyword">char</span> *line )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">　　　　 <span class="keyword">static</span> <span class="keyword">char</span> whitespace[] = <span class="string">&quot; \t\f\r\v\n&quot;</span>;</span><br><span class="line">　　　　 <span class="keyword">char</span>　*token;</span><br><span class="line"></span><br><span class="line">　　　　 <span class="keyword">for</span>( token = strtok( line, whitespace );</span><br><span class="line">　　　　　　 token != <span class="literal">NULL</span>;</span><br><span class="line">　　　　　　 token = strtok( <span class="literal">NULL</span>, whitespace ) )</span><br><span class="line">　　　　　　　<span class="built_in">printf</span>( <span class="string">&quot;Next token is %s\n&quot;</span>, token );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>由于strtok函数保存它所处理的函数的局部状态信息，所以你不能用它同时解析两个字符串。因此，如果for循环的循环体内调用了一个在内部调用strtok函数的函数,不能嵌套使用.</p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>打赏一下作者~  ฅ( ̳• ◡ • ̳)ฅ</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay2.jpg" alt="halisi7 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.jpg" alt="halisi7 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/c%E8%AF%AD%E8%A8%80/" rel="tag"><i class="fa fa-tag"></i> c语言</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/03/25/c%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%93%E6%8E%A5%E6%9C%AC%E5%AD%A6%E4%B9%A0/c%E4%B8%8E%E6%8C%87%E9%92%881/" rel="prev" title="c与指针1">
+      <i class="fa fa-chevron-left"></i> c与指针1
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/03/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCPIP%E5%8D%8F%E8%AE%AE%E6%A0%88/" rel="next" title="TCP/IP协议栈">
+      TCP/IP协议栈 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E4%B8%89%E5%AD%97%E6%AF%8D%E8%AF%8D"><span class="nav-number">1.1.</span> <span class="nav-text">1.三字母词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-typedef"><span class="nav-number">1.2.</span> <span class="nav-text">2. typedef</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-goto%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.3.</span> <span class="nav-text">3. goto语句</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E9%9B%B6%E4%B8%BA%E5%81%87%EF%BC%8C%E9%9D%9E%E9%9B%B6%E4%B8%BA%E7%9C%9F%E3%80%82"><span class="nav-number">1.4.</span> <span class="nav-text">4.零为假，非零为真。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E9%97%B4%E6%8E%A5%E8%AE%BF%E9%97%AE%E6%93%8D%E4%BD%9C%E7%AC%A6"><span class="nav-number">1.5.</span> <span class="nav-text">5.间接访问操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-NULL%E6%8C%87%E9%92%88"><span class="nav-number">1.6.</span> <span class="nav-text">6. NULL指针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-stdarg%E5%AE%8F"><span class="nav-number">1.7.</span> <span class="nav-text">7. stdarg宏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-ap-6%E7%9B%B8%E5%BD%93%E4%BA%8E%E8%A1%A8%E8%BE%BE%E5%BC%8Farray-2-6%E3%80%82"><span class="nav-number">1.8.</span> <span class="nav-text">8. *ap+6相当于表达式array[2]+6。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-2-array-%E7%AD%89%E4%BA%8E-array-2-%EF%BC%8Carray%E4%B8%BA%E6%95%B0%E7%BB%84%E3%80%82"><span class="nav-number">1.9.</span> <span class="nav-text">9.   2[array]等于*( array + 2 )，array为数组。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-%E5%AD%97%E7%AC%A6%E6%95%B0%E7%BB%84%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-number">1.10.</span> <span class="nav-text">10.字符数组初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84"><span class="nav-number">1.11.</span> <span class="nav-text">11.二维数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E9%95%BF%E5%BA%A6%E5%B9%B6%E4%B8%8D%E5%8C%85%E6%8B%ACNUL%E5%AD%97%E8%8A%82%E3%80%82"><span class="nav-number">1.12.</span> <span class="nav-text">12. 字符串的长度并不包括NUL字节。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-%E5%A4%8D%E5%88%B6%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">1.13.</span> <span class="nav-text">13.复制字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-%E8%BF%9E%E6%8E%A5%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">1.14.</span> <span class="nav-text">14.连接字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="nav-number">1.14.1.</span> <span class="nav-text">返回值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83"><span class="nav-number">1.15.</span> <span class="nav-text">15.字符串比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16-%E9%95%BF%E5%BA%A6%E5%8F%97%E9%99%90%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0"><span class="nav-number">1.16.</span> <span class="nav-text">16.长度受限的字符串函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-%E6%9F%A5%E6%89%BE%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6"><span class="nav-number">1.17.</span> <span class="nav-text">17.查找一个字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#18-%E6%9F%A5%E6%89%BE%E4%BB%BB%E4%BD%95%E5%87%A0%E4%B8%AA%E5%AD%97%E7%AC%A6"><span class="nav-number">1.18.</span> <span class="nav-text">18.查找任何几个字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-%E6%9F%A5%E6%89%BE%E4%B8%80%E4%B8%AA%E5%AD%90%E4%B8%B2"><span class="nav-number">1.19.</span> <span class="nav-text">19.查找一个子串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#20-%E6%9F%A5%E6%89%BE%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%89%8D%E7%BC%80"><span class="nav-number">1.20.</span> <span class="nav-text">20.查找一个字符串前缀</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#21-%E6%9F%A5%E6%89%BE%E6%A0%87%E8%AE%B0"><span class="nav-number">1.21.</span> <span class="nav-text">21.查找标记</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="halisi7"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">halisi7</p>
+  <div class="site-description" itemprop="description">涉猎的方面为 c语言、Java、mysql、linux、docker，领域涵盖算法、服务器和数据库等，微信：17638342348 QQ：2548825576</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">172</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/halisi7" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;halisi7" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://blog.csdn.net/qq_42912469?spm=1010.2135.3001.5343" title="CSDN → https:&#x2F;&#x2F;blog.csdn.net&#x2F;qq_42912469?spm&#x3D;1010.2135.3001.5343" rel="noopener" target="_blank"><i class="CSDN fa-fw"></i>CSDN</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://juejin.cn/user/853691327067198" title="掘金 → https:&#x2F;&#x2F;juejin.cn&#x2F;user&#x2F;853691327067198" rel="noopener" target="_blank"><i class="掘金 fa-fw"></i>掘金</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/li-jia-cheng-32-78-7" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;li-jia-cheng-32-78-7" rel="noopener" target="_blank"><i class="知乎 fa-fw"></i>知乎</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">halisi7</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'IghlQJHO7BhPTvcj5tR942MR-gzGzoHsz',
+      appKey     : 'omb9tQNxVorMPUvyhyAwbKpX',
+      placeholder: " 我是小哈1号。\n 请输入你的评论。\n 昵称为必填!\n 填写emall可以收到推送通知哦！",
+      avatar     : 'wavatar',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'en,zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
