@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-12-03T03:24:22.814Z</updated>
+  <updated>2023-03-30T02:32:37.426Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,23 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2022/12/03/java/hello-world/"/>
-    <id>http://example.com/2022/12/03/java/hello-world/</id>
-    <published>2022-12-03T03:24:22.814Z</published>
-    <updated>2022-12-03T03:24:22.814Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-    <summary type="html">初始文章。</summary>
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>改变</title>
@@ -439,6 +422,27 @@
     
     
     <category term="Java" scheme="http://example.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>应用层-万维网和HTTP协议</title>
+    <link href="http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%B8%87%E7%BB%B4%E7%BD%91%E5%92%8CHTTP%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://example.com/2022/04/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E4%B8%87%E7%BB%B4%E7%BD%91%E5%92%8CHTTP%E5%8D%8F%E8%AE%AE/</id>
+    <published>2022-04-02T11:16:12.000Z</published>
+    <updated>2023-03-30T02:32:37.437Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="万维网和HTTP协议"><a href="#万维网和HTTP协议" class="headerlink" title="万维网和HTTP协议"></a>万维网和HTTP协议</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021943131.png" alt="image-20220402194322984"></p><h1 id="超文本传输协议HTTP"><a href="#超文本传输协议HTTP" class="headerlink" title="超文本传输协议HTTP"></a>超文本传输协议HTTP</h1><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021945824.png" alt="image-20220402194512681"></p><h2 id="HTTP协议的特点"><a href="#HTTP协议的特点" class="headerlink" title="HTTP协议的特点"></a>HTTP协议的特点</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021947435.png" alt="image-20220402194712288"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021949833.png" alt="image-20220402194919674"></p><ul><li>持久连接是非流水线式的。</li><li>红线部分是流水线式的图示，不属于持久连接。</li></ul><h2 id="报文结构"><a href="#报文结构" class="headerlink" title="报文结构"></a>报文结构</h2><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021950867.png" alt="image-20220402195031706"></p><p>报文分为两种</p><ol><li>请求报文。</li><li>响应报文。</li></ol><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021952320.png" alt="image-20220402195213152"></p><p><img src="https://halisi7-1310601873.cos.ap-beijing.myqcloud.com/202204021953068.png" alt="image-20220402195327870"></p>]]></content>
+    
+    
+    <summary type="html">计算机网络</summary>
+    
+    
+    
+    <category term="计算机网络" scheme="http://example.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+    <category term="计算机网络" scheme="http://example.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
